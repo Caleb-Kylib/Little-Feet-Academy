@@ -1,0 +1,173 @@
+/* Global */
+:root {
+  --pink: #ff7aa2;
+  --orange: #ffb35c;
+  --yellow: #ffd166;
+  --green: #73d47f;
+  --teal: #4fd2c2;
+  --blue: #66a6ff;
+  --purple: #a78bfa;
+  --dark: #2a2a2a;
+}
+
+html, body {
+  font-family: 'Fredoka', 'Comic Sans MS', 'Comic Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--dark);
+}
+
+.brand-name {
+  color: var(--pink);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+/* Hero */
+.hero-section {
+  min-height: 72vh;
+  background: url('/img/daycare.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.hero-title {
+  line-height: 1.15;
+}
+
+.hero-subtitle {
+  opacity: 0.95;
+}
+
+.pill-btn {
+  border-radius: 999px;
+}
+
+.btn-kid {
+  background: linear-gradient(90deg, var(--teal), var(--blue));
+  color: #fff;
+  border: none;
+}
+
+.btn-kid:hover {
+  filter: brightness(0.95);
+  color: #fff;
+}
+
+/* Sections */
+.section-title {
+  font-weight: 700;
+}
+
+.section-pad {
+  scroll-margin-top: 90px;
+}
+
+/* Cards */
+.program-card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(102, 166, 255, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.program-card .card-img-top {
+  height: 240px;
+  object-fit: cover;
+  padding: 0px;
+  background: radial-gradient(100% 100% at 50% 0%, #fff 0%, #f7fbff 100%);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.program-card:hover {
+  transform: translateY(-6px) rotate(-0.25deg);
+  box-shadow: 0 16px 36px rgba(102, 166, 255, 0.18);
+}
+
+/* Features */
+.feature-card {
+  background: #fff;
+  border-radius: 18px;
+  border: 2px dashed rgba(167, 139, 250, 0.35);
+}
+
+.feature-icon {
+  font-size: 28px;
+}
+
+/* Testimonials */
+.testimonial {
+  max-width: 780px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+/* About */
+.about-image {
+  max-height: 320px;
+  object-fit: contain;
+}
+
+/* Contact */
+.info-tile {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.contact-form .form-control {
+  border-radius: 12px;
+}
+
+/* Creative Footer (About page) */
+.footer-creative {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(135deg, #66a6ff, #ff7aa2);
+}
+
+.footer-creative .footer-wave {
+  position: relative;
+  color: #fff;
+}
+
+.footer-creative .footer-wave svg {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+
+.footer-badges .badge {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+/* Creative Footer (About page) */
+.footer-creative {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(135deg, #66a6ff, #ff7aa2);
+}
+
+.footer-creative .footer-wave {
+  position: relative;
+  color: #fff;
+}
+
+.footer-creative .footer-wave svg {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+
+.footer-badges .badge {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+
+/* Utilities */
+.rounded-4 { border-radius: 1rem; }
+
+
