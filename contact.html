@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -41,15 +41,29 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="graduation-gallery.html">🎓 Graduation Day</a></li>
+                <li><a class="dropdown-item" href="sports-gallery.html">🏃‍♂️ Sports Day</a></li>
+                <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Banner/Header Section -->
-    <section class="contact-banner py-5 text-center text-white">
+    <section class="contact-banner py-5 text-center text-white" style="background: linear-gradient(135deg, rgba(255, 122, 162, 0.8), rgba(255, 179, 92, 0.8)), url('assets/img/kids.jpg') no-repeat center center; background-size: cover;">
       <div class="container">
         <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
         <p class="lead mb-0">We'd love to hear from you!</p>
@@ -64,35 +78,28 @@
           <div class="col-lg-6">
             <div class="contact-details">
               <h2 class="section-title mb-4">Get in Touch</h2>
-              <div class="contact-info">
-                <div class="contact-item d-flex align-items-start mb-4">
-                  <div class="contact-icon me-3">📍</div>
-                  <div>
-                    <h6 class="fw-bold mb-1">Address</h6>
-                    <p class="mb-0">123 Rainbow Road<br>Playtown, PT 12345</p>
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <div class="info-tile p-3 h-100">
+                    <h6 class="mb-1">Address</h6>
+                    <p class="mb-0">123 Rainbow Road, Playtown</p>
                   </div>
                 </div>
-                
-                <div class="contact-item d-flex align-items-start mb-4">
-                  <div class="contact-icon me-3">📞</div>
-                  <div>
-                    <h6 class="fw-bold mb-1">Phone</h6>
+                <div class="col-sm-6">
+                  <div class="info-tile p-3 h-100">
+                    <h6 class="mb-1">Phone</h6>
                     <p class="mb-0">(123) 456-7890</p>
                   </div>
                 </div>
-                
-                <div class="contact-item d-flex align-items-start mb-4">
-                  <div class="contact-icon me-3">✉️</div>
-                  <div>
-                    <h6 class="fw-bold mb-1">Email</h6>
-                    <p class="mb-0">hello@happykidsnursery.example</p>
+                <div class="col-sm-12">
+                  <div class="info-tile p-3 h-100">
+                    <h6 class="mb-1">Email</h6>
+                    <p class="mb-0">hello@littlefeetacademy.example</p>
                   </div>
                 </div>
-                
-                <div class="contact-item d-flex align-items-start mb-4">
-                  <div class="contact-icon me-3">🕒</div>
-                  <div>
-                    <h6 class="fw-bold mb-1">Office Hours</h6>
+                <div class="col-sm-12">
+                  <div class="info-tile p-3 h-100">
+                    <h6 class="mb-1">Office Hours</h6>
                     <p class="mb-0">Monday - Friday: 7:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 2:00 PM<br>Sunday: Closed</p>
                   </div>
                 </div>
@@ -156,6 +163,75 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqOneHeading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                What ages do you accept?
+              </button>
+            </h2>
+            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOneHeading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We welcome children ages 2 to 6 across our daycare, kindergarten, and after school programs.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqTwoHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                Do you offer meals and snacks?
+              </button>
+            </h2>
+            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. We provide healthy snacks and optional lunch plans. Please let us know about any allergies.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqThreeHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                What are your operating hours?
+              </button>
+            </h2>
+            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We are open Monday through Friday from 7:00 AM to 6:00 PM, and Saturday from 8:00 AM to 2:00 PM. We are closed on Sundays and holidays.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqFourHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                Do you provide transportation?
+              </button>
+            </h2>
+            <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqFourHeading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We do not provide transportation services. Parents are responsible for drop-off and pick-up of their children.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqFiveHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                What safety measures do you have in place?
+              </button>
+            </h2>
+            <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="faqFiveHeading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We maintain strict safety protocols including secure entry systems, regular safety drills, first aid certified staff, and comprehensive background checks for all employees.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Creative Footer -->
     <footer class="footer-creative mt-5">
       <!-- Decorative wave -->
@@ -167,15 +243,15 @@
       <div class="container py-5 text-center text-white">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2 class="mb-2">Happy Kids Nursery</h2>
+            <h2 class="mb-2">Little Feet Academy</h2>
             <p class="mb-4">Where play sparks learning and every child shines ✨</p>
             <div class="footer-badges d-flex justify-content-center gap-3 mb-4">
               <span class="badge rounded-pill bg-light text-dark">🎨 Creative Arts</span>
               <span class="badge rounded-pill bg-light text-dark">📚 Early Literacy</span>
               <span class="badge rounded-pill bg-light text-dark">🤝 Caring Community</span>
             </div>
-            <p class="small mb-1">123 Rainbow Road, Playtown • (123) 456-7890 • hello@happykidsnursery.example</p>
-            <p class="small mb-0">&copy; <span id="year"></span> Happy Kids Nursery</p>
+            <p class="small mb-1">123 Rainbow Road, Playtown • (123) 456-7890 • hello@littlefeetacademy.example</p>
+            <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
           </div>
         </div>
       </div>
