@@ -26,7 +26,7 @@ html, body {
 /* Hero */
 .hero-section {
   min-height: 72vh;
-  background: url('/img/daycare.jpg') no-repeat center center;
+  background: url('../assets/img/daycare.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   color: #fff;
@@ -174,7 +174,7 @@ html, body {
 
 /*About us page */
 .about-banner {
-  background: url('/img/pexels-yankrukov-8613089.jpg') no-repeat center center;
+  background: url('../assets/img/kids.jpg') no-repeat center center;
   background-size: cover;
   min-height: 50vh;
   position: relative;
@@ -314,6 +314,99 @@ html, body {
   box-shadow: 0 8px 25px rgba(255, 122, 162, 0.3);
 }
 
+/* Team Page Styles */
+.team-banner {
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  position: relative;
+}
+
+.director-card {
+  border: 3px solid rgba(102, 166, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.director-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.leadership-card, .teacher-card, .support-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(167, 139, 250, 0.1);
+}
+
+.leadership-card:hover, .teacher-card:hover, .support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Gallery Page Styles */
+.gallery-banner {
+  background: linear-gradient(135deg, var(--orange), var(--green));
+  position: relative;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-content h5 {
+  font-size: 1.1rem;
+}
+
+.activity-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(255, 179, 92, 0.1);
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.activity-icon {
+  font-size: 2.5rem;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--orange), var(--yellow));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(255, 179, 92, 0.3);
+}
+
 /* Responsive adjustments for contact page */
 @media (max-width: 991.98px) {
   .contact-details {
@@ -335,6 +428,11 @@ html, body {
     width: 35px;
     height: 35px;
     font-size: 1.25rem;
+  }
+  
+  .gallery-overlay {
+    opacity: 1;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
   }
 }
 
