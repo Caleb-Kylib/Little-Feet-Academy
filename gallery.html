@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery • Little Feet Academy</title>
+    <meta name="description" content="Take a peek into our vibrant learning environment and see the joy and creativity that fills our classrooms every day." />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold brand-name" href="index.html">Little Feet Academy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                Gallery
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="graduation-gallery.html">🎓 Graduation Day</a></li>
+                <li><a class="dropdown-item" href="sports-gallery.html">🏃‍♂️ Sports Day</a></li>
+                <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner/Header Section -->
+    <section class="gallery-banner py-5 text-center text-white" style="background: linear-gradient(135deg, rgba(255, 179, 92, 0.8), rgba(115, 212, 127, 0.8)), url('assets/img/kids.jpg') no-repeat center center; background-size: cover;">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Our Gallery</h1>
+        <p class="lead mb-0">A glimpse into our colorful world of learning and fun</p>
+      </div>
+    </section>
+
+    <!-- Graduation Day Gallery -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">🎓 Graduation Day</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/pexels-yankrukov-8612967.jpg" class="img-fluid" alt="Graduation ceremony" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Graduation Ceremony</h5>
+                    <p class="text-white small mb-0">Celebrating our little graduates' achievements</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/pexels-yankrukov-8613059.jpg" class="img-fluid" alt="Graduation cap and gown" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Little Graduates</h5>
+                    <p class="text-white small mb-0">Proud moments in caps and gowns</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/kids.jpg" class="img-fluid" alt="Graduation celebration" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Celebration Time</h5>
+                    <p class="text-white small mb-0">Joyful moments with families and friends</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="graduation-gallery.html" class="btn btn-primary btn-lg pill-btn px-4">View More Graduation Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports Day Gallery -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">🏃‍♂️ Sports Day</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/pexels-yankrukov-8613089.jpg" class="img-fluid" alt="Sports activities" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Fun Races</h5>
+                    <p class="text-white small mb-0">Exciting races and friendly competitions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/pexels-yankrukov-8613320.jpg" class="img-fluid" alt="Outdoor sports" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Outdoor Games</h5>
+                    <p class="text-white small mb-0">Active play and team building activities</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/daycare.jpg" class="img-fluid" alt="Sports day setup" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Team Spirit</h5>
+                    <p class="text-white small mb-0">Building confidence through sports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="sports-gallery.html" class="btn btn-primary btn-lg pill-btn px-4">View More Sports Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cultural Day Gallery -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">🎭 Cultural Day</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/pexels-yankrukov-8612967.jpg" class="img-fluid" alt="Cultural performances" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Cultural Performances</h5>
+                    <p class="text-white small mb-0">Dance, music, and traditional celebrations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/pexels-yankrukov-8613059.jpg" class="img-fluid" alt="Traditional costumes" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Traditional Attire</h5>
+                    <p class="text-white small mb-0">Beautiful costumes from different cultures</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery-item">
+              <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
+                <img src="assets/img/kids.jpg" class="img-fluid" alt="Cultural activities" />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="text-white fw-bold mb-2">Art & Crafts</h5>
+                    <p class="text-white small mb-0">Creative projects celebrating diversity</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="cultural-gallery.html" class="btn btn-primary btn-lg pill-btn px-4">View More Cultural Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities Showcase -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Daily Activities</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="activity-card bg-white rounded-4 p-4 text-center h-100">
+              <div class="activity-icon mb-3">🎨</div>
+              <h5 class="fw-bold mb-2">Art & Crafts</h5>
+              <p class="small mb-0">Creative expression through painting, drawing, and hands-on projects</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="activity-card bg-white rounded-4 p-4 text-center h-100">
+              <div class="activity-icon mb-3">📚</div>
+              <h5 class="fw-bold mb-2">Story Time</h5>
+              <p class="small mb-0">Interactive reading sessions that spark imagination and language development</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="activity-card bg-white rounded-4 p-4 text-center h-100">
+              <div class="activity-icon mb-3">🎵</div>
+              <h5 class="fw-bold mb-2">Music & Movement</h5>
+              <p class="small mb-0">Singing, dancing, and rhythm activities that promote coordination</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="activity-card bg-white rounded-4 p-4 text-center h-100">
+              <div class="activity-icon mb-3">🧩</div>
+              <h5 class="fw-bold mb-2">Learning Games</h5>
+              <p class="small mb-0">Educational games that make learning numbers, letters, and shapes fun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 cta-reach">
+      <div class="container text-center text-white">
+        <h2 class="fw-bold mb-3">Want to See More?</h2>
+        <p class="lead mb-4">Schedule a tour to experience our vibrant learning environment firsthand!</p>
+        <a href="contact.html" class="btn btn-light btn-lg pill-btn px-4">Schedule a Tour</a>
+      </div>
+    </section>
+
+    <!-- Creative Footer -->
+    <footer class="footer-creative mt-5">
+      <!-- Decorative wave -->
+      <div class="footer-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,69.3C672,64,768,96,864,96C960,96,1056,64,1152,48C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+      </div>
+
+      <div class="container py-5 text-white">
+        <div class="row">
+          
+          <!-- Column 1: About -->
+          <div class="col-md-4 text-center mb-4">
+            <h4 class="mb-3">Little Feet Academy</h4>
+            <p class="small">Where play sparks learning and every child shines ✨</p>
+            <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
+              <span class="badge rounded-pill bg-light text-dark">🎨 Creative Arts</span>
+              <span class="badge rounded-pill bg-light text-dark">📚 Early Literacy</span>
+              <span class="badge rounded-pill bg-light text-dark">🤝 Caring Community</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled small">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+              <li><a href="team.html" class="text-white text-decoration-none">Our Team</a></li>
+              <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Opening Hours -->
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Opening Hours</h5>
+            <p class="small mb-1">Monday – Friday: 8:00 AM – 5:00 PM</p>
+            <p class="small mb-1">Saturday: 9:00 AM – 1:00 PM</p>
+            <p class="small mb-0">Sunday & Holidays: Closed</p>
+          </div>
+
+        </div>
+
+        <!-- Bottom row -->
+        <div class="text-center mt-4">
+          <p class="small mb-1">123 Rainbow Road, Playtown • (123) 456-7890 • hello@littlefeetacademy.example</p>
+          <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Small helper for current year -->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
