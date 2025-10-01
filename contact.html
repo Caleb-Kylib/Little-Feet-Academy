@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Us • Happy Kids Nursery</title>
-    <meta name="description" content="Get in touch with Happy Kids Nursery. We'd love to hear from you!" />
+    <title>Contact Us • Little Feet Academy</title>
+    <meta name="description" content="Get in touch with Little Feet Academy. Schedule a tour, ask about enrollment, or just say hello!" />
 
     <!-- Bootstrap 5 CSS -->
     <link
@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container">
-        <a class="navbar-brand fw-bold brand-name" href="index.html">Happy Kids Nursery</a>
+        <a class="navbar-brand fw-bold brand-name" href="index.html">Little Feet Academy</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -62,169 +62,94 @@
       </div>
     </nav>
 
-    <!-- Banner/Header Section -->
-    <section class="contact-banner py-5 text-center text-white" style="background: linear-gradient(135deg, rgba(255, 122, 162, 0.8), rgba(255, 179, 92, 0.8)), url('assets/img/kids.jpg') no-repeat center center; background-size: cover;">
+    <!-- Banner -->
+    <section class="contact-banner py-5 text-center text-white" style="background: linear-gradient(135deg, rgba(115, 212, 127, 0.8), rgba(102, 166, 255, 0.8)), url('assets/img/kids.jpg') no-repeat center center; background-size: cover;">
       <div class="container">
-        <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
-        <p class="lead mb-0">We'd love to hear from you!</p>
+        <h1 class="display-4 fw-bold mb-3">Get in Touch</h1>
+        <p class="lead mb-0">We'd love to hear from you and welcome your family to our academy.</p>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Content -->
     <section class="py-5">
       <div class="container">
         <div class="row g-5">
-          <!-- Left Column: Contact Details -->
-          <div class="col-lg-6">
-            <div class="contact-details">
-              <h2 class="section-title mb-4">Get in Touch</h2>
-              <div class="row g-3 mb-3">
-                <div class="col-sm-6">
-                  <div class="info-tile p-3 h-100">
-                    <h6 class="mb-1">Address</h6>
-                    <p class="mb-0">123 Rainbow Road, Playtown</p>
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="contact-card bg-light p-4 p-md-5 rounded-4 shadow-sm">
+              <h2 class="fw-bold mb-4">Send us a Message</h2>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="john@example.com" required />
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="subject" class="form-label">Subject</label>
+                    <select class="form-select" id="subject" required>
+                      <option value="" selected disabled>Choose a topic...</option>
+                      <option value="enrollment">Enrollment Inquiry</option>
+                      <option value="tour">Schedule a Tour</option>
+                      <option value="general">General Question</option>
+                      <option value="feedback">Feedback</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a subject.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="How can we help your child shine?" required></textarea>
+                    <div class="invalid-feedback">Please write your message.</div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-lg pill-btn px-4 w-100 w-sm-auto">Send Message</button>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="info-tile p-3 h-100">
-                    <h6 class="mb-1">Phone</h6>
-                    <p class="mb-0">(123) 456-7890</p>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="info-tile p-3 h-100">
-                    <h6 class="mb-1">Email</h6>
-                    <p class="mb-0">hello@littlefeetacademy.example</p>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="info-tile p-3 h-100">
-                    <h6 class="mb-1">Office Hours</h6>
-                    <p class="mb-0">Monday - Friday: 7:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 2:00 PM<br>Sunday: Closed</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Contact Form -->
-          <div class="col-lg-6">
-            <div class="contact-form-container">
-              <h2 class="section-title mb-4">Send us a Message</h2>
-              <form class="contact-form needs-validation" novalidate>
-                <div class="mb-3">
-                  <label for="fullName" class="form-label">Full Name *</label>
-                  <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required />
-                  <div class="invalid-feedback">Please enter your full name.</div>
-                </div>
-                
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email *</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email address" required />
-                  <div class="invalid-feedback">Please enter a valid email address.</div>
-                </div>
-                
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Phone (Optional)</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" />
-                </div>
-                
-                <div class="mb-4">
-                  <label for="message" class="form-label">Message *</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
-                  <div class="invalid-feedback">Please enter your message.</div>
-                </div>
-                
-                <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">
-                  <span class="btn-icon">📤</span>
-                  Send Message
-                </button>
               </form>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Google Maps Section -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="section-title text-center mb-4">Find Us</h2>
-        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24178.159617946934!2d-74.0060156!3d40.7127281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ1LjgiTiA3NMKwMDAnMjEuNSJX!5e0!3m2!1sen!2sus!4v1689876543210"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Happy Kids Nursery Location"
-          ></iframe>
-        </div>
-      </div>
-    </section>
+          <!-- Contact Info & Map -->
+          <div class="col-lg-5">
+            <div class="contact-info-sidebar h-100">
+              <div class="info-item mb-4 d-flex align-items-start gap-3 p-3 bg-white rounded-4 shadow-sm">
+                <div class="info-icon fs-3">📍</div>
+                <div>
+                  <h5 class="fw-bold mb-1">Our Location</h5>
+                  <p class="text-muted mb-0">Barclays Road, Ongata Rongai</p>
+                </div>
+              </div>
 
-    <!-- FAQ Section -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="section-title text-center mb-4">Frequently Asked Questions</h2>
-        <div class="accordion" id="faqAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqOneHeading">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
-                What ages do you accept?
-              </button>
-            </h2>
-            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOneHeading" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                We welcome children ages 2 to 6 across our daycare, kindergarten, and after school programs.
+              <div class="info-item mb-4 d-flex align-items-start gap-3 p-3 bg-white rounded-4 shadow-sm">
+                <div class="info-icon fs-3">📞</div>
+                <div>
+                  <h5 class="fw-bold mb-1">Call Us</h5>
+                  <p class="text-muted mb-0">+254 796 609 626</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqTwoHeading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
-                Do you offer meals and snacks?
-              </button>
-            </h2>
-            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes. We provide healthy snacks and optional lunch plans. Please let us know about any allergies.
+
+              <div class="info-item mb-4 d-flex align-items-start gap-3 p-3 bg-white rounded-4 shadow-sm">
+                <div class="info-icon fs-3">✉️</div>
+                <div>
+                  <h5 class="fw-bold mb-1">Email Us</h5>
+                  <p class="text-muted mb-0">hello@littlefeetacademy.co.ke</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqThreeHeading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
-                What are your operating hours?
-              </button>
-            </h2>
-            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeading" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                We are open Monday through Friday from 7:00 AM to 6:00 PM, and Saturday from 8:00 AM to 2:00 PM. We are closed on Sundays and holidays.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqFourHeading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
-                Do you provide transportation?
-              </button>
-            </h2>
-            <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqFourHeading" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                We do not provide transportation services. Parents are responsible for drop-off and pick-up of their children.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqFiveHeading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
-                What safety measures do you have in place?
-              </button>
-            </h2>
-            <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="faqFiveHeading" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                We maintain strict safety protocols including secure entry systems, regular safety drills, first aid certified staff, and comprehensive background checks for all employees.
+
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mt-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24178.159617946934!2d-74.0060156!3d40.7127281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ1LjgiTiA3NMKwMDAnMjEuNSJX!5e0!3m2!1sen!2sus!4v1689876543210"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Google Map"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -234,25 +159,44 @@
 
     <!-- Creative Footer -->
     <footer class="footer-creative mt-5">
-      <!-- Decorative wave -->
       <div class="footer-wave" aria-hidden="true">
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <path fill="currentColor" d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,69.3C672,64,768,96,864,96C960,96,1056,64,1152,48C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
         </svg>
       </div>
-      <div class="container py-5 text-center text-white">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="mb-2">Little Feet Academy</h2>
-            <p class="mb-4">Where play sparks learning and every child shines ✨</p>
-            <div class="footer-badges d-flex justify-content-center gap-3 mb-4">
+
+      <div class="container py-5 text-white">
+        <div class="row">
+          <div class="col-md-4 text-center mb-4">
+            <h4 class="mb-3">Little Feet Academy</h4>
+            <p class="small">Where play sparks learning and every child shines ✨</p>
+            <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
               <span class="badge rounded-pill bg-light text-dark">🎨 Creative Arts</span>
               <span class="badge rounded-pill bg-light text-dark">📚 Early Literacy</span>
               <span class="badge rounded-pill bg-light text-dark">🤝 Caring Community</span>
             </div>
-            <p class="small mb-1">123 Rainbow Road, Playtown • (123) 456-7890 • hello@littlefeetacademy.example</p>
-            <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
           </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled small">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+              <li><a href="team.html" class="text-white text-decoration-none">Our Team</a></li>
+              <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Opening Hours</h5>
+            <p class="small mb-1">Monday – Friday: 8:00 AM – 5:00 PM</p>
+            <p class="small mb-1">Saturday: 9:00 AM – 1:00 PM</p>
+            <p class="small mb-0">Sunday & Holidays: Closed</p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="small mb-1">Barclays Road, Ongata Rongai • +254 796 609 626 • hello@littlefeetacademy.co.ke</p>
+          <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
         </div>
       </div>
     </footer>
@@ -264,11 +208,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Form validation script -->
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
-      
-      // Form validation
       (() => {
         const forms = document.querySelectorAll('.needs-validation');
         Array.from(forms).forEach((form) => {
@@ -283,4 +224,4 @@
       })();
     </script>
   </body>
-  </html>
+</html>
