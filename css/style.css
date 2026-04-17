@@ -456,32 +456,75 @@ html, body {
 }
 
 
-/* Responsive adjustments for contact page */
-@media (max-width: 991.98px) {
-  .contact-details {
-    padding-right: 0;
-    margin-bottom: 2rem;
-  }
-  
-  .contact-form-container {
-    padding: 1.5rem;
-  }
+
+/* WhatsApp Chatbot */
+.whatsapp-chat-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: whatsappPulse 2s infinite;
 }
 
-@media (max-width: 767.98px) {
-  .contact-form-container {
-    padding: 1rem;
+.whatsapp-chat-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-chat-button svg {
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+}
+
+.whatsapp-chat-tooltip {
+  position: absolute;
+  right: 80px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-chat-button:hover .whatsapp-chat-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+@keyframes whatsappPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-chat-button {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
   }
-  
-  .contact-icon {
-    width: 35px;
-    height: 35px;
-    font-size: 1.25rem;
-  }
-  
-  .gallery-overlay {
-    opacity: 1;
-    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+  .whatsapp-chat-tooltip {
+    display: none;
   }
 }
 
