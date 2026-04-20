@@ -69,51 +69,47 @@
     </nav>
 
     <!-- Banner -->
-    <section class="contact-banner py-5 text-center text-white" style="background: linear-gradient(135deg, rgba(115, 212, 127, 0.8), rgba(102, 166, 255, 0.8)), url('assets/img/kids.jpg') no-repeat center center; background-size: cover;">
-      <div class="container">
+    <section class="contact-banner d-flex align-items-center text-center text-white" style="background: linear-gradient(135deg, rgba(115, 212, 127, 0.8), rgba(102, 166, 255, 0.8)), url('assets/img/kids.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
+      <div class="container reveal reveal-scale">
         <h1 class="display-4 fw-bold mb-3">Get in Touch</h1>
         <p class="lead mb-0">We'd love to hear from you and welcome your family to our academy.</p>
       </div>
     </section>
 
     <!-- Contact Content -->
-    <section class="py-5">
+    <section class="py-5 section-pad">
       <div class="container">
         <div class="row g-5">
           <!-- Contact Form -->
-          <div class="col-lg-7">
-            <div class="contact-card bg-light p-4 p-md-5 rounded-4 shadow-sm">
+          <div class="col-lg-7 reveal reveal-left">
+            <div class="contact-card bg-white p-4 p-md-5 rounded-5 shadow-lg border-0">
               <h2 class="fw-bold mb-4">Send us a Message</h2>
               <form class="needs-validation" novalidate>
-                <div class="row g-3">
+                <div class="row g-4">
                   <div class="col-md-6">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="John Doe" required />
-                    <div class="invalid-feedback">Please enter your name.</div>
+                    <label for="name" class="form-label fw-bold">Full Name</label>
+                    <input type="text" class="form-control rounded-pill border-0 bg-light py-3 px-4" id="name" placeholder="John Doe" required />
                   </div>
                   <div class="col-md-6">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="john@example.com" required />
-                    <div class="invalid-feedback">Please enter a valid email.</div>
+                    <label for="email" class="form-label fw-bold">Email Address</label>
+                    <input type="email" class="form-control rounded-pill border-0 bg-light py-3 px-4" id="email" placeholder="john@example.com" required />
                   </div>
                   <div class="col-12">
-                    <label for="subject" class="form-label">Subject</label>
-                    <select class="form-select" id="subject" required>
+                    <label for="subject" class="form-label fw-bold">Subject</label>
+                    <select class="form-select rounded-pill border-0 bg-light py-3 px-4" id="subject" required>
                       <option value="" selected disabled>Choose a topic...</option>
                       <option value="enrollment">Enrollment Inquiry</option>
                       <option value="tour">Schedule a Tour</option>
                       <option value="general">General Question</option>
                       <option value="feedback">Feedback</option>
                     </select>
-                    <div class="invalid-feedback">Please select a subject.</div>
                   </div>
                   <div class="col-12">
-                    <label for="message" class="form-label">Your Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="How can we help your child shine?" required></textarea>
-                    <div class="invalid-feedback">Please write your message.</div>
+                    <label for="message" class="form-label fw-bold">Your Message</label>
+                    <textarea class="form-control rounded-4 border-0 bg-light py-3 px-4" id="message" rows="5" placeholder="How can we help your child shine?" required></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn btn-primary btn-lg pill-btn px-4 w-100 w-sm-auto">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-lg pill-btn px-5 py-3 w-100 shadow-sm fw-bold">Send Message</button>
                   </div>
                 </div>
               </form>
@@ -121,35 +117,35 @@
           </div>
 
           <!-- Contact Info & Map -->
-          <div class="col-lg-5">
+          <div class="col-lg-5 reveal reveal-right">
             <div class="contact-info-sidebar h-100">
-              <div class="info-item mb-4 d-flex align-items-start gap-3 p-3 bg-white rounded-4 shadow-sm">
-                <div class="info-icon fs-3">📍</div>
+              <div class="info-item mb-4 d-flex align-items-center gap-3 p-4 bg-white rounded-5 shadow-sm hover-up">
+                <div class="info-icon fs-2">📍</div>
                 <div>
-                  <h5 class="fw-bold mb-1">Our Location</h5>
-                  <p class="text-muted mb-0">Barclays Road, Ongata Rongai</p>
+                  <h5 class="fw-bold mb-0">Our Location</h5>
+                  <p class="text-muted small mb-0">Barclays Road, Ongata Rongai</p>
                 </div>
               </div>
 
-              <div class="info-item mb-4 d-flex align-items-start gap-3 p-3 bg-white rounded-4 shadow-sm">
-                <div class="info-icon fs-3">📞</div>
+              <div class="info-item mb-4 d-flex align-items-center gap-3 p-4 bg-white rounded-5 shadow-sm hover-up">
+                <div class="info-icon fs-2">📞</div>
                 <div>
-                  <h5 class="fw-bold mb-1">Call Us</h5>
-                  <p class="text-muted mb-0">+254 796 609 626</p>
+                  <h5 class="fw-bold mb-0">Call Us</h5>
+                  <p class="text-muted small mb-0">+254 796 609 626</p>
                 </div>
               </div>
 
-              <div class="info-item mb-4 d-flex align-items-start gap-3 p-3 bg-white rounded-4 shadow-sm">
-                <div class="info-icon fs-3">✉️</div>
+              <div class="info-item mb-4 d-flex align-items-center gap-3 p-4 bg-white rounded-5 shadow-sm hover-up">
+                <div class="info-icon fs-2">✉️</div>
                 <div>
-                  <h5 class="fw-bold mb-1">Email Us</h5>
-                  <p class="text-muted mb-0">hello@littlefeetacademy.co.ke</p>
+                  <h5 class="fw-bold mb-0">Email Us</h5>
+                  <p class="text-muted small mb-0">hello@littlefeetacademy.co.ke</p>
                 </div>
               </div>
 
-              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mt-4">
+              <div class="ratio ratio-16x9 rounded-5 overflow-hidden shadow-lg mt-4 reveal reveal-scale">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24178.159617946934!2d-74.0060156!3d40.7127281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ1LjgiTiA3NMKwMDAnMjEuNSJX!5e0!3m2!1sen!2sus!4v1689876543210"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.21852771597!2d36.7412217!3d-1.3932824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f059cb23bda8d%3A0xe54d3e5f7a0b5f1a!2sOngata%20Rongai!5e0!3m2!1sen!2ske!4v1689876543210"
                   style="border:0;"
                   allowfullscreen=""
                   loading="lazy"
@@ -175,11 +171,10 @@
         <div class="row">
           <div class="col-md-4 text-center mb-4">
             <h4 class="mb-3">Little Feet Academy</h4>
-            <p class="small">Where play sparks learning and every child shines ✨</p>
             <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
-              <span class="badge rounded-pill bg-light text-dark">🎨 Creative Arts</span>
-              <span class="badge rounded-pill bg-light text-dark">📚 Early Literacy</span>
-              <span class="badge rounded-pill bg-light text-dark">🤝 Caring Community</span>
+              <span class="badge rounded-pill bg-light text-dark">🎨 Arts</span>
+              <span class="badge rounded-pill bg-light text-dark">📚 Reading</span>
+              <span class="badge rounded-pill bg-light text-dark">🤝 Caring</span>
             </div>
           </div>
           <div class="col-md-4 text-center mb-4">
@@ -194,18 +189,24 @@
             </ul>
           </div>
           <div class="col-md-4 text-center mb-4">
-            <h5 class="mb-3">Opening Hours</h5>
-            <p class="small mb-1">Monday – Friday: 8:00 AM – 5:00 PM</p>
-            <p class="small mb-1">Saturday: 9:00 AM – 1:00 PM</p>
-            <p class="small mb-0">Sunday & Holidays: Closed</p>
+            <h5 class="mb-3">Connect</h5>
+            <p class="small mb-1">+254 796 609 626</p>
+            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
           </div>
         </div>
-        <div class="text-center mt-4">
-          <p class="small mb-1">Barclays Road, Ongata Rongai • +254 796 609 626 • hello@littlefeetacademy.co.ke</p>
+        <div class="text-center mt-4 border-top pt-4 opacity-50">
           <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
         </div>
       </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script
@@ -213,21 +214,20 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
-      (() => {
-        const forms = document.querySelectorAll('.needs-validation');
-        Array.from(forms).forEach((form) => {
-          form.addEventListener('submit', (event) => {
-            if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
+
+      // Intersection Observer for Scroll Animations
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
         });
-      })();
+      }, { threshold: 0.1 });
+
+      revealElements.forEach(el => observer.observe(el));
     </script>
   </body>
 </html>

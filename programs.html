@@ -25,27 +25,23 @@
         .program-hero {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/daycare.jpg') no-repeat center center;
             background-size: cover;
-            padding: 100px 0;
+            padding: 120px 0;
             color: white;
             text-align: center;
         }
-        .curriculum-section {
-            background: #fff;
-            padding: 80px 0;
-        }
         .class-group-card {
             border: none;
-            border-radius: 20px;
+            border-radius: 30px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             height: 100%;
             background: #fff;
-            border-bottom: 5px solid transparent;
+            border-bottom: 8px solid transparent;
         }
         .class-group-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.1);
         }
         .pg-card { border-color: var(--pink); }
         .pp-card { border-color: var(--orange); }
@@ -53,26 +49,20 @@
         .js-card { border-color: var(--blue); }
 
         .group-icon {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 1.5rem;
             display: inline-block;
         }
         .curriculum-tag {
-            background: var(--yellow);
+            background: var(--soft-yellow);
             color: var(--dark);
-            padding: 5px 15px;
+            padding: 6px 18px;
             border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
+            font-size: 0.85rem;
+            font-weight: 700;
             display: inline-block;
-            margin-bottom: 10px;
-        }
-        .cbc-highlight {
-            background: linear-gradient(135deg, var(--teal), var(--blue));
-            color: white;
-            padding: 40px;
-            border-radius: 30px;
-            margin-top: 50px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
     </style>
   </head>
@@ -124,69 +114,73 @@
 
     <!-- Hero Section -->
     <section class="program-hero">
-      <div class="container">
+      <div class="container reveal reveal-scale">
         <h1 class="display-4 fw-bold mb-3">Our Academic Programs</h1>
         <p class="lead">Nurturing every step of your child's educational journey from Age 2 to Junior Secondary.</p>
       </div>
     </section>
 
     <!-- Programs Grid -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light section-pad">
       <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Class Groups</h2>
+        <div class="text-center mb-5 reveal reveal-up">
+            <h2 class="section-title h1">Class Groups</h2>
             <p class="text-muted">Tailored learning environments for every age group.</p>
         </div>
         
         <div class="row g-4">
           <!-- Play Group -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.1s;">
             <div class="card class-group-card pg-card p-4">
               <div class="card-body text-center">
                 <span class="group-icon">🧸</span>
+                <br>
                 <span class="curriculum-tag">Early Years</span>
                 <h4 class="fw-bold">Play Group</h4>
-                <p class="small text-secondary">Ages 2 – 4 Years</p>
-                <p>Focusing on social skills, sensory exploration, and emotional development in a safe, loving space.</p>
+                <p class="small text-secondary fw-bold">Ages 2 – 4 Years</p>
+                <p class="text-muted">Focusing on social skills, sensory exploration, and emotional development in a safe, loving space.</p>
               </div>
             </div>
           </div>
 
           <!-- PP1 & PP2 -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.2s;">
             <div class="card class-group-card pp-card p-4">
               <div class="card-body text-center">
                 <span class="group-icon">🎨</span>
+                <br>
                 <span class="curriculum-tag">Pre-Primary</span>
                 <h4 class="fw-bold">PP1 & PP2</h4>
-                <p class="small text-secondary">Ages 4 – 6 Years</p>
-                <p>Transitioning into structured learning with emphasis on literacy, numeracy, and environmental awareness.</p>
+                <p class="small text-secondary fw-bold">Ages 4 – 6 Years</p>
+                <p class="text-muted">Transitioning into structured learning with emphasis on literacy, numeracy, and environmental awareness.</p>
               </div>
             </div>
           </div>
 
           <!-- Lower Primary -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.3s;">
             <div class="card class-group-card lp-card p-4">
               <div class="card-body text-center">
                 <span class="group-icon">📚</span>
+                <br>
                 <span class="curriculum-tag">Primary</span>
                 <h4 class="fw-bold">Lower Primary</h4>
-                <p class="small text-secondary">Grade 1 – Grade 3</p>
-                <p>Building strong foundations in core subjects through inquiry-based learning and creative expression.</p>
+                <p class="small text-secondary fw-bold">Grade 1 – Grade 3</p>
+                <p class="text-muted">Building strong foundations in core subjects through inquiry-based learning and creative expression.</p>
               </div>
             </div>
           </div>
 
           <!-- Junior Secondary -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.4s;">
             <div class="card class-group-card js-card p-4">
               <div class="card-body text-center">
                 <span class="group-icon">🔬</span>
+                <br>
                 <span class="curriculum-tag">Upper Years</span>
                 <h4 class="fw-bold">Junior Secondary</h4>
-                <p class="small text-secondary">Grade 7 & Above</p>
-                <p>Developing critical thinking, specialized skills, and career pathways in alignment with national goals.</p>
+                <p class="small text-secondary fw-bold">Grade 7 & Above</p>
+                <p class="text-muted">Developing critical thinking, specialized skills, and career pathways in alignment with national goals.</p>
               </div>
             </div>
           </div>
@@ -195,23 +189,31 @@
     </section>
 
     <!-- Curriculum Details -->
-    <section class="curriculum-section">
+    <section class="py-5 bg-white section-pad">
       <div class="container">
         <div class="row align-items-center gy-5">
-          <div class="col-lg-6">
-            <h2 class="section-title mb-4">The CBC Advantage</h2>
-            <p>At Little Feet Academy, we fully embrace the <strong>Competency Based Curriculum (CBC)</strong>. Our approach moves beyond rote memorization to focus on what a child can DO.</p>
+          <div class="col-lg-6 reveal reveal-left">
+            <h2 class="section-title h1 mb-4">The CBC Advantage</h2>
+            <p class="lead mb-4">Our approach moves beyond rote memorization to focus on what a child can <strong>DO</strong>.</p>
             <ul class="list-unstyled">
-              <li class="mb-3">✅ <strong>Critical Thinking:</strong> Encouraging kids to ask "Why?" and "How?"</li>
-              <li class="mb-3">✅ <strong>Creativity:</strong> Nurturing innate talents through art, music, and play.</li>
-              <li class="mb-3">✅ <strong>Communication:</strong> Building confidence in self-expression.</li>
-              <li class="mb-3">✅ <strong>Collaboration:</strong> Working together to solve problems.</li>
+              <li class="mb-3 d-flex align-items-center gap-2">
+                  <span class="text-primary fs-4">✔</span>
+                  <span><strong>Practical Knowledge:</strong> Learning through doing.</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-2">
+                  <span class="text-primary fs-4">✔</span>
+                  <span><strong>Talent Discovery:</strong> Identifying unique gifts early.</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-2">
+                  <span class="text-primary fs-4">✔</span>
+                  <span><strong>Modern Skills:</strong> Critical thinking & digital literacy.</span>
+              </li>
             </ul>
           </div>
-          <div class="col-lg-6">
-            <div class="cbc-highlight shadow-lg">
-                <h3 class="fw-bold">Our Philosophy</h3>
-                <p class="mb-0">"Education is not the filling of a pail, but the lighting of a fire." We believe in identifying and nurturing the unique potential of every child through a learner-centered approach.</p>
+          <div class="col-lg-6 reveal reveal-right">
+            <div class="cbc-highlight shadow-lg p-5">
+                <h3 class="fw-bold text-white mb-3">Our Promise</h3>
+                <p class="mb-0 text-white opacity-90">"We don't just teach children; we inspire them to become lifelong learners, confident leaders, and compassionate citizens of the world."</p>
             </div>
           </div>
         </div>
@@ -219,25 +221,17 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-5 bg-primary text-white text-center">
-      <div class="container">
-        <h2 class="fw-bold mb-3">Ready to Join the Family?</h2>
-        <p class="lead mb-4">Admissions are open for the current academic year. Schedule a visit today.</p>
-        <div class="d-flex justify-content-center gap-3">
-          <a href="contact.html" class="btn btn-light btn-lg pill-btn px-4">Apply Now</a>
-          <a href="tel:+254796609626" class="btn btn-outline-light btn-lg pill-btn px-4">Call Us</a>
+    <section class="py-5 reveal reveal-up">
+        <div class="container">
+            <div class="big-cta-section text-center text-white py-5 shadow-lg">
+                <h2 class="display-5 fw-bold mb-3">Ready to Join the Family?</h2>
+                <p class="lead mb-4 opacity-75">Admissions are open for the current academic year.</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <a href="contact.html" class="btn btn-light btn-lg pill-btn px-5 shadow">Apply Now</a>
+                  <a href="https://wa.me/254796609626" class="btn btn-outline-light btn-lg pill-btn px-5 border-2">Chat with Us</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section id="newsletter" class="newsletter">
-      <h2>Subscribe to our Newsletter</h2>
-      <p>Stay updated with the latest news and events from Little Feet Academy.</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
     </section>
 
     <!-- Creative Footer -->
@@ -252,11 +246,10 @@
         <div class="row">
           <div class="col-md-4 text-center mb-4">
             <h4 class="mb-3">Little Feet Academy</h4>
-            <p class="small">Where play sparks learning and every child shines ✨</p>
             <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
-              <span class="badge rounded-pill bg-light text-dark">🎨 Creative Arts</span>
-              <span class="badge rounded-pill bg-light text-dark">📚 Early Literacy</span>
-              <span class="badge rounded-pill bg-light text-dark">🤝 Caring Community</span>
+              <span class="badge rounded-pill bg-light text-dark">🎨 Arts</span>
+              <span class="badge rounded-pill bg-light text-dark">📚 Reading</span>
+              <span class="badge rounded-pill bg-light text-dark">🤝 Caring</span>
             </div>
           </div>
           <div class="col-md-4 text-center mb-4">
@@ -271,28 +264,16 @@
             </ul>
           </div>
           <div class="col-md-4 text-center mb-4">
-            <h5 class="mb-3">Opening Hours</h5>
-            <p class="small mb-1">Monday – Friday: 8:00 AM – 5:00 PM</p>
-            <p class="small mb-1">Saturday: 9:00 AM – 1:00 PM</p>
-            <p class="small mb-0">Sunday & Holidays: Closed</p>
+            <h5 class="mb-3">Connect</h5>
+            <p class="small mb-1">+254 796 609 626</p>
+            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
           </div>
         </div>
-        <div class="text-center mt-4">
-          <p class="small mb-1">Barclays Road, Ongata Rongai • +254 796 609 626 • hello@littlefeetacademy.co.ke</p>
+        <div class="text-center mt-4 border-top pt-4 opacity-50">
           <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
         </div>
       </div>
     </footer>
-
-    <!-- Bootstrap 5 JS Bundle -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
@@ -302,5 +283,26 @@
       </svg>
     </a>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Intersection Observer for Scroll Animations
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      revealElements.forEach(el => observer.observe(el));
+    </script>
   </body>
 </html>
