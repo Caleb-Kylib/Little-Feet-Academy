@@ -1004,3 +1004,84 @@ html, body {
     font-size: 2.2rem;
   }
 }
+
+/* --- Director's Message Section --- */
+.director-section {
+  background-color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+.director-img-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.director-img-wrap::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: 20px;
+  bottom: 20px;
+  background: var(--soft-yellow);
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.director-img {
+  border-radius: 40px;
+  width: 100%;
+  box-shadow: 20px 20px 60px rgba(0,0,0,0.05);
+}
+
+.director-title-prefix {
+  color: var(--pink);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.director-message {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.director-quote {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  border-left: 5px solid var(--pink);
+  padding-left: 25px;
+  margin: 40px 0;
+  font-style: italic;
+}
+
+.director-signature {
+  margin-top: 40px;
+}
+
+.director-sign-img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.director-name {
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.director-role {
+  color: var(--pink);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
