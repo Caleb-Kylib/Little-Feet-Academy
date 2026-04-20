@@ -1192,3 +1192,94 @@ html, body {
   background: linear-gradient(to top, rgba(255, 122, 162, 0.8) 0%, rgba(0,0,0,0.2) 100%);
 }
 
+/* --- Admission Process Section --- */
+.admission-process-section {
+    background-color: #fcfcfc;
+    padding: 100px 0;
+}
+
+.process-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+    border-top: 6px solid transparent;
+}
+
+.process-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.process-illustration {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.process-title {
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.process-desc {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Step Colors */
+.step-blue { border-top-color: #0d6efd; }
+.step-green { border-top-color: #198754; }
+.step-yellow { border-top-color: #ffc107; }
+.step-orange { border-top-color: #fd7e14; }
+
+/* --- FAQ Section --- */
+.faq-section {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 20px 25px;
+    background-color: #fff;
+    color: var(--dark);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--soft-yellow);
+    color: var(--dark);
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 20px 25px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.admission-info-card {
+    background: var(--playful-blue);
+    border-radius: 30px;
+    padding: 40px;
+    color: var(--dark);
+}
+
+
