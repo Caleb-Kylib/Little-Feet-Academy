@@ -27,8 +27,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
-          <img src="assets/img/logo.png" alt="Little Feet Academy Logo" class="navbar-logo">
-          <span>Little Feet Academy</span>
+          <div class="navbar-logo-wrap">
+              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="logo-fallback" style="display:none;">LF</div>
+              <span>Little Feet Academy</span>
+          </div>
         </a>
         <button
           class="navbar-toggler"
@@ -77,38 +80,77 @@
       </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="py-5 why-section section-pad">
+
+    <!-- Short About Us -->
+    <section class="short-about section-pad">
       <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title h1">Why Choose Us?</h2>
-            <p class="text-muted">Discover what makes Little Feet Academy the perfect place for your child.</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="why-card text-center">
-              <div class="why-icon mx-auto">🌱</div>
-              <h4 class="fw-bold">Nurturing Growth</h4>
-              <p class="text-muted">We provide a supportive environment where every child feels loved and encouraged to reach their full potential.</p>
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <h2 class="section-title h1 mb-4">A Brighter Start for <span class="text-pink">Every Child</span></h2>
+            <p class="lead mb-4">Founded on the principle that early education should be a journey of joy, curiosity, and discovery, Little Feet Academy has been a second home to hundreds of children since 2010.</p>
+            <p class="text-muted mb-4">We combine international best practices with local values to provide a unique learning experience that prepares children for the challenges of tomorrow while letting them enjoy the magic of today.</p>
+            <div class="experience-box shadow-sm mb-4">
+                <h3 class="fw-bold mb-0">16+</h3>
+                <p class="small mb-0">Years of Excellence</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="why-card text-center">
-              <div class="why-icon mx-auto">🎨</div>
-              <h4 class="fw-bold">Creative Curriculum</h4>
-              <p class="text-muted">Our CBC-aligned programs blend academic excellence with music, arts, and hands-on discovery.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="why-card text-center">
-              <div class="why-icon mx-auto">🛡️</div>
-              <h4 class="fw-bold">Safe & Secure</h4>
-              <p class="text-muted">Your child's safety is our priority, with modern facilities and dedicated staff monitoring every moment.</p>
-            </div>
+          <div class="col-lg-6 text-center">
+            <img src="assets/img/kids.jpg" alt="About Little Feet" class="img-fluid rounded-5 shadow-lg">
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Our Approach (Based on Image) -->
+    <section class="approach-section section-pad">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 text-center order-lg-2">
+                    <img src="assets/img/group-african-kids-learning-together.jpg" alt="Our Approach" class="approach-image-circle">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="approach-tag">OUR APPROACH</span>
+                    <h2 class="display-5 fw-bold mb-4">Secure Your Child’s Future</h2>
+                    <p class="mb-5">At Little Feet Academy, we believe in providing a nurturing environment where your child can grow and thrive. Our dedicated team of educators is committed to fostering a love for learning and empowering each student to reach their full potential.</p>
+                    
+                    <!-- Progress Grid -->
+                    <div class="approach-progress">
+                        <div class="progress-label-wrap">
+                            <span>Holistic Education</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="progress-custom">
+                            <div class="progress-bar-fill fill-blue" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="approach-progress">
+                        <div class="progress-label-wrap">
+                            <span>Supportive Community</span>
+                            <span>97%</span>
+                        </div>
+                        <div class="progress-custom">
+                            <div class="progress-bar-fill fill-orange" style="width: 97%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="approach-progress">
+                        <div class="progress-label-wrap">
+                            <span>Extracurricular Activities</span>
+                            <span>98%</span>
+                        </div>
+                        <div class="progress-custom">
+                            <div class="progress-bar-fill fill-red" style="width: 98%;"></div>
+                        </div>
+                    </div>
+
+                    <a href="About.html" class="btn btn-kid btn-lg pill-btn px-5 mt-4">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Academic Programs Preview -->
     <section id="programs" class="py-5 bg-light section-pad">
@@ -149,6 +191,39 @@
                 <p class="card-text text-muted">Preparing young leaders for global challenges with critical thinking and STEAM.</p>
                 <a href="programs.html" class="btn btn-kid w-100 rounded-pill mt-3">Learn More</a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 why-section section-pad">
+      <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title h1">Why Choose Us?</h2>
+            <p class="text-muted">Discover what makes Little Feet Academy the perfect place for your child.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="why-card text-center">
+              <div class="why-icon mx-auto">🌱</div>
+              <h4 class="fw-bold">Nurturing Growth</h4>
+              <p class="text-muted">We provide a supportive environment where every child feels loved and encouraged to reach their full potential.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="why-card text-center">
+              <div class="why-icon mx-auto">🎨</div>
+              <h4 class="fw-bold">Creative Curriculum</h4>
+              <p class="text-muted">Our CBC-aligned programs blend academic excellence with music, arts, and hands-on discovery.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="why-card text-center">
+              <div class="why-icon mx-auto">🛡️</div>
+              <h4 class="fw-bold">Safe & Secure</h4>
+              <p class="text-muted">Your child's safety is our priority, with modern facilities and dedicated staff monitoring every moment.</p>
             </div>
           </div>
         </div>

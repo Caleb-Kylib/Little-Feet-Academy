@@ -27,8 +27,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
-          <img src="assets/img/logo.png" alt="Little Feet Academy Logo" class="navbar-logo">
-          <span>Little Feet Academy</span>
+          <div class="navbar-logo-wrap">
+              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="logo-fallback" style="display:none;">LF</div>
+              <span>Little Feet Academy</span>
+          </div>
         </a>
         <button
           class="navbar-toggler"
@@ -66,7 +69,7 @@
     </nav>
 
     <!-- About Us Banner -->
-    <section class="about-banner d-flex align-items-center text-center text-white">
+    <section class="about-banner d-flex align-items-center text-center text-white" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/daycare.jpg') no-repeat center center; background-size: cover; height: 350px;">
       <div class="container">
         <h1 class="display-4 fw-bold">About Us</h1>
         <p class="lead">Nurturing young minds with care, creativity, and curiosity since 2010.</p>
@@ -74,57 +77,85 @@
     </section>
 
     <!-- About Us Page Content -->
-    <main class="py-5">
+    <main class="py-5 section-pad">
       <div class="container">
-        <div class="row align-items-center gy-5">
+        <div class="row align-items-center gy-5 mb-5">
           <!-- Left Column: Text -->
           <div class="col-lg-6">
-            <div class="about-content">
-              <h2 class="section-title mb-4">Our Story</h2>
-              <p class="lead mb-0">
+            <div class="about-content pe-lg-5">
+              <h2 class="section-title h1 mb-4">Our Story</h2>
+              <p class="lead mb-4 text-dark" style="line-height: 1.8;">
                 Founded in 2010, Little Feet Academy began as a cozy, family-run daycare with a big dream:
-                to make early education joyful, caring, and creative for every child. Over the years, we’ve
-                grown into a cherished learning community, partnering with families and nurturing hundreds
-                of little learners. Our approach blends play-based exploration with essential early skills,
-                helping children build confidence, curiosity, and kindness.
+                to make early education joyful, caring, and creative for every child.
               </p>
+              <p class="text-muted mb-5">
+                Over the years, we’ve grown into a cherished learning community, partnering with families and nurturing hundreds
+                of little learners. Our approach blends play-based exploration with essential early skills,
+                helping children build confidence, curiosity, and kindness. We believe that every child is unique and deserves a tailored path to success.
+              </p>
+              <div class="d-flex gap-4">
+                  <div class="text-center">
+                      <h3 class="fw-bold text-primary mb-0">14+</h3>
+                      <p class="small text-muted">Years</p>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="text-center">
+                      <h3 class="fw-bold text-secondary mb-0">500+</h3>
+                      <p class="small text-muted">Graduates</p>
+                  </div>
+              </div>
             </div>
           </div>
 
           <!-- Right Column: Image -->
           <div class="col-lg-6">
-            <div class="about-image-container shadow-lg">
+            <div class="position-relative">
               <img
                 src="assets/img/kids.jpg"
-                alt="Happy children learning and playing together"
-                class="img-fluid rounded-4 about-main-image"
+                alt="Happy children learning"
+                class="img-fluid rounded-5 shadow-lg"
               />
+              <div class="position-absolute bottom-0 end-0 bg-white p-4 rounded-4 shadow-sm m-4 d-none d-md-block">
+                  <p class="mb-0 fw-bold text-primary">Award Winning<br>Early Education</p>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Mission, Vision, Core Values Section -->
-        <section class="values-section mt-5">
+        <section class="py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Why We Do What We Do</h2>
+                <p class="text-muted">Our guiding principles in every classroom.</p>
+            </div>
           <div class="row g-4">
+            <!-- Mission -->
             <div class="col-md-4">
-              <div class="value-card text-center p-4 h-100 shadow-sm rounded-4">
-                <div class="value-icon mb-2 fs-2">🎯</div>
-                <h6 class="fw-bold">Mission</h6>
-                <p class="small mb-0">Inspire curiosity and nurture kind, confident learners through playful learning.</p>
+              <div class="about-card mission-card text-center">
+                <div class="card-icon-wrap mission-icon">🎯</div>
+                <h4 class="fw-bold mb-3">Our Mission</h4>
+                <p class="text-muted mb-0">To inspire curiosity and nurture kind, confident learners through playful, research-backed learning experiences that honor each child's uniqueness.</p>
               </div>
             </div>
+            <!-- Vision -->
             <div class="col-md-4">
-              <div class="value-card text-center p-4 h-100 shadow-sm rounded-4">
-                <div class="value-icon mb-2 fs-2">⭐</div>
-                <h6 class="fw-bold">Vision</h6>
-                <p class="small mb-0">A joyful start for every child, where potential shines bright every day.</p>
+              <div class="about-card vision-card text-center">
+                <div class="card-icon-wrap vision-icon">⭐</div>
+                <h4 class="fw-bold mb-3">Our Vision</h4>
+                <p class="text-muted mb-0">To be a beacon of joyful early education, where every spark of potential is ignited, creating a foundation for a lifetime of success and happiness.</p>
               </div>
             </div>
+            <!-- Core Values -->
             <div class="col-md-4">
-              <div class="value-card text-center p-4 h-100 shadow-sm rounded-4">
-                <div class="value-icon mb-2 fs-2">💎</div>
-                <h6 class="fw-bold">Core Values</h6>
-                <p class="small mb-0">Kindness, Creativity, Curiosity, Community.</p>
+              <div class="about-card values-card-item text-center">
+                <div class="card-icon-wrap values-icon">💎</div>
+                <h4 class="fw-bold mb-3">Core Values</h4>
+                <ul class="list-unstyled text-muted mb-0 d-flex flex-wrap justify-content-center gap-2">
+                    <li class="badge bg-light text-dark px-3 py-2">Kindness</li>
+                    <li class="badge bg-light text-dark px-3 py-2">Creativity</li>
+                    <li class="badge bg-light text-dark px-3 py-2">Curiosity</li>
+                    <li class="badge bg-light text-dark px-3 py-2">Community</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -132,50 +163,48 @@
       </div>
     </main>
 
-    <!-- Faculty & Staff -->
-    <section id="faculty" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="section-title text-center mb-4">Faculty &amp; Staff</h2>
-        <div class="row g-4 justify-content-center">
-          <div class="col-10 col-sm-6 col-lg-4 d-flex justify-content-center">
-            <div class="staff-card circle-card p-4 text-center bg-white rounded-4 shadow-sm">
-              <div class="staff-icon mb-2 fs-1">🏫</div>
-              <h6 class="fw-bold mb-1">Administration</h6>
-              <p class="small mb-0">Guiding our vision and leadership.</p>
+    <!-- Faculty Summary -->
+    <section id="faculty" class="py-5 bg-light section-pad">
+      <div class="container text-center">
+        <h2 class="section-title h1 mb-5">Meet the Heart of our School</h2>
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="faculty-card">
+              <span class="display-4 mb-3 d-block">🏫</span>
+              <h5 class="fw-bold">Leadership</h5>
+              <p class="text-muted small">Visionary educators steering our community toward excellence.</p>
             </div>
           </div>
-          <div class="col-10 col-sm-6 col-lg-4 d-flex justify-content-center">
-            <div class="staff-card circle-card p-4 text-center bg-white rounded-4 shadow-sm">
-              <div class="staff-icon mb-2 fs-1">👩‍🏫</div>
-              <h6 class="fw-bold mb-1">Teachers</h6>
-              <p class="small mb-0">Inspiring curiosity and confidence every day.</p>
+          <div class="col-md-4">
+            <div class="faculty-card">
+              <span class="display-4 mb-3 d-block">👩‍🏫</span>
+              <h5 class="fw-bold">Experts</h5>
+              <p class="text-muted small">Passionate teachers certified in early childhood development.</p>
             </div>
           </div>
-          <div class="col-10 col-sm-6 col-lg-4 d-flex justify-content-center">
-            <div class="staff-card circle-card p-4 text-center bg-white rounded-4 shadow-sm">
-              <div class="staff-icon mb-2 fs-1">🤝</div>
-              <h6 class="fw-bold mb-1">Support Staff</h6>
-              <p class="small mb-0">Caring hands that keep our school smiling.</p>
+          <div class="col-md-4">
+            <div class="faculty-card">
+              <span class="display-4 mb-3 d-block">🤝</span>
+              <h5 class="fw-bold">Support</h5>
+              <p class="text-muted small">Caring staff who ensure a safe and happy environment for all.</p>
             </div>
           </div>
         </div>
-        <div class="text-center mt-4">
-          <a href="team.html" class="btn btn-primary rounded-pill px-4">See Our Team</a>
-        </div>
+        <a href="team.html" class="btn btn-primary btn-lg pill-btn px-5">View Our Full Team</a>
       </div>
     </section>
     
-    <!-- CTA: Reach Out -->
-    <section class="cta-reach text-center text-white py-5">
-      <div class="container">
-        <h2 class="mb-2">Reach Out</h2>
-        <p class="lead mb-4">We’d love to hear from you. Let’s talk!</p>
-        <a href="contact.html" class="btn btn-light rounded-pill px-4">Contact Us</a>
+    <!-- CTA Section -->
+    <section class="py-5 big-cta-section text-center text-white">
+      <div class="container position-relative">
+        <h2 class="display-5 fw-bold mb-3">Ready to Join the Family?</h2>
+        <p class="lead mb-4">Admissions are currently open for our upcoming intake.</p>
+        <a href="contact.html" class="btn btn-light btn-lg pill-btn px-5 py-3 shadow">Get in Touch Today</a>
       </div>
     </section>
 
     <!-- Creative Footer -->
-    <footer class="footer-creative mt-5">
+    <footer class="footer-creative">
       <div class="footer-wave" aria-hidden="true">
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <path fill="currentColor" d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,69.3C672,64,768,96,864,96C960,96,1056,64,1152,48C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
@@ -186,11 +215,10 @@
         <div class="row">
           <div class="col-md-4 text-center mb-4">
             <h4 class="mb-3">Little Feet Academy</h4>
-            <p class="small">Where play sparks learning and every child shines ✨</p>
             <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
-              <span class="badge rounded-pill bg-light text-dark">🎨 Creative Arts</span>
-              <span class="badge rounded-pill bg-light text-dark">📚 Early Literacy</span>
-              <span class="badge rounded-pill bg-light text-dark">🤝 Caring Community</span>
+              <span class="badge rounded-pill bg-light text-dark">🎨 Arts</span>
+              <span class="badge rounded-pill bg-light text-dark">📚 Reading</span>
+              <span class="badge rounded-pill bg-light text-dark">🤝 Caring</span>
             </div>
           </div>
           <div class="col-md-4 text-center mb-4">
@@ -205,18 +233,24 @@
             </ul>
           </div>
           <div class="col-md-4 text-center mb-4">
-            <h5 class="mb-3">Opening Hours</h5>
-            <p class="small mb-1">Monday – Friday: 8:00 AM – 5:00 PM</p>
-            <p class="small mb-1">Saturday: 9:00 AM – 1:00 PM</p>
-            <p class="small mb-0">Sunday & Holidays: Closed</p>
+            <h5 class="mb-3">Connect</h5>
+            <p class="small mb-1">+254 796 609 626</p>
+            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
           </div>
         </div>
-        <div class="text-center mt-4">
-          <p class="small mb-1">Barclays Road, Ongata Rongai • +254 796 609 626 • hello@littlefeetacademy.co.ke</p>
+        <div class="text-center mt-4 border-top pt-4 opacity-50">
           <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
         </div>
       </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script
@@ -228,14 +262,5 @@
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
-      <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-      </svg>
-    </a>
-
   </body>
 </html>

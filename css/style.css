@@ -190,46 +190,98 @@ html, body {
   z-index: 2;
 }
 
-/* Values cards */
-.value-card {
+
+/* Unified Card Styles for About Page */
+.about-card {
+  border: none;
+  border-radius: 24px;
+  padding: 40px 30px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background: #fff;
-  border: 1px solid #eee;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 250px;
-  width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-.value-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+.about-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.1);
+}
+.about-card:hover::before {
+  opacity: 0.1;
 }
 
-/* Faculty & Staff */
-.staff-card {
-  width: 240px;
-  height: 240px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  border: 3px solid rgba(167, 139, 250, 0.35);
+.mission-card::before { background-color: var(--blue); }
+.vision-card::before { background-color: var(--pink); }
+.values-card-item::before { background-color: var(--orange); }
+
+.card-icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-size: 32px;
+  margin: 0 auto 25px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+}
+.mission-icon { background: linear-gradient(135deg, var(--blue), var(--teal)); color: #fff; }
+.vision-icon { background: linear-gradient(135deg, var(--pink), var(--purple)); color: #fff; }
+.values-icon { background: linear-gradient(135deg, var(--orange), var(--yellow)); color: #fff; }
+
+/* Faculty Cards Update */
+.faculty-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 35px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.faculty-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 15px 35px rgba(102, 166, 255, 0.15);
+}
+.faculty-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.staff-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+/* Logo Fallback Pattern */
+.navbar-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-
-.staff-icon {
-  font-size: 2.25rem;
-}
-
-/* Optional creative variant using clip-path */
-.circle-card {
-  clip-path: circle(50% at 50% 50%);
+.logo-fallback {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, var(--pink), var(--orange));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(255, 122, 162, 0.3);
 }
 
 /* CTA Reach Out */
@@ -626,3 +678,80 @@ html, body {
 }
 
 
+/* Approach Section */
+.approach-section {
+  padding: 100px 0;
+  overflow: hidden;
+  background: #fff;
+}
+.approach-tag {
+  color: var(--orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 10px;
+}
+.approach-image-circle {
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 15px solid #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* Custom Progress Bars */
+.approach-progress {
+  margin-bottom: 25px;
+}
+.progress-label-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.progress-custom {
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 99px;
+  overflow: visible;
+  position: relative;
+}
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  position: relative;
+}
+.progress-bar-fill::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fill-blue { background-color: var(--blue); border: 2px solid var(--blue); }
+.fill-orange { background-color: var(--orange); border: 2px solid var(--orange); }
+.fill-red { background-color: #ff4d4d; border: 2px solid #ff4d4d; }
+
+/* Short About */
+.short-about {
+  padding: 100px 0;
+  background: #fafafa;
+}
+.experience-box {
+  background: linear-gradient(135deg, var(--teal), var(--blue));
+  color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  display: inline-block;
+}
