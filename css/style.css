@@ -840,3 +840,65 @@ html, body {
   border-radius: 30px;
   display: inline-block;
 }
+
+/* --- Voices of Our Parents (Image Update) --- */
+.voices-section {
+  background-color: #ffe8d6; /* Soft peach from image */
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+.voices-bg-quote {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 180px;
+  color: #000;
+  opacity: 0.05;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+}
+.parent-review-card {
+  background: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: none;
+  text-align: left;
+}
+.parent-review-card:hover {
+    transform: translateY(-5px);
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.review-avatar-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.parent-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+  color: #2c3e50;
+}
+.parent-subtext {
+  font-size: 0.85rem;
+  color: #888;
+  display: block;
+}
+.review-body-text {
+  color: #555;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  font-style: italic;
+}

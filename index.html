@@ -213,59 +213,85 @@
       </div>
     </section>
 
-    <!-- Reviews Sliding Carousel -->
-    <section id="reviews" class="py-5 reviews-section section-pad bg-playful-pink">
-      <div class="container text-center">
-        <h2 class="section-title h1 mb-5 reveal reveal-up">Parents Love Us</h2>
-        
-        <div class="reviews-carousel-container reveal reveal-scale">
-            <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2"></button>
-                </div>
-                <div class="carousel-inner pt-5 pb-4">
+    <!-- Voices of Our Parents (New Image Design) -->
+    <section id="reviews" class="voices-section">
+        <span class="voices-bg-quote">“</span>
+        <div class="container text-center reveal reveal-up">
+            <h2 class="display-4 fw-bold mb-5" style="color: #4a3427;">Voices of Our Parents</h2>
+            
+            <div id="voicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner carousel-inner-voices">
+                    <!-- Slide 1 -->
                     <div class="carousel-item active">
-                        <div class="carousel-review-card shadow-sm mx-auto">
-                            <img src="assets/img/kids.jpg" class="review-avatar-main" alt="Parent">
-                            <div class="review-stars mb-3">⭐⭐⭐⭐⭐</div>
-                            <p class="fs-5 mb-4 px-lg-5">"Choosing Little Feet Academy was the best decision. Her confidence has soared, and she wakes up excited for school every single day!"</p>
-                            <h6 class="fw-bold mb-0">Mama Zawadi</h6>
-                            <span class="small text-muted">PP2 Parent</span>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-6">
+                                <div class="parent-review-card">
+                                    <div class="review-header">
+                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
+                                        <div>
+                                            <h5 class="parent-name">Mary Wambui</h5>
+                                            <span class="parent-subtext">Parent since 2019</span>
+                                        </div>
+                                    </div>
+                                    <p class="review-body-text">"The transformation I've seen in my daughter's confidence is incredible. Sunrise Academy isn't just a school, it's a family that truly cares about each child's unique spark."</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <div class="parent-review-card">
+                                    <div class="review-header">
+                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
+                                        <div>
+                                            <h5 class="parent-name">David Omondi</h5>
+                                            <span class="parent-subtext">Parent of 2 boys</span>
+                                        </div>
+                                    </div>
+                                    <p class="review-body-text">"As a parent, I value the balance between academics and values. The CBC program here is excellently delivered, and my children look forward to school every morning."</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Slide 2 -->
                     <div class="carousel-item">
-                        <div class="carousel-review-card shadow-sm mx-auto">
-                            <img src="assets/img/kids.jpg" class="review-avatar-main" alt="Parent">
-                            <div class="review-stars mb-3">⭐⭐⭐⭐⭐</div>
-                            <p class="fs-5 mb-4 px-lg-5">"The teachers here go above and beyond. It truly feels like a second home. I love the balance between academics and creative activities."</p>
-                            <h6 class="fw-bold mb-0">Mr. Onyango</h6>
-                            <span class="small text-muted">Grade 3 Parent</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-review-card shadow-sm mx-auto">
-                            <img src="assets/img/kids.jpg" class="review-avatar-main" alt="Parent">
-                            <div class="review-stars mb-3">⭐⭐⭐⭐⭐</div>
-                            <p class="fs-5 mb-4 px-lg-5">"A wonderful school with a heart. My boys have learned so much about kindness and collaboration here. Highly recommended!"</p>
-                            <h6 class="fw-bold mb-0">Sarah Wambui</h6>
-                            <span class="small text-muted">Playgroup Parent</span>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-6">
+                                <div class="parent-review-card">
+                                    <div class="review-header">
+                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
+                                        <div>
+                                            <h5 class="parent-name">Sarah Wambui</h5>
+                                            <span class="parent-subtext">Playgroup Parent</span>
+                                        </div>
+                                    </div>
+                                    <p class="review-body-text">"A wonderful school with a heart. My boys have learned so much about kindness and collaboration here. Highly recommended to any parent!"</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <div class="parent-review-card">
+                                    <div class="review-header">
+                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
+                                        <div>
+                                            <h5 class="parent-name">Mary Wambui</h5>
+                                            <span class="parent-subtext">Parent since 2019</span>
+                                        </div>
+                                    </div>
+                                    <p class="review-body-text">"The transformation I've seen in my daughter's confidence is incredible. Little Feet Academy is a family that truly cares about each child's unique spark."</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#voicesCarousel" data-bs-slide="prev" style="width: 5%; left: -5%;">
                     <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#voicesCarousel" data-bs-slide="next" style="width: 5%; right: -5%;">
                     <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
-      </div>
     </section>
 
-    <!-- Latest News -->
+    <!-- Our Articles -->
     <section id="articles" class="py-5 articles-section section-pad bg-white">
       <div class="container">
         <div class="text-center mb-5 reveal reveal-up">
