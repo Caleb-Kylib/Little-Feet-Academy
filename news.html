@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>News & Events • Little Feet Academy</title>
+    <meta name="description" content="Stay updated with the latest news, success stories, and upcoming events at Little Feet Academy. View our school calendar and recent activities." />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Utility Bar -->
+    <div class="utility-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left: Social Media -->
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Center: Working Hours -->
+        <div class="working-hours top-bar-item">
+          <i class="far fa-clock"></i>
+          <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+        </div>
+
+        <!-- Right: Contact & Location -->
+        <div class="top-bar-right d-flex gap-4 align-items-center">
+          <div class="top-bar-item d-none d-lg-flex">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ongata Rongai, Kenya</span>
+          </div>
+          <a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item d-none d-sm-flex">
+            <i class="fas fa-envelope"></i>
+            <span>hello@littlefeetacademy.co.ke</span>
+          </a>
+          <a href="tel:+254796609626" class="top-bar-item accent-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+254 796 609 626</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
+          <div class="navbar-logo-wrap">
+              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="logo-fallback" style="display:none;">LF</div>
+              <span>Little Feet Academy</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="graduation-gallery.html">🎓 Graduation Day</a></li>
+                <li><a class="dropdown-item" href="sports-gallery.html">🏃‍♂️ Sports Day</a></li>
+                <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold" href="contact.html">Book a Visit</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-banner news-banner d-flex align-items-center text-center text-white" style="background: linear-gradient(rgba(12, 27, 51, 0.7), rgba(12, 27, 51, 0.7)), url('https://images.unsplash.com/photo-1506784365847-bbad939e9335?q=80&w=1920&auto=format&fit=crop') no-repeat center center; background-size: cover; height: 350px;">
+      <div class="reveal reveal-scale container">
+        <h1 class="display-4 fw-bold">News & Events</h1>
+        <p class="lead">Celebrating our milestones and looking forward to exciting horizons.</p>
+      </div>
+    </section>
+
+    <!-- News Section (Blog) -->
+    <section class="py-5 bg-light">
+      <div class="container py-lg-5">
+        <div class="text-center mb-5 reveal reveal-up">
+          <h2 class="section-title h1">Latest Updates</h2>
+          <p class="text-muted fs-5">Success stories and recent highlights from our school community.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Article 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="article-card reveal reveal-up h-100">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop" class="article-img" alt="Graduation Day">
+              <div class="p-4">
+                <span class="article-date">April 12, 2026</span>
+                <h4 class="mt-2 fw-bold">Class of 2026: Graduation Highlights</h4>
+                <p class="text-muted mt-3">A vibrant celebration of academic achievement and personal growth for our graduating class.</p>
+                <a href="#" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Article 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="article-card reveal reveal-up h-100" style="transition-delay: 0.1s;">
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop" class="article-img" alt="Science Fair">
+              <div class="p-4">
+                <span class="article-date">March 28, 2026</span>
+                <h4 class="mt-2 fw-bold">Annual Science & Tech Fair Success</h4>
+                <p class="text-muted mt-3">Our little inventors showcased brilliant projects ranging from sustainable gardening to robotics.</p>
+                <a href="#" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Article 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="article-card reveal reveal-up h-100" style="transition-delay: 0.2s;">
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=800&auto=format&fit=crop" class="article-img" alt="Sports Day">
+              <div class="p-4">
+                <span class="article-date">March 05, 2026</span>
+                <h4 class="mt-2 fw-bold">Junior Sports Day: Records Broken</h4>
+                <p class="text-muted mt-3">Energy, teamwork, and sheer determination on display as students competed in various track events.</p>
+                <a href="#" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Article 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="article-card reveal reveal-up h-100">
+              <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?q=80&w=800&auto=format&fit=crop" class="article-img" alt="Cultural Week">
+              <div class="p-4">
+                <span class="article-date">February 15, 2026</span>
+                <h4 class="mt-2 fw-bold">Cultural Week: Unity in Diversity</h4>
+                <p class="text-muted mt-3">A week-long celebration of Kenyan heritage through dance, traditional attire, and food festivals.</p>
+                <a href="#" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Article 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="article-card reveal reveal-up h-100" style="transition-delay: 0.1s;">
+              <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=800&auto=format&fit=crop" class="article-img" alt="Parent Workshop">
+              <div class="p-4">
+                <span class="article-date">January 20, 2026</span>
+                <h4 class="mt-2 fw-bold">Digital Safety: Parent Workshop</h4>
+                <p class="text-muted mt-3">Helping families navigate the digital world safely. A recap of our successful evening seminar.</p>
+                <a href="#" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Article 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="article-card reveal reveal-up h-100" style="transition-delay: 0.2s;">
+              <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop" class="article-img" alt="Community Service">
+              <div class="p-4">
+                <span class="article-date">December 10, 2025</span>
+                <h4 class="mt-2 fw-bold">Nurturing Kindness: Charity Drive</h4>
+                <p class="text-muted mt-3">Our students visited local communities to share donations and warmth during the festive season.</p>
+                <a href="#" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- School Calendar Section -->
+    <section class="py-5 bg-white">
+      <div class="container py-lg-5">
+        <div class="row align-items-center mb-5 reveal reveal-up">
+          <div class="col-lg-6">
+            <h2 class="section-title h1">School Calendar</h2>
+            <p class="text-muted fs-5">Save the dates for our upcoming major events and term breaks.</p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a href="#" class="btn btn-outline-primary pill-btn px-4"><i class="fas fa-download me-2"></i>Download PDF Calendar</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="calendar-list">
+              <!-- Event 1 -->
+              <div class="calendar-item d-flex gap-4 reveal reveal-up">
+                <div class="calendar-date-box text-center">
+                  <span class="month">MAY</span>
+                  <span class="day">15</span>
+                </div>
+                <div class="calendar-info">
+                  <h4 class="fw-bold mb-1">Annual Inter-House Sports Day</h4>
+                  <p class="text-muted mb-0">Join us for a day of athletic competitions and family fun at the school grounds.</p>
+                  <span class="badge bg-warning text-dark mt-2">All Day Event</span>
+                </div>
+              </div>
+              <!-- Event 2 -->
+              <div class="calendar-item d-flex gap-4 reveal reveal-up">
+                <div class="calendar-date-box text-center">
+                  <span class="month">JUN</span>
+                  <span class="day">12</span>
+                </div>
+                <div class="calendar-info">
+                  <h4 class="fw-bold mb-1">Mid-Term Break (Term 2) Begins</h4>
+                  <p class="text-muted mb-0">School closes for the mid-term break. Classes resume on June 20, 2026.</p>
+                  <span class="badge bg-info text-white mt-2">School Closed</span>
+                </div>
+              </div>
+              <!-- Event 3 -->
+              <div class="calendar-item d-flex gap-4 reveal reveal-up">
+                <div class="calendar-date-box text-center">
+                  <span class="month">JUL</span>
+                  <span class="day">24</span>
+                </div>
+                <div class="calendar-info">
+                  <h4 class="fw-bold mb-1">End of Term 2 Examinations</h4>
+                  <p class="text-muted mb-0">Final assessments for Term 2 for all classes from Grade 1 to Junior Secondary.</p>
+                  <span class="badge bg-danger text-white mt-2">Critical Dates</span>
+                </div>
+              </div>
+              <!-- Event 4 -->
+              <div class="calendar-item d-flex gap-4 reveal reveal-up">
+                <div class="calendar-date-box text-center">
+                  <span class="month">SEP</span>
+                  <span class="day">02</span>
+                </div>
+                <div class="calendar-info">
+                  <h4 class="fw-bold mb-1">Reporting Day: Term 3 Begins</h4>
+                  <p class="text-muted mb-0">Welcome back! School opens for the third and final term of the academic year.</p>
+                  <span class="badge bg-success text-white mt-2">New Term</span>
+                </div>
+              </div>
+              <!-- Event 5 -->
+              <div class="calendar-item d-flex gap-4 reveal reveal-up">
+                <div class="calendar-date-box text-center">
+                  <span class="month">NOV</span>
+                  <span class="day">20</span>
+                </div>
+                <div class="calendar-info">
+                  <h4 class="fw-bold mb-1">Prize Giving & Speech Day</h4>
+                  <p class="text-muted mb-0">Celebrating excellence in academics, sports, and character development.</p>
+                  <span class="badge bg-primary text-white mt-2">Celebration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="calendar-notice p-5 rounded-5 shadow-sm reveal reveal-right" style="background: var(--soft-blue);">
+              <h4 class="fw-bold mb-4">Important Note</h4>
+              <p class="text-dark">Dates are subject to change based on the Ministry of Education guidelines. Always refer to our official parent portal or WhatsApp channel for real-time updates.</p>
+              <hr class="my-4">
+              <h5 class="fw-bold mb-3">Questions?</h5>
+              <p>Contact the school office for any clarification regarding the academic schedule.</p>
+              <a href="contact.html" class="btn btn-primary w-100 pill-btn">Visit Office</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp CTA -->
+    <section class="py-5 bg-playful-pink">
+      <div class="container text-center reveal reveal-up">
+        <h2 class="fw-bold">Never Miss an Update!</h2>
+        <p class="lead mb-4">Join our official Parent WhatsApp Hub for instant news and announcements.</p>
+        <a href="https://wa.me/254796609626" class="btn btn-success btn-lg pill-btn px-5 py-3 shadow">Join Parent Hub</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-creative">
+
+
+      <div class="container py-5 text-white">
+        <div class="row">
+          <div class="col-md-4 text-center mb-4">
+            <h4 class="mb-3">Little Feet Academy</h4>
+            <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
+              <span class="badge rounded-pill bg-light text-dark">🎨 Arts</span>
+              <span class="badge rounded-pill bg-light text-dark">📚 Reading</span>
+              <span class="badge rounded-pill bg-light text-dark">🤝 Caring</span>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled small">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+              <li><a href="admissions.html" class="text-white text-decoration-none">Admissions</a></li>
+              <li><a href="team.html" class="text-white text-decoration-none">Our Team</a></li>
+              <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+              <li><a href="news.html" class="text-white text-decoration-none">News & Events</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Connect</h5>
+            <p class="small mb-1">+254 796 609 626</p>
+            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
+          </div>
+        </div>
+        <div class="text-center mt-4 border-top pt-4 opacity-50">
+          <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Intersection Observer for Scroll Animations
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      revealElements.forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>

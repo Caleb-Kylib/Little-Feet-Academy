@@ -172,6 +172,91 @@ html, body {
 /* Utilities */
 .rounded-4 { border-radius: 1rem; }
 
+/* Top Bar Styling */
+.utility-bar {
+  background-color: #0c1b33; /* Navy Blue */
+  color: #ffffff; /* White */
+  font-size: 0.85rem;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--orange);
+}
+
+.utility-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.utility-bar a:hover {
+  color: var(--orange);
+}
+
+.top-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-bar-item i {
+  color: var(--orange); /* Default icon color to Orange */
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  font-size: 1rem;
+}
+
+.accent-item {
+  color: var(--orange) !important;
+  font-weight: 600;
+}
+
+.accent-item i {
+  color: var(--orange) !important;
+}
+
+@media (max-width: 991.98px) {
+  .utility-bar .working-hours {
+    display: none; /* Hide hours on medium/small for space */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .utility-bar .social-links {
+    margin-bottom: 5px;
+  }
+  .utility-bar .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .utility-bar .top-bar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.utility-bar .btn-warning {
+  background-color: var(--orange);
+  border: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff !important;
+}
+
+.utility-bar .btn-warning:hover {
+  background-color: #f7941d !important;
+  color: #fff !important;
+}
+
+
+
 /*About us page */
 .about-banner {
   background: url('../assets/img/kids.jpg') no-repeat center center;
@@ -515,7 +600,7 @@ html, body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Button Loading State */
+/* Button Loading State Refinement */
 .btn-loading {
   position: relative;
   color: transparent !important;
@@ -525,18 +610,18 @@ html, body {
 .btn-loading::after {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  width: 24px;
+  height: 24px;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
   border: 3px solid rgba(255,255,255,0.3);
   border-top-color: #fff;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
+
+
+
 
 @keyframes spin {
   to { transform: rotate(360deg); }
