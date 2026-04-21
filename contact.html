@@ -85,19 +85,22 @@
           <div class="col-lg-7 reveal reveal-left">
             <div class="contact-card bg-white p-4 p-md-5 rounded-5 shadow-lg border-0">
               <h2 class="fw-bold mb-4">Send us a Message</h2>
-              <form class="needs-validation" novalidate>
+              <form action="https://formspree.io/f/xgorlred" method="POST" class="needs-validation" novalidate>
+                <!-- Formspree Configuration -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission - Little Feet Academy">
+
                 <div class="row g-4">
                   <div class="col-md-6">
                     <label for="name" class="form-label fw-bold">Full Name</label>
-                    <input type="text" class="form-control rounded-pill border-0 bg-light py-3 px-4" id="name" placeholder="John Doe" required />
+                    <input type="text" name="name" class="form-control rounded-pill border-0 bg-light py-3 px-4" id="name" placeholder="John Doe" required />
                   </div>
                   <div class="col-md-6">
                     <label for="email" class="form-label fw-bold">Email Address</label>
-                    <input type="email" class="form-control rounded-pill border-0 bg-light py-3 px-4" id="email" placeholder="john@example.com" required />
+                    <input type="email" name="email" class="form-control rounded-pill border-0 bg-light py-3 px-4" id="email" placeholder="john@example.com" required />
                   </div>
                   <div class="col-12">
                     <label for="subject" class="form-label fw-bold">Subject</label>
-                    <select class="form-select rounded-pill border-0 bg-light py-3 px-4" id="subject" required>
+                    <select name="subject" class="form-select rounded-pill border-0 bg-light py-3 px-4" id="subject" required>
                       <option value="" selected disabled>Choose a topic...</option>
                       <option value="enrollment">Enrollment Inquiry</option>
                       <option value="tour">Schedule a Tour</option>
@@ -107,10 +110,11 @@
                   </div>
                   <div class="col-12">
                     <label for="message" class="form-label fw-bold">Your Message</label>
-                    <textarea class="form-control rounded-4 border-0 bg-light py-3 px-4" id="message" rows="5" placeholder="How can we help your child shine?" required></textarea>
+                    <textarea name="message" class="form-control rounded-4 border-0 bg-light py-3 px-4" id="message" rows="5" placeholder="How can we help your child shine?" required></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn btn-primary btn-lg pill-btn px-5 py-3 w-100 shadow-sm fw-bold">Send Message</button>
+                    <button type="submit" id="contact-submit" class="btn btn-primary btn-lg pill-btn px-5 py-3 w-100 shadow-sm fw-bold">Send Message</button>
+                    <div id="contact-status" class="form-status"></div>
                   </div>
                 </div>
               </form>
@@ -230,6 +234,54 @@
       }, { threshold: 0.1 });
 
       revealElements.forEach(el => observer.observe(el));
+
+      // Formspree AJAX Submission
+      const contactForm = document.querySelector('form[action^="https://formspree.io"]');
+      const contactStatus = document.getElementById("contact-status");
+      const contactBtn = document.getElementById("contact-submit");
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          
+          // Basic Bootstrap Validation
+          if (!contactForm.checkValidity()) {
+            contactForm.classList.add('was-validated');
+            return;
+          }
+
+          const data = new FormData(contactForm);
+          contactBtn.classList.add("btn-loading");
+          contactStatus.className = "form-status";
+          contactStatus.textContent = "";
+
+          try {
+            const response = await fetch(contactForm.action, {
+              method: "POST",
+              body: data,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+
+            if (response.ok) {
+              contactStatus.textContent = "Thank you! Your message has been sent. We'll get back to you shortly.";
+              contactStatus.classList.add("success");
+              contactForm.reset();
+              contactForm.classList.remove('was-validated');
+            } else {
+              const result = await response.json();
+              contactStatus.textContent = result.error || "Oops! There was a problem submitting your form.";
+              contactStatus.classList.add("error");
+            }
+          } catch (error) {
+            contactStatus.textContent = "Oops! There was a problem connecting to the server.";
+            contactStatus.classList.add("error");
+          } finally {
+            contactBtn.classList.remove("btn-loading");
+          }
+        });
+      }
     </script>
   </body>
 </html>

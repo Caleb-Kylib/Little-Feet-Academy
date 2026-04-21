@@ -188,26 +188,30 @@
                     <div class="admission-info-card shadow-lg">
                         <h3 class="fw-bold mb-3">Admission Inquiry</h3>
                         <p class="mb-4 opacity-75">Can't find what you're looking for? Send us a quick message and our admissions officer will get back to you.</p>
-                        <form>
+                        <form action="https://formspree.io/f/xgorlred" method="POST">
+                            <!-- Formspree Configuration -->
+                            <input type="hidden" name="_subject" value="New Admission Inquiry - Little Feet Academy">
+                            
                             <div class="mb-3">
-                                <input type="text" class="form-control pill-btn py-3 px-4" placeholder="Full Name" required>
+                                <input type="text" name="name" class="form-control pill-btn py-3 px-4" placeholder="Full Name" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control pill-btn py-3 px-4" placeholder="Email Address" required>
+                                <input type="email" name="email" class="form-control pill-btn py-3 px-4" placeholder="Email Address" required>
                             </div>
                             <div class="mb-3">
-                                <select class="form-select pill-btn py-3 px-4">
-                                    <option selected disabled>Interested Program</option>
-                                    <option>Play Group</option>
-                                    <option>Kindergarten</option>
-                                    <option>Primary</option>
-                                    <option>Junior Secondary</option>
+                                <select name="program" class="form-select pill-btn py-3 px-4" required>
+                                    <option value="" selected disabled>Interested Program</option>
+                                    <option value="Play Group">Play Group</option>
+                                    <option value="Kindergarten">Kindergarten</option>
+                                    <option value="Primary">Primary</option>
+                                    <option value="Junior Secondary">Junior Secondary</option>
                                 </select>
                             </div>
                             <div class="mb-4">
-                                <textarea class="form-control rounded-4 p-4" rows="4" placeholder="Your Message or Question"></textarea>
+                                <textarea name="message" class="form-control rounded-4 p-4" rows="4" placeholder="Your Message or Question" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-dark btn-lg pill-btn w-100 py-3 shadow">Send Inquiry</button>
+                            <button type="submit" id="admission-submit" class="btn btn-dark btn-lg pill-btn w-100 py-3 shadow">Send Inquiry</button>
+                            <div id="admission-status" class="form-status"></div>
                         </form>
                     </div>
                 </div>
@@ -285,6 +289,47 @@
       }, { threshold: 0.1 });
 
       revealElements.forEach(el => observer.observe(el));
+
+      // Formspree AJAX Submission
+      const admissionForm = document.querySelector('form[action^="https://formspree.io"]');
+      const admissionStatus = document.getElementById("admission-status");
+      const admissionBtn = document.getElementById("admission-submit");
+
+      if (admissionForm) {
+        admissionForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          
+          const data = new FormData(admissionForm);
+          admissionBtn.classList.add("btn-loading");
+          admissionStatus.className = "form-status";
+          admissionStatus.textContent = "";
+
+          try {
+            const response = await fetch(admissionForm.action, {
+              method: "POST",
+              body: data,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+
+            if (response.ok) {
+              admissionStatus.textContent = "Your inquiry has been sent! Our admissions officer will contact you soon.";
+              admissionStatus.classList.add("success");
+              admissionForm.reset();
+            } else {
+              const result = await response.json();
+              admissionStatus.textContent = result.error || "Oops! There was a problem submitting your inquiry.";
+              admissionStatus.classList.add("error");
+            }
+          } catch (error) {
+            admissionStatus.textContent = "Oops! There was a problem connecting to the server.";
+            admissionStatus.classList.add("error");
+          } finally {
+            admissionBtn.classList.remove("btn-loading");
+          }
+        });
+      }
     </script>
   </body>
 </html>
