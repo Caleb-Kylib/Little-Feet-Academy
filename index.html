@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Little Feet Academy • Where Little Minds Grow Big Smiles</title>
-    <meta name="description" content="Nurturing curiosity through playful learning. Explore our programs from Play Group to Junior Secondary at Little Feet Academy." />
+    <title>Little Feet Academy • Daycare &amp; Kindergarten</title>
+    <meta name="description" content="A colorful, kid-friendly daycare &amp; kindergarten where playful learning helps little minds grow big smiles." />
 
     <!-- Bootstrap 5 CSS -->
     <link
@@ -19,58 +19,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Top Utility Bar -->
-    <div class="utility-bar">
-      <div class="container d-flex justify-content-between align-items-center">
-        <!-- Left: Social Media -->
-        <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
-
-        <!-- Center: Working Hours -->
-        <div class="working-hours top-bar-item">
-          <i class="far fa-clock"></i>
-          <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
-        </div>
-
-        <!-- Right: Contact & Location -->
-        <div class="top-bar-right d-flex gap-4 align-items-center">
-          <div class="top-bar-item d-none d-lg-flex">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Ongata Rongai, Kenya</span>
-          </div>
-          <a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item d-none d-sm-flex">
-            <i class="fas fa-envelope"></i>
-            <span>hello@littlefeetacademy.co.ke</span>
-          </a>
-          <a href="tel:+254796609626" class="top-bar-item accent-item">
-            <i class="fas fa-phone-alt"></i>
-            <span>+254 796 609 626</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
-          <div class="navbar-logo-wrap">
-              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="logo-fallback" style="display:none;">LF</div>
-              <span>Little Feet Academy</span>
-          </div>
-        </a>
+        <a class="navbar-brand fw-bold brand-name" href="#home">Little Feet Academy</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -84,10 +40,9 @@
         </button>
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
-            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
             <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -101,223 +56,77 @@
                 <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-            <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold" href="contact.html">Book a Visit</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section d-flex align-items-center">
-      <div class="hero-image-layer" style="background-image: url('assets/img/school.jpg');"></div>
-
-      <div class="hero-overlay-layer"></div>
-      
-      <!-- Playful Floating Shapes -->
-      <div class="hero-shapes">
-        <div class="shape" style="width: 100px; height: 100px; top: 10%; left: 5%; animation-duration: 25s;"></div>
-        <div class="shape" style="width: 150px; height: 150px; bottom: 20%; right: 10%; animation-duration: 30s; background: rgba(255, 179, 92, 0.1);"></div>
-        <div class="shape" style="width: 80px; height: 80px; top: 40%; right: 20%; animation-duration: 20s; background: rgba(255, 122, 162, 0.1);"></div>
+    <section id="home" class="hero-section d-flex align-items-center text-center">
+      <div class="container">
+        <h1 class="display-5 display-md-4 display-lg-3 fw-bold hero-title">Where Little Minds Grow Big Smiles</h1>
+        <p class="lead hero-subtitle">Playful learning for ages 2–6: safe, caring, and curiosity-driven.</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="#programs" class="btn btn-primary btn-lg pill-btn px-4">Explore Programs</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg pill-btn px-4">Enroll Now</a>
+        </div>
       </div>
+    </section>
 
-      <div class="container position-relative z-index-5" style="z-index: 5;">
-        <div class="row align-items-center">
-          <div class="col-lg-7 text-center text-lg-start reveal reveal-left">
-            <h1 class="hero-title fw-bold text-white mb-4">
-              Where <span class="text-pink">Little Minds</span><br>
-              Grow <span class="text-orange">Big Smiles</span>
-            </h1>
-            <p class="hero-subtitle text-white mb-5 pe-lg-5 opacity-90">
-              Nurturing curiosity, creativity, and confidence through our unique heart-led curriculum. Discover the perfect environment for your child to shine.
+    <!-- About Us -->
+    <section id="about" class="py-5 section-pad">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <h2 class="section-title">About Us</h2>
+            <p class="mb-3">
+              At Happy Kids Nursery, we believe every child shines in their own unique way. Our
+              caring teachers nurture curiosity through play, music, art, and hands-on activities.
+              With a warm community and a safe environment, we help little learners build confidence,
+              kindness, and a love for learning that lasts a lifetime.
             </p>
-            <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
-              <a href="programs.html" class="btn btn-primary btn-lg pill-btn px-5 py-3 shadow-lg fw-bold">Explore Programs</a>
-              <a href="admissions.html" class="btn btn-warning btn-lg pill-btn px-5 py-3 text-white fw-bold">Apply Now</a>
-            </div>
+            <a href="About.html" class="btn btn-kid pill-btn">Read More About Our History</a>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img src="assets/img/kids.jpg" alt="Kids learning together" class="img-fluid rounded-4 shadow-sm about-image" />
           </div>
         </div>
       </div>
-
-      <!-- Hero Bottom Wave Transition -->
-      <div class="hero-bottom-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill="currentColor" d="M0,0L48,8C96,16,192,32,288,37.3C384,43,480,37,576,32C672,27,768,21,864,24C960,27,1056,37,1152,42.7C1248,48,1344,48,1392,48L1440,48L1440,60L1392,60C1344,60,1248,60,1152,60C1056,60,960,60,864,60C768,60,672,60,576,60C480,60,384,60,288,60C192,60,96,60,48,60L0,60Z"></path>
-        </svg>
-      </div>
     </section>
 
-    <!-- Short About Us -->
-    <section class="short-about section-pad bg-playful-yellow">
+    <!-- Our Academic Programs -->
+    <section id="programs" class="py-5 bg-light section-pad">
       <div class="container">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-6 reveal reveal-left">
-            <h2 class="section-title h1 mb-4">A Brighter Start for <span class="text-pink">Every Child</span></h2>
-            <p class="lead mb-4">Founded on the principle that early education should be a journey of joy, curiosity, and discovery, Little Feet Academy has been a second home since 2010.</p>
-            <p class="text-muted mb-4">We combine international best practices with local values to provide a unique learning experience that prepares children for the challenges of tomorrow.</p>
-            <div class="experience-box shadow-sm mb-4">
-                <h3 class="fw-bold mb-0">14+</h3>
-                <p class="small mb-0">Years of Excellence</p>
-            </div>
-          </div>
-          <div class="col-lg-6 text-center reveal reveal-right">
-            <img src="assets/img/kids.jpg" alt="About Little Feet" class="img-fluid rounded-5 shadow-lg float-img">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Approach -->
-    <section class="approach-section section-pad">
-        <div class="container">
-            <div class="row align-items-center gy-5">
-                <div class="col-lg-6 text-center order-lg-2 reveal reveal-scale">
-                    <img src="assets/img/group-african-kids-learning-together.jpg" alt="Our Approach" class="approach-image-circle">
-                </div>
-                <div class="col-lg-6 order-lg-1 reveal reveal-left">
-                    <span class="approach-tag">OUR APPROACH</span>
-                    <h2 class="display-5 fw-bold mb-4">Secure Your Child’s Future</h2>
-                    <p class="mb-5">We believe in providing a nurturing environment where your child can grow and thrive. Our dedicated team of educators is committed to fostering a love for learning.</p>
-                    
-                    <div class="approach-progress reveal reveal-up" style="transition-delay: 0.1s;">
-                        <div class="progress-label-wrap"><span>Holistic Education</span><span>100%</span></div>
-                        <div class="progress-custom"><div class="progress-bar-fill fill-blue" style="width: 100%;"></div></div>
-                    </div>
-
-                    <div class="approach-progress reveal reveal-up" style="transition-delay: 0.2s;">
-                        <div class="progress-label-wrap"><span>Supportive Community</span><span>97%</span></div>
-                        <div class="progress-custom"><div class="progress-bar-fill fill-orange" style="width: 97%;"></div></div>
-                    </div>
-
-                    <div class="approach-progress reveal reveal-up" style="transition-delay: 0.3s;">
-                        <div class="progress-label-wrap"><span>Extracurricular Activities</span><span>98%</span></div>
-                        <div class="progress-custom"><div class="progress-bar-fill fill-red" style="width: 98%;"></div></div>
-                    </div>
-
-                    <a href="About.html" class="btn btn-kid btn-lg pill-btn px-5 mt-4">Discover Our Philosophy</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   
-    <!-- Academic Programs -->
-    <section id="programs" class="py-5 bg-white section-pad">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-end mb-5 reveal reveal-up">
-            <div>
-                <h2 class="section-title h1 mb-0">Our Programs</h2>
-                <p class="text-muted mb-0">Step-by-step learning for every milestone.</p>
-            </div>
-            <a href="programs.html" class="btn btn-link text-primary fw-bold text-decoration-none">View All Programs →</a>
-        </div>
+        <h2 class="section-title text-center mb-4">Our Academic Programs</h2>
         <div class="row g-4">
-          <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.1s;">
-            <div class="card program-card h-100 border-0 shadow-sm">
-              <img src="assets/img/kids.jpg" class="card-img-top" alt="Kindergarten" />
-              <div class="card-body p-4">
-                <h5 class="card-title fw-bold">Kindergarten</h5>
-                <p class="card-text text-muted small">Building foundations through sensory play and early literacy.</p>
-                <a href="programs.html" class="btn btn-kid w-100 rounded-pill mt-3">Learn More</a>
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img src="assets/img/kids.jpg" class="card-img-top" alt="Daycare" />
+              <div class="card-body">
+                <h5 class="card-title">Daycare</h5>
+                <p class="card-text">Gentle routines, creative play, and lots of giggles for our youngest explorers.</p>
+                <a href="#contact" class="btn btn-primary pill-btn">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.2s;">
-            <div class="card program-card h-100 border-0 shadow-sm">
-              <img src="assets/img/PLC10-min-scaled.jpg" class="card-img-top" alt="Lower Primary" />
-              <div class="card-body p-4">
-                <h5 class="card-title fw-bold">Lower Primary</h5>
-                <p class="card-text text-muted small">Hands-on approach to core subjects under the CBC framework.</p>
-                <a href="programs.html" class="btn btn-kid w-100 rounded-pill mt-3">Learn More</a>
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img src="assets/img/PLC10-min-scaled.jpg" class="card-img-top" alt="Kindergarten" />
+              <div class="card-body">
+                <h5 class="card-title">Kindergarten</h5>
+                <p class="card-text">Early literacy, numbers, and discovery-based learning in a joyful classroom.</p>
+                <a href="#contact" class="btn btn-primary pill-btn">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.3s;">
-            <div class="card program-card h-100 border-0 shadow-sm">
-              <img src="assets/img/group-african-kids-learning-together.jpg" class="card-img-top" alt="Junior Secondary" />
-              <div class="card-body p-4">
-                <h5 class="card-title fw-bold">Junior Secondary</h5>
-                <p class="card-text text-muted small">Preparing young leaders for global challenges with STEAM.</p>
-                <a href="programs.html" class="btn btn-kid w-100 rounded-pill mt-3">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Beyond the Classroom -->
-    <section id="activities" class="py-5 section-pad reveal reveal-up">
-      <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title h1">Beyond the Classroom</h2>
-            <p class="text-muted">Nurturing holistic development through diverse activities.</p>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <!-- Music -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="activity-card-modern reveal reveal-scale" style="transition-delay: 0.1s;">
-              <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=400&auto=format&fit=crop" alt="Music">
-              <div class="activity-overlay">
-                <h5 class="activity-name">Music</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Scouts -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="activity-card-modern reveal reveal-scale" style="transition-delay: 0.2s;">
-              <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5c?q=80&w=400&auto=format&fit=crop" alt="Scouts">
-              <div class="activity-overlay">
-                <h5 class="activity-name">Scouts</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Swimming -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="activity-card-modern reveal reveal-scale" style="transition-delay: 0.3s;">
-              <img src="https://images.unsplash.com/photo-1519735777090-ec97162ec268?q=80&w=400&auto=format&fit=crop" alt="Swimming">
-              <div class="activity-overlay">
-                <h5 class="activity-name">Swimming</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Cookery Club -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="activity-card-modern reveal reveal-scale" style="transition-delay: 0.4s;">
-              <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400&auto=format&fit=crop" alt="Cookery Club">
-              <div class="activity-overlay">
-                <h5 class="activity-name">Cookery Club</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Sign Language -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="activity-card-modern reveal reveal-scale" style="transition-delay: 0.5s;">
-              <img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?q=80&w=400&auto=format&fit=crop" alt="Sign Language">
-              <div class="activity-overlay">
-                <h5 class="activity-name">Sign Language</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Ballet -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="activity-card-modern reveal reveal-scale" style="transition-delay: 0.6s;">
-              <img src="https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?q=80&w=400&auto=format&fit=crop" alt="Ballet">
-              <div class="activity-overlay">
-                <h5 class="activity-name">Ballet</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Drama Club -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="activity-card-modern reveal reveal-scale" style="transition-delay: 0.7s;">
-              <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=400&auto=format&fit=crop" alt="Drama Club">
-              <div class="activity-overlay">
-                <h5 class="activity-name">Drama Club</h5>
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img src="assets/img/PLC10-min-scaled.jpg" class="card-img-top" alt="After School" />
+              <div class="card-body">
+                <h5 class="card-title">Junior Secondary </h5>
+                <p class="card-text">Homework help, STEAM crafts, and active games to end the day with smiles.</p>
+                <a href="#contact" class="btn btn-primary pill-btn">Learn More</a>
               </div>
             </div>
           </div>
@@ -325,222 +134,244 @@
       </div>
     </section>
 
-     <!-- Why Choose Us -->
-    <section class="py-5 why-section section-pad bg-playful-blue">
+    <!-- Why Choose Us -->
+    <section id="why" class="py-5 section-pad">
       <div class="container">
-        <div class="text-center mb-5 reveal reveal-up">
-            <h2 class="section-title h1">Why Choose Us?</h2>
-            <p class="text-muted">Discover what makes Little Feet Academy the perfect place.</p>
-        </div>
+        <h2 class="section-title text-center mb-4">Why Choose Us</h2>
         <div class="row g-4">
-          <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.1s;">
-            <div class="why-card text-center">
-              <div class="why-icon mx-auto">🌱</div>
-              <h4 class="fw-bold">Nurturing Growth</h4>
-              <p class="text-muted">A supportive environment where every child feels loved and encouraged.</p>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="feature-icon">💗</div>
+              <h6 class="mt-2">Caring Teachers</h6>
+              <p class="mb-0">Experienced educators who nurture every child's unique spark.</p>
             </div>
           </div>
-          <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.2s;">
-            <div class="why-card text-center">
-              <div class="why-icon mx-auto">🎨</div>
-              <h4 class="fw-bold">Creative Curriculum</h4>
-              <p class="text-muted">CBC-aligned programs blending academic excellence with hands-on discovery.</p>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="feature-icon">🎨</div>
+              <h6 class="mt-2">Fun Learning</h6>
+              <p class="mb-0">Play-based activities that build creativity, curiosity, and joy.</p>
             </div>
           </div>
-          <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.3s;">
-            <div class="why-card text-center">
-              <div class="why-icon mx-auto">🛡️</div>
-              <h4 class="fw-bold">Safe & Secure</h4>
-              <p class="text-muted">Modern facilities and dedicated staff monitoring every joyful moment.</p>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="feature-icon">📚</div>
+              <h6 class="mt-2">Strong Curriculum</h6>
+              <p class="mb-0">Balanced academics and social-emotional learning foundations.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="feature-icon">🛡️</div>
+              <h6 class="mt-2">Safe Environment</h6>
+              <p class="mb-0">Healthy, secure spaces where families feel confident and welcome.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light section-pad">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">What Families Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure class="text-center mx-auto testimonial p-4">
+                <blockquote class="blockquote mb-2">“Our daughter can’t wait to go every morning. The teachers are amazing!”</blockquote>
+                <figcaption class="blockquote-footer">Sophia’s Mom</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="text-center mx-auto testimonial p-4">
+                <blockquote class="blockquote mb-2">“A joyful place with real learning. We love the creativity and care.”</blockquote>
+                <figcaption class="blockquote-footer">Liam’s Dad</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="text-center mx-auto testimonial p-4">
+                <blockquote class="blockquote mb-2">“Safe, welcoming, and so much fun. Best decision for our family!”</blockquote>
+                <figcaption class="blockquote-footer">Ava’s Family</figcaption>
+              </figure>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
 
-    <!-- Voices of Our Parents (New Image Design) -->
-    <section id="reviews" class="voices-section">
-        <span class="voices-bg-quote">“</span>
-        <div class="container text-center reveal reveal-up">
-            <h2 class="display-4 fw-bold mb-5" style="color: #4a3427;">Voices of Our Parents</h2>
-            
-            <div id="voicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                <div class="carousel-inner carousel-inner-voices">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="row g-4 justify-content-center">
-                            <div class="col-md-6">
-                                <div class="parent-review-card">
-                                    <div class="review-header">
-                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
-                                        <div>
-                                            <h5 class="parent-name">Mary Wambui</h5>
-                                            <span class="parent-subtext">Parent since 2019</span>
-                                        </div>
-                                    </div>
-                                    <p class="review-body-text">"The transformation I've seen in my daughter's confidence is incredible. Sunrise Academy isn't just a school, it's a family that truly cares about each child's unique spark."</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 d-none d-md-block">
-                                <div class="parent-review-card">
-                                    <div class="review-header">
-                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
-                                        <div>
-                                            <h5 class="parent-name">David Omondi</h5>
-                                            <span class="parent-subtext">Parent of 2 boys</span>
-                                        </div>
-                                    </div>
-                                    <p class="review-body-text">"As a parent, I value the balance between academics and values. The CBC program here is excellently delivered, and my children look forward to school every morning."</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="row g-4 justify-content-center">
-                            <div class="col-md-6">
-                                <div class="parent-review-card">
-                                    <div class="review-header">
-                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
-                                        <div>
-                                            <h5 class="parent-name">Sarah Wambui</h5>
-                                            <span class="parent-subtext">Playgroup Parent</span>
-                                        </div>
-                                    </div>
-                                    <p class="review-body-text">"A wonderful school with a heart. My boys have learned so much about kindness and collaboration here. Highly recommended to any parent!"</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 d-none d-md-block">
-                                <div class="parent-review-card">
-                                    <div class="review-header">
-                                        <img src="assets/img/kids.jpg" class="review-avatar-circle" alt="Parent">
-                                        <div>
-                                            <h5 class="parent-name">Mary Wambui</h5>
-                                            <span class="parent-subtext">Parent since 2019</span>
-                                        </div>
-                                    </div>
-                                    <p class="review-body-text">"The transformation I've seen in my daughter's confidence is incredible. Little Feet Academy is a family that truly cares about each child's unique spark."</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Contact Us -->
+    <section id="contact" class="py-5 section-pad">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Contact Us</h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <form class="contact-form needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your full name" required />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="How can we help?" required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <button type="submit" class="btn btn-primary pill-btn">Send Message</button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <div class="info-tile p-3 h-100">
+                  <h6 class="mb-1">Address</h6>
+                  <p class="mb-0">123 Rainbow Road, Playtown</p>
                 </div>
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#voicesCarousel" data-bs-slide="prev" style="width: 5%; left: -5%;">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#voicesCarousel" data-bs-slide="next" style="width: 5%; right: -5%;">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                </button>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-tile p-3 h-100">
+                  <h6 class="mb-1">Phone</h6>
+                  <p class="mb-0">(123) 456-7890</p>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="info-tile p-3 h-100">
+                  <h6 class="mb-1">Email</h6>
+                  <p class="mb-0">hello@happykidsnursery.example</p>
+                </div>
+              </div>
             </div>
+            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24178.159617946934!2d-74.0060156!3d40.7127281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ1LjgiTiA3NMKwMDAnMjEuNSJX!5e0!3m2!1sen!2sus!4v1689876543210"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Map"
+              ></iframe>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- News & Events Section -->
-    <section id="news-events" class="py-5 articles-section section-pad bg-white">
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-light section-pad">
       <div class="container">
-        <div class="text-center mb-5 reveal reveal-up">
-            <h2 class="section-title h1">News & Events</h2>
-            <p class="text-muted">Stay updated with our latest stories and upcoming activities.</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.1s;">
-            <div class="article-card h-100">
-              <img src="assets/img/kids.jpg" class="article-img" alt="Blog 1">
-              <div class="p-4">
-                <span class="article-date">April 12, 2026</span>
-                <h5 class="fw-bold mt-2">The Magic of Play-Based Learning</h5>
-                <a href="#" class="btn btn-link p-0 text-primary text-decoration-none fw-bold">Read More</a>
+        <h2 class="section-title text-center mb-4">FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqOneHeading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                What ages do you accept?
+              </button>
+            </h2>
+            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOneHeading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We welcome children ages 2 to 6 across our daycare, kindergarten, and after school programs.
               </div>
             </div>
           </div>
-          <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.2s;">
-            <div class="article-card h-100">
-              <img src="assets/img/PLC10-min-scaled.jpg" class="article-img" alt="Blog 2">
-              <div class="p-4">
-                  <span class="article-date">April 05, 2026</span>
-                  <h5 class="fw-bold mt-2">Navigating the CBC Curriculum</h5>
-                  <a href="#" class="btn btn-link p-0 text-primary text-decoration-none fw-bold">Read More</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqTwoHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                Do you offer meals and snacks?
+              </button>
+            </h2>
+            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. We provide healthy snacks and optional lunch plans. Please let us know about any allergies.
               </div>
             </div>
           </div>
-          <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.3s;">
-            <div class="article-card h-100">
-              <img src="assets/img/group-african-kids-learning-together.jpg" class="article-img" alt="Blog 3">
-              <div class="p-4">
-                  <span class="article-date">March 28, 2026</span>
-                  <h5 class="fw-bold mt-2">Nurturing Tomorrow's Leaders</h5>
-                  <a href="#" class="btn btn-link p-0 text-primary text-decoration-none fw-bold">Read More</a>
-              </div>
-            </div>
-          </div>
-        <div class="text-center mt-5 reveal reveal-up">
-            <a href="news.html" class="btn btn-outline-primary pill-btn px-5 py-3 fw-bold">View All News & Events</a>
         </div>
       </div>
     </section>
 
-    <!-- Full-Width CTA -->
-    <section class="pt-5 pb-0 bg-white">
-        <div class="big-cta-section text-center text-white py-4 reveal reveal-scale shadow-lg" style="background: linear-gradient(135deg, #0c1b33 0%, #1e3a61 100%); border-radius: 0;">
-            <div class="container position-relative py-4">
-              <h2 class="display-5 fw-bold mb-3 px-3">Ready to Spark Your Child's Future?</h2>
-              <p class="lead mb-4 px-4 opacity-90">Join our growing community and watch your child shine bright.</p>
-              <div class="d-flex justify-content-center gap-3 flex-wrap">
-                  <a href="contact.html" class="btn btn-warning btn-lg pill-btn px-5 text-white fw-bold shadow">Get Started Now</a>
-                  <a href="https://wa.me/254796609626" class="btn btn-outline-light btn-lg pill-btn px-5 border-2">WhatsApp Us</a>
-              </div>
-            </div>
-        </div>
+<!-- Newsletter -->
+    <section id="newsletter" class="newsletter">
+      <h2>Subscribe to our Newsletter</h2>
+      <p>Stay updated with the latest news and events from Little Feet Academy.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </section>
 
+    
+     <!-- Creative Footer -->
+    <footer class="footer-creative mt-5">
+  <!-- Decorative wave -->
+  <div class="footer-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="currentColor" d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,69.3C672,64,768,96,864,96C960,96,1056,64,1152,48C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+  </div>
 
-    <!-- Creative Footer -->
-    <footer class="footer-creative">
-
-
-      <div class="container py-5 text-white">
-        <div class="row">
-          <div class="col-md-4 text-center mb-4">
-            <h4 class="mb-3">Little Feet Academy</h4>
-            <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
-              <span class="badge rounded-pill bg-light text-dark">🎨 Arts</span>
-              <span class="badge rounded-pill bg-light text-dark">📚 Reading</span>
-              <span class="badge rounded-pill bg-light text-dark">🤝 Caring</span>
-            </div>
-          </div>
-          <div class="col-md-4 text-center mb-4">
-            <h5 class="mb-3">Quick Links</h5>
-            <ul class="list-unstyled small">
-              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-              <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
-              <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
-              <li><a href="admissions.html" class="text-white text-decoration-none">Admissions</a></li>
-              <li><a href="team.html" class="text-white text-decoration-none">Our Team</a></li>
-              <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
-              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center mb-4">
-            <h5 class="mb-3">Connect</h5>
-            <p class="small mb-1">+254 796 609 626</p>
-            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
-          </div>
-        </div>
-        <div class="text-center mt-4 border-top pt-4 opacity-50">
-          <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
+  <div class="container py-5 text-white">
+    <div class="row">
+      
+      <!-- Column 1: About -->
+      <div class="col-md-4 text-center mb-4">
+        <h4 class="mb-3">Little Feet Academy</h4>
+        <p class="small">Where play sparks learning and every child shines ✨</p>
+        <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
+          <span class="badge rounded-pill bg-light text-dark">🎨 Creative Arts</span>
+          <span class="badge rounded-pill bg-light text-dark">📚 Early Literacy</span>
+          <span class="badge rounded-pill bg-light text-dark">🤝 Caring Community</span>
         </div>
       </div>
-    </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
-      <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-      </svg>
-    </a>
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-4 text-center mb-4">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled small">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+          <li><a href="team.html" class="text-white text-decoration-none">Our Team</a></li>
+          <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Opening Hours -->
+      <div class="col-md-4 text-center mb-4">
+        <h5 class="mb-3">Opening Hours</h5>
+        <p class="small mb-1">Monday – Friday: 8:00 AM – 5:00 PM</p>
+        <p class="small mb-1">Saturday: 9:00 AM – 1:00 PM</p>
+        <p class="small mb-0">Sunday & Holidays: Closed</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom row -->
+    <div class="text-center mt-4">
+      <p class="small mb-1">123 Rainbow Road, Playtown • (123) 456-7890 • hello@littlefeetacademy.example</p>
+      <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
+    </div>
+  </div>
+</footer>
+
 
     <!-- Bootstrap 5 JS Bundle -->
     <script
@@ -549,21 +380,37 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Small helper for current year & form validation -->
     <script>
-      // Current Year
       document.getElementById('year').textContent = new Date().getFullYear();
-
-      // Intersection Observer for Scroll Animations
-      const revealElements = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
+      (() => {
+        const forms = document.querySelectorAll('.needs-validation');
+        Array.from(forms).forEach((form) => {
+          form.addEventListener('submit', (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
         });
-      }, { threshold: 0.1 });
-
-      revealElements.forEach(el => observer.observe(el));
+      })();
     </script>
+
+
+    <!-- Newsletter Section -->
+<section id="newsletter" class="newsletter">
+  <h2>Subscribe to our Newsletter</h2>
+  <p>Stay updated with the latest news and events from Little Feet Academy.</p>
+  <form class="newsletter-form">
+    <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+
+
   </body>
-</html>
+  </html>
+
+

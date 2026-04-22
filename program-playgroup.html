@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Playgroup Program • Little Feet Academy</title>
+    <meta name="description" content="Discover our Playgroup Program at Little Feet Academy. A loving, supportive environment for children ages 2-4." />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <!-- Top Utility Bar -->
+    <div class="utility-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left: Social Media -->
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Center: Working Hours -->
+        <div class="working-hours top-bar-item">
+          <i class="far fa-clock"></i>
+          <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+        </div>
+        <!-- Right: Contact & Location -->
+        <div class="top-bar-right d-flex gap-4 align-items-center">
+          <div class="top-bar-item d-none d-lg-flex">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ongata Rongai, Kenya</span>
+          </div>
+          <a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item d-none d-sm-flex">
+            <i class="fas fa-envelope"></i>
+            <span>hello@littlefeetacademy.co.ke</span>
+          </a>
+          <a href="tel:+254796609626" class="top-bar-item accent-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+254 796 609 626</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
+          <div class="navbar-logo-wrap">
+              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="logo-fallback" style="display:none;">LF</div>
+              <span>Little Feet Academy</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="graduation-gallery.html">🎓 Graduation Day</a></li>
+                <li><a class="dropdown-item" href="sports-gallery.html">🏃‍♂️ Sports Day</a></li>
+                <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold" href="contact.html">Book a Visit</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Specific Program Hero -->
+    <section class="program-single-hero" style="background: linear-gradient(rgba(12, 27, 51, 0.7), rgba(12, 27, 51, 0.6)), url('assets/img/kids.jpg') no-repeat center center; background-size: cover;">
+      <div class="container reveal reveal-scale">
+        <span class="badge bg-white text-pink rounded-pill px-4 py-2 mb-3 fs-6">Early Years Education</span>
+        <h1 class="display-3 fw-bold mb-3">Play Group Program</h1>
+        <p class="lead mb-0 fs-4">A gentle, joyful introduction to learning for children aged 2 to 4 years.</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5 section-pad bg-light">
+      <div class="container">
+        <!-- Floating Icon -->
+        <div class="program-icon-badge reveal reveal-scale">🧸</div>
+
+        <div class="row gy-5 align-items-center mt-3">
+          <div class="col-lg-6 reveal reveal-left">
+            <h2 class="display-5 fw-bold mb-4" style="color: var(--dark);">Learning Through <span class="text-pink">Play</span></h2>
+            <p class="lead mb-4">Our Playgroup is designed to be your child's home away from home. For many children, this is the first school experience, so we prioritize emotional safety, routine, and warm caregiver relationships.</p>
+            <p class="text-muted mb-3">At this stage, children learn best through play. Daily activities include storytelling, sensory exploration, music, movement, and guided free-play that develop language and coordination naturally.</p>
+            <p class="text-muted mb-4">We also work closely with parents to support communication, toilet routines, independence, and healthy social behavior so every child transitions confidently to pre-primary.</p>
+            
+            <a href="admissions.html" class="btn btn-primary pill-btn btn-lg px-5 shadow me-3">Enroll Today</a>
+            <a href="contact.html" class="btn btn-outline-primary pill-btn btn-lg px-5">Book a Tour</a>
+          </div>
+          
+          <div class="col-lg-6 reveal reveal-right">
+            <div class="bg-white p-5 rounded-4 shadow-sm border" style="border-color: rgba(255, 122, 162, 0.3) !important;">
+              <h3 class="fw-bold mb-4 border-bottom pb-3">Program Highlights</h3>
+              <ul class="list-unstyled highlight-list mb-0">
+                <li>
+                  <i class="fas fa-check-circle icon-check"></i>
+                  <div>
+                    <h5 class="fw-bold mb-1">Emotion & Socialization</h5>
+                    <p class="text-muted small mb-0">Learning to share, take turns, and communicate feelings with peers and caregivers.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-music icon-check"></i>
+                  <div>
+                    <h5 class="fw-bold mb-1">Music & Movement</h5>
+                    <p class="text-muted small mb-0">Daily singing, dancing, and rhythmic activities to develop coordination and joy.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-paint-brush icon-check"></i>
+                  <div>
+                    <h5 class="fw-bold mb-1">Sensory Art</h5>
+                    <p class="text-muted small mb-0">Finger painting, clay molding, and hands-on crafts to spark creativity and fine motor skills.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-apple-alt icon-check"></i>
+                  <div>
+                    <h5 class="fw-bold mb-1">Healthy Habits</h5>
+                    <p class="text-muted small mb-0">Daily routines include hygiene, rest, toilet-learning support, and nutritious snack time.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section for Playgroup -->
+    <section class="py-5 bg-white section-pad">
+      <div class="container maxWidth-800 mx-auto">
+        <div class="text-center mb-5 reveal reveal-up">
+            <h2 class="section-title h1">Common Questions</h2>
+            <p class="text-muted">Everything parents ask about our Playgroup program.</p>
+        </div>
+
+        <div class="accordion reveal reveal-up" id="playgroupFaq">
+          <!-- FAQ 1 -->
+          <div class="accordion-item faq-card">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Does my child need to be fully potty trained?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#playgroupFaq">
+              <div class="accordion-body">
+                Not at all! We understand that children develop at different paces. Our caregivers work in partnership with parents to support the potty training process with a gentle, consistent approach.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="accordion-item faq-card">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What are the daily operating hours for Playgroup?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#playgroupFaq">
+              <div class="accordion-body">
+                Playgroup runs from <strong>8:00 AM to 12:30 PM</strong> for a half-day session. However, we also offer a full-day daycare extension for working parents that runs until 5:00 PM, which includes a supervised afternoon nap and playtime.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="accordion-item faq-card">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What should I pack for my child daily?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#playgroupFaq">
+              <div class="accordion-body">
+                Parents are advised to pack a healthy mid-morning snack, a change of clothes, diapers/wipes (if applicable), and a clearly labeled water bottle. Hot nutritious lunches are provided for those staying full-day.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="accordion-item faq-card">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                What is the teacher-to-child ratio?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#playgroupFaq">
+              <div class="accordion-body">
+                We maintain a low ratio of 1 adult to every 5 children in playgroup. This ensures each child gets close supervision, responsive care, and the individual attention needed at this critical stage.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Bar -->
+    <section class="bg-pink text-white py-5 text-center px-3" style="background-color: var(--pink);">
+      <div class="container reveal reveal-up">
+        <h3 class="fw-bold mb-3">See Our Playgroup in Action</h3>
+        <p class="lead mb-4">Reading about it is great, but experiencing the laughter and joy is better. Come see for yourself!</p>
+        <a href="contact.html" class="btn btn-light pill-btn btn-lg px-5 fw-bold text-pink">Schedule a Campus Tour</a>
+      </div>
+    </section>
+
+    <!-- Creative Footer -->
+    <footer class="footer-creative">
+      <div class="container py-5 text-white">
+        <div class="row">
+          <div class="col-md-4 text-center mb-4">
+            <h4 class="mb-3">Little Feet Academy</h4>
+            <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
+              <span class="badge rounded-pill bg-light text-dark">🎨 Arts</span>
+              <span class="badge rounded-pill bg-light text-dark">📚 Reading</span>
+              <span class="badge rounded-pill bg-light text-dark">🤝 Caring</span>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled small">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+              <li><a href="admissions.html" class="text-white text-decoration-none">Admissions</a></li>
+              <li><a href="team.html" class="text-white text-decoration-none">Our Team</a></li>
+              <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Connect</h5>
+            <p class="small mb-1">+254 796 609 626</p>
+            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
+          </div>
+        </div>
+        <div class="text-center mt-4 border-top pt-4 opacity-50">
+          <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254796609626?text=Hello,%20I'd%20like%20more%20info%20about%20the%20Playgroup%20Program!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-chat-tooltip">Ask about Playgroup!</span>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+319:       </svg>
+320:     </a>
+321: 
+322:     <!-- Bootstrap 5 JS Bundle -->
+323:     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+324:     <script>
+325:       document.getElementById('year').textContent = new Date().getFullYear();
+326:       const revealElements = document.querySelectorAll('.reveal');
+327:       const observer = new IntersectionObserver((entries) => {
+328:         entries.forEach(entry => {
+329:           if (entry.isIntersecting) {
+330:             entry.target.classList.add('active');
+331:           }
+332:         });
+333:       }, { threshold: 0.1 });
+334:       revealElements.forEach(el => observer.observe(el));
+335:     </script>
+336:   </body>
+337: </html>
+

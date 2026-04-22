@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lower Primary Program • Little Feet Academy</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <!-- Top Utility Bar -->
+    <div class="utility-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left: Social Media -->
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Center: Working Hours -->
+        <div class="working-hours top-bar-item">
+          <i class="far fa-clock"></i>
+          <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+        </div>
+        <!-- Right: Contact & Location -->
+        <div class="top-bar-right d-flex gap-4 align-items-center">
+          <div class="top-bar-item d-none d-lg-flex">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ongata Rongai, Kenya</span>
+          </div>
+          <a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item d-none d-sm-flex">
+            <i class="fas fa-envelope"></i>
+            <span>hello@littlefeetacademy.co.ke</span>
+          </a>
+          <a href="tel:+254796609626" class="top-bar-item accent-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+254 796 609 626</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
+          <div class="navbar-logo-wrap">
+              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="logo-fallback" style="display:none;">LF</div>
+              <span>Little Feet Academy</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold" href="contact.html">Book a Visit</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="program-single-hero">
+      <div class="container reveal reveal-scale">
+        <span class="badge bg-white text-green rounded-pill px-4 py-2 mb-3 fs-6">Primary Education</span>
+        <h1 class="display-3 fw-bold mb-3">Lower Primary Program</h1>
+        <p class="lead mb-0 fs-4">Grade 1 - Grade 3: Building strong academic foundations.</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5 section-pad bg-light">
+      <div class="container">
+        <div class="program-icon-badge reveal reveal-scale">📚</div>
+        <div class="row gy-5 align-items-center mt-3">
+          <div class="col-lg-6 reveal reveal-left">
+            <h2 class="display-5 fw-bold mb-4" style="color: var(--dark);">Academic <span class="text-green">Excellence</span></h2>
+            <p class="lead mb-4">Our Lower Primary program (Grade 1 to Grade 3) builds the academic foundation children need for lifelong learning. We nurture confidence in reading, writing, numeracy, and communication from an early stage.</p>
+            <p class="text-muted mb-3">Lessons are active and engaging, combining classroom instruction with hands-on activities, storytelling, experiments, and guided group tasks.</p>
+            <p class="text-muted mb-4">Within the CBC approach, we continuously monitor progress and support each learner according to their pace while encouraging curiosity, discipline, and creativity.</p>
+            <a href="admissions.html" class="btn btn-primary pill-btn btn-lg px-5 shadow me-3">Enroll Today</a>
+            <a href="contact.html" class="btn btn-outline-primary pill-btn btn-lg px-5">Book a Tour</a>
+          </div>
+          <div class="col-lg-6 reveal reveal-right">
+            <div class="bg-white p-5 rounded-4 shadow-sm border" style="border-color: rgba(115, 212, 127, 0.3) !important;">
+              <h3 class="fw-bold mb-4 border-bottom pb-3">Program Highlights</h3>
+              <ul class="list-unstyled highlight-list mb-0">
+                <li><i class="fas fa-book icon-check"></i><div><h5 class="fw-bold mb-1">Literacy & Numeracy</h5><p class="text-muted small mb-0">Strong grounding in reading fluency, writing mechanics, and number sense.</p></div></li>
+                <li><i class="fas fa-laptop icon-check"></i><div><h5 class="fw-bold mb-1">Digital Readiness</h5><p class="text-muted small mb-0">Age-appropriate digital literacy and responsible technology use.</p></div></li>
+                <li><i class="fas fa-brain icon-check"></i><div><h5 class="fw-bold mb-1">Inquiry-Based Learning</h5><p class="text-muted small mb-0">Children ask questions, test ideas, and present what they discover.</p></div></li>
+                <li><i class="fas fa-futbol icon-check"></i><div><h5 class="fw-bold mb-1">Clubs, Sports & Arts</h5><p class="text-muted small mb-0">A balanced program that supports physical health and creativity.</p></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5 bg-white section-pad">
+      <div class="container maxWidth-800 mx-auto">
+        <div class="text-center mb-5 reveal reveal-up">
+            <h2 class="section-title h1">Common Questions</h2>
+        </div>
+        <div class="accordion reveal reveal-up" id="lpFaq">
+          <div class="accordion-item faq-card">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                How are assessments handled?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#lpFaq">
+              <div class="accordion-body">Under CBC, we use Continuous Assessment Rubrics rather than high-stakes exams. Children are assessed on their acquired competencies and practical skills.</div>
+            </div>
+          </div>
+          <div class="accordion-item faq-card">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                How do you support children who learn at different speeds?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#lpFaq">
+              <div class="accordion-body">Teachers provide differentiated support, small-group instruction, and enrichment tasks. This ensures both struggling and fast learners receive the right challenge and guidance.</div>
+            </div>
+          </div>
+          <div class="accordion-item faq-card">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                Do learners get homework?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#lpFaq">
+              <div class="accordion-body">Yes, we give short and meaningful assignments for home reinforcement. Homework is age-appropriate and designed to build good study habits without overloading learners.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Footer -->
+    <footer class="footer-creative">
+      <div class="container py-5 text-white">
+        <div class="row">
+          <div class="col-md-4 text-center mb-4">
+            <h4 class="mb-3">Little Feet Academy</h4>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled small">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="mb-3">Connect</h5>
+            <p class="small mb-1">+254 796 609 626</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
