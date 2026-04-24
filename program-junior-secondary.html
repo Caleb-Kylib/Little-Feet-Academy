@@ -3,30 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Junior Secondary Program • Little Feet Academy</title>
-    <!-- Bootstrap 5 CSS -->
+    <title>Junior Secondary • Little Feet Academy</title>
+    <meta name="description" content="Junior Secondary at Little Feet Academy — rigorous CBC pathways, STEM and digital learning, and mentorship for upper levels and career awareness." />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
   <body>
-    <!-- Top Utility Bar -->
     <div class="utility-bar">
       <div class="container d-flex justify-content-between align-items-center">
-        <!-- Left: Social Media -->
         <div class="social-links">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
-        <!-- Center: Working Hours -->
         <div class="working-hours top-bar-item">
           <i class="far fa-clock"></i>
           <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
         </div>
-        <!-- Right: Contact & Location -->
         <div class="top-bar-right d-flex gap-4 align-items-center">
           <div class="top-bar-item d-none d-lg-flex">
             <i class="fas fa-map-marker-alt"></i>
@@ -44,14 +42,13 @@
       </div>
     </div>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
           <div class="navbar-logo-wrap">
-              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="logo-fallback" style="display:none;">LF</div>
-              <span>Little Feet Academy</span>
+            <img src="assets/img/logo.png" alt="Little Feet Academy logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="logo-fallback" style="display: none">LF</div>
+            <span>Little Feet Academy</span>
           </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +61,16 @@
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="programs.html">Programs</a></li>
             <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
             <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="graduation-gallery.html">Graduation Day</a></li>
+                <li><a class="dropdown-item" href="sports-gallery.html">Sports Day</a></li>
+                <li><a class="dropdown-item" href="cultural-gallery.html">Cultural Day</a></li>
+              </ul>
+            </li>
             <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold" href="contact.html">Book a Visit</a></li>
@@ -72,107 +79,229 @@
       </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="program-single-hero">
-      <div class="container reveal reveal-scale">
-        <span class="badge bg-white text-blue rounded-pill px-4 py-2 mb-3 fs-6">Upper Years</span>
-        <h1 class="display-3 fw-bold mb-3">Junior Secondary</h1>
-        <p class="lead mb-0 fs-4">Grade 7 & Above: Critical thinking & career pathways.</p>
-      </div>
-    </section>
+    <main>
+      <header class="program-page-hero" role="banner">
+        <div class="program-page-hero__bg" style="background-image: url('assets/img/group-african-kids-learning-together.jpg')"></div>
+        <div class="program-page-hero__overlay" aria-hidden="true"></div>
+        <div class="container program-page-hero__inner text-center text-white">
+          <span class="badge bg-white text-dark rounded-pill px-3 py-2 mb-3">Junior Secondary</span>
+          <h1 class="display-4 fw-bold">Grades 7 &amp; beyond</h1>
+          <p class="lead mb-0 col-lg-8 mx-auto">Rigorous academics, real-world projects, and guidance for the pathways that come next.</p>
+        </div>
+      </header>
 
-    <!-- Main Content -->
-    <section class="py-5 section-pad bg-light">
-      <div class="container">
-        <div class="program-icon-badge reveal reveal-scale">🔬</div>
-        <div class="row gy-5 align-items-center mt-3">
-          <div class="col-lg-6 reveal reveal-left">
-            <h2 class="display-5 fw-bold mb-4" style="color: var(--dark);">Shaping <span class="text-blue">Future Leaders</span></h2>
-            <p class="lead mb-4">Our Junior Secondary program supports learners through one of the most important transitions in education. We help students in Grade 7 and above build confidence, academic depth, and a strong sense of identity.</p>
-            <p class="text-muted mb-3">Learning is competency-based and practical. Students engage in project work, experiments, guided research, and presentations that sharpen communication and problem-solving skills.</p>
-            <p class="text-muted mb-4">With close teacher mentorship, learners identify strengths early and begin exploring pathways in sciences, humanities, technology, and creative arts in line with CBC progression.</p>
-            <a href="admissions.html" class="btn btn-primary pill-btn btn-lg px-5 shadow me-3">Enroll Today</a>
-            <a href="contact.html" class="btn btn-outline-primary pill-btn btn-lg px-5">Book a Tour</a>
-          </div>
-          <div class="col-lg-6 reveal reveal-right">
-            <div class="bg-white p-5 rounded-4 shadow-sm border" style="border-color: rgba(102, 166, 255, 0.3) !important;">
-              <h3 class="fw-bold mb-4 border-bottom pb-3">Program Highlights</h3>
-              <ul class="list-unstyled highlight-list mb-0">
-                <li><i class="fas fa-flask icon-check"></i><div><h5 class="fw-bold mb-1">STEM & Laboratory Learning</h5><p class="text-muted small mb-0">Hands-on science practicals, coding basics, and investigative projects.</p></div></li>
-                <li><i class="fas fa-comments icon-check"></i><div><h5 class="fw-bold mb-1">Communication & Languages</h5><p class="text-muted small mb-0">Strong emphasis on literacy, public speaking, and language mastery.</p></div></li>
-                <li><i class="fas fa-user-graduate icon-check"></i><div><h5 class="fw-bold mb-1">Pathway Guidance</h5><p class="text-muted small mb-0">Continuous guidance to help learners choose suitable senior school pathways.</p></div></li>
-                <li><i class="fas fa-shield-heart icon-check"></i><div><h5 class="fw-bold mb-1">Character & Life Skills</h5><p class="text-muted small mb-0">Leadership, discipline, digital citizenship, and responsible decision-making.</p></div></li>
-              </ul>
+      <section class="program-detail-section bg-light" id="about">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 text-center">
+              <h2 class="section-title h1 mb-3">About the Program</h2>
+              <p class="lead text-muted">
+                Junior Secondary learners engage with more specialised knowledge and skills while developing study habits, leadership, and digital fluency. Our teaching balances national curriculum expectations with authentic tasks—lab work, research, and collaborative projects.
+              </p>
+              <p class="text-muted mb-0">
+                <strong>Level:</strong> Junior Secondary (from Grade 7) &nbsp;|&nbsp; <strong>Approach:</strong> problem-based learning, career-linked exposure, and strong pastoral and academic mentoring.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ -->
-    <section class="py-5 bg-white section-pad">
-      <div class="container maxWidth-800 mx-auto">
-        <div class="text-center mb-5 reveal reveal-up">
-            <h2 class="section-title h1">Common Questions</h2>
+      <section class="program-detail-section" id="highlights" aria-labelledby="jss-highlights">
+        <div class="container">
+          <h2 id="jss-highlights" class="section-title h1 text-center mb-4">Key Features</h2>
+          <p class="text-center text-muted col-lg-8 mx-auto mb-5">A challenging yet supported environment for adolescents to grow in skill and character.</p>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="program-feature-card">
+                <div class="program-feature-icon" style="background: linear-gradient(135deg, var(--blue), var(--teal))">
+                  <i class="fas fa-flask" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 fw-bold">STEM &amp; Practical Work</h3>
+                <p class="text-muted small mb-0">Laboratory and integrated science tasks that build inquiry, safety, and evidence-based reasoning.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="program-feature-card">
+                <div class="program-feature-icon" style="background: linear-gradient(135deg, var(--green), var(--teal))">
+                  <i class="fas fa-code" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 fw-bold">Digital &amp; Pre-technical Skills</h3>
+                <p class="text-muted small mb-0">Computational thinking, digital creation, and responsible technology use in learning and projects.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="program-feature-card">
+                <div class="program-feature-icon" style="background: linear-gradient(135deg, var(--yellow), var(--orange))">
+                  <i class="fas fa-language" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 fw-bold">Languages &amp; Communication</h3>
+                <p class="text-muted small mb-0">Strong focus on writing for purpose, public speaking, and academic discourse across subjects.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="program-feature-card">
+                <div class="program-feature-icon" style="background: linear-gradient(135deg, var(--pink), var(--purple))">
+                  <i class="fas fa-chess" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 fw-bold">Leadership &amp; Co-curricular</h3>
+                <p class="text-muted small mb-0">Debate, clubs, and house systems that grow confidence and responsibility outside class time.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="program-feature-card">
+                <div class="program-feature-icon" style="background: linear-gradient(135deg, var(--teal), var(--blue))">
+                  <i class="fas fa-road" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 fw-bold">Pathways Guidance</h3>
+                <p class="text-muted small mb-0">Mentoring conversations to align strengths with subject choices and future study options.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="program-feature-card">
+                <div class="program-feature-icon" style="background: linear-gradient(135deg, var(--orange), var(--pink))">
+                  <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 fw-bold">Values &amp; Wellbeing</h3>
+                <p class="text-muted small mb-0">Explicit focus on integrity, service, and healthy peer relationships in the teen years.</p>
+              </article>
+            </div>
+          </div>
         </div>
-        <div class="accordion reveal reveal-up" id="jsFaq">
-          <div class="accordion-item faq-card">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-                Are JSS facilities separate from Primary?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#jsFaq">
-              <div class="accordion-body">Yes. As per the Ministry guidelines, Junior Secondary students have separate classrooms and dedicated science/computer labs.</div>
-            </div>
-          </div>
-          <div class="accordion-item faq-card">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
-                How do you support academic and emotional growth?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#jsFaq">
-              <div class="accordion-body">Each learner is assigned close class mentorship, regular parent updates, and targeted support sessions. We focus on both performance and well-being during early adolescence.</div>
-            </div>
-          </div>
-          <div class="accordion-item faq-card">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                What co-curricular options are available?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#jsFaq">
-              <div class="accordion-body">Learners participate in clubs, sports, music, debate, and community service projects. These activities build confidence, teamwork, and leadership beyond the classroom.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Creative Footer -->
+      <section class="program-detail-section" id="curriculum" aria-labelledby="jss-curriculum">
+        <div class="container">
+          <h2 id="jss-curriculum" class="section-title h1 text-center mb-2">Curriculum &amp; Activities</h2>
+          <p class="text-center text-muted col-lg-8 mx-auto mb-5">Integrated subjects, activities, and transferable skills for senior school readiness.</p>
+
+          <div class="row program-curriculum-row g-4 g-lg-5">
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold mb-3">Core &amp; Integrated Learning</h3>
+              <p class="text-muted">Mathematics, languages, humanities, and sciences are taught for depth and application. Longer assignments build research skills, referencing habits, and academic writing.</p>
+            </div>
+            <div class="col-lg-6">
+              <img src="assets/img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg" alt="Learners using technology in the classroom" class="program-curriculum-img" width="800" height="500" />
+            </div>
+          </div>
+          <div class="row program-curriculum-row g-4 g-lg-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <img src="assets/img/sign-language.jpg" alt="Communication and collaboration in learning" class="program-curriculum-img" width="800" height="500" />
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <h3 class="h4 fw-bold mb-3">Activities &amp; Real-world Skills</h3>
+              <p class="text-muted">Community projects, enterprise-style tasks, and team presentations help learners connect classroom ideas to life beyond school. Sport and the arts continue to shape teamwork and self-discipline.</p>
+            </div>
+          </div>
+          <div class="row program-curriculum-row g-4 g-lg-5">
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold mb-3">Readiness for Senior Pathways</h3>
+              <p class="text-muted">We help learners set academic goals, manage workload, and reflect on progress. Career talks and subject clinics support informed next steps in line with national standards.</p>
+            </div>
+            <div class="col-lg-6">
+              <img src="assets/img/ballet.jpg" alt="Pupils in a performance and teamwork setting" class="program-curriculum-img" width="800" height="500" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="program-competencies-section program-detail-section" id="competencies" aria-labelledby="jss-competencies">
+        <div class="container">
+          <h2 id="jss-competencies" class="section-title h1 text-center mb-2">Core Competencies</h2>
+          <p class="text-center text-muted col-lg-8 mx-auto mb-5">Competencies for Junior Secondary, embedded across subjects and co-curricular life.</p>
+          <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2">
+              <article class="program-competency-card">
+                <div class="competency-icon" style="background: var(--blue)"><i class="fas fa-puzzle-piece" aria-hidden="true"></i></div>
+                <h3 class="h6 fw-bold">Critical Thinking</h3>
+                <p class="small text-muted mb-0">Analysing sources, testing solutions, and defending conclusions with evidence.</p>
+              </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <article class="program-competency-card">
+                <div class="competency-icon" style="background: var(--teal)"><i class="fas fa-people-group" aria-hidden="true"></i></div>
+                <h3 class="h6 fw-bold">Communication &amp; Collaboration</h3>
+                <p class="small text-muted mb-0">Productive group work, academic dialogue, and respectful feedback.</p>
+              </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <article class="program-competency-card">
+                <div class="competency-icon" style="background: var(--green)"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+                <h3 class="h6 fw-bold">Digital Literacy</h3>
+                <p class="small text-muted mb-0">Using devices and media ethically for research, design, and communication.</p>
+              </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <article class="program-competency-card">
+                <div class="competency-icon" style="background: var(--orange)"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+                <h3 class="h6 fw-bold">Self-efficacy</h3>
+                <p class="small text-muted mb-0">Goal-setting, persistence, and ownership of learning outcomes.</p>
+              </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <article class="program-competency-card">
+                <div class="competency-icon" style="background: var(--pink)"><i class="fas fa-globe" aria-hidden="true"></i></div>
+                <h3 class="h6 fw-bold">Citizenship &amp; Ethics</h3>
+                <p class="small text-muted mb-0">Responsibility, service, and integrity in school and the wider community.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="program-cta-section text-center" id="enroll" aria-labelledby="jss-cta">
+        <div class="container">
+          <h2 id="jss-cta" class="h2 fw-bold mb-3">Take the next step in your learning journey</h2>
+          <p class="lead opacity-90 mb-4">Request admission details for Junior Secondary or book a school tour with our team.</p>
+          <a href="admissions.html" class="btn btn-light btn-lg pill-btn px-5 fw-bold me-2 mb-2">Apply Today</a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg pill-btn px-5 border-2 mb-2">Contact Admissions</a>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer-creative">
       <div class="container py-5 text-white">
         <div class="row">
           <div class="col-md-4 text-center mb-4">
             <h4 class="mb-3">Little Feet Academy</h4>
+            <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
+              <span class="badge rounded-pill bg-light text-dark">Junior Secondary</span>
+              <span class="badge rounded-pill bg-light text-dark">CBC</span>
+            </div>
           </div>
           <div class="col-md-4 text-center mb-4">
             <h5 class="mb-3">Quick Links</h5>
             <ul class="list-unstyled small">
               <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
               <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+              <li><a href="admissions.html" class="text-white text-decoration-none">Admissions</a></li>
               <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
             </ul>
           </div>
           <div class="col-md-4 text-center mb-4">
             <h5 class="mb-3">Connect</h5>
             <p class="small mb-1">+254 796 609 626</p>
+            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
           </div>
+        </div>
+        <div class="text-center mt-4 border-top pt-4 opacity-50">
+          <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <a href="https://wa.me/254796609626" class="whatsapp-chat-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-chat-tooltip">Chat with us</span>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
-
