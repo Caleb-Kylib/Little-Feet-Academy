@@ -1,0 +1,212 @@
+/**
+ * Injects shared topbar, navbar, and footer (aligned with index.html).
+ * Expects: #site-topbar, #site-navbar, #site-footer
+ * Optional body attrs: data-nav-active, data-article-id (unique newsletter field id)
+ */
+(function () {
+  function navLink(href, label, key, active) {
+    const isActive = active === key;
+    const cls = isActive ? "nav-link active" : "nav-link";
+    const extra = isActive ? ' aria-current="page"' : "";
+    return (
+      '<li class="nav-item"><a class="' +
+      cls +
+      '" href="' +
+      href +
+      '"' +
+      extra +
+      ">" +
+      label +
+      "</a></li>"
+    );
+  }
+
+  function buildTopbar() {
+    return (
+      '<div class="utility-bar">' +
+      '<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 py-2">' +
+      '<div class="social-links order-1">' +
+      '<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>' +
+      '<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>' +
+      '<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>' +
+      '<a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>' +
+      "</div>" +
+      '<div class="working-hours top-bar-item order-3 order-md-2">' +
+      '<i class="far fa-clock"></i>' +
+      "<span>Mon - Fri: 8:00 AM - 5:00 PM</span>" +
+      "</div>" +
+      '<div class="top-bar-right d-flex flex-wrap justify-content-center gap-3 gap-md-4 order-2 order-md-3">' +
+      '<div class="top-bar-item">' +
+      '<i class="fas fa-map-marker-alt"></i>' +
+      "<span>Ongata Rongai, Kenya</span>" +
+      "</div>" +
+      '<a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item">' +
+      '<i class="fas fa-envelope"></i>' +
+      "<span>hello@littlefeetacademy.co.ke</span>" +
+      "</a>" +
+      '<a href="tel:+254796609626" class="top-bar-item accent-item">' +
+      '<i class="fas fa-phone-alt"></i>' +
+      "<span>+254 796 609 626</span>" +
+      "</a>" +
+      "</div>" +
+      "</div>" +
+      "</div>"
+    );
+  }
+
+  function buildNavbar(active) {
+    const a = active || "home";
+    return (
+      '<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">' +
+      '<div class="container">' +
+      '<a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">' +
+      '<div class="navbar-logo-wrap">' +
+      '<img src="assets/img/logo.png" alt="Little Feet Academy logo" class="navbar-logo" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';" />' +
+      '<div class="logo-fallback" style="display: none">LF</div>' +
+      "<span>Little Feet Academy</span>" +
+      "</div>" +
+      "</a>" +
+      '<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">' +
+      '<span class="navbar-toggler-icon"></span>' +
+      "</button>" +
+      '<div class="collapse navbar-collapse" id="mainNavbar">' +
+      '<ul class="navbar-nav ms-auto mb-2 mb-lg-0">' +
+      navLink("index.html", "Home", "home", a) +
+      navLink("About.html", "About", "about", a) +
+      navLink("programs.html", "Programs", "programs", a) +
+      navLink("admissions.html", "Admissions", "admissions", a) +
+      navLink("team.html", "Our Team", "team", a) +
+      '<li class="nav-item dropdown">' +
+      '<a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>' +
+      '<ul class="dropdown-menu" aria-labelledby="galleryDropdown">' +
+      '<li><a class="dropdown-item" href="gallery.html">All Photos</a></li>' +
+      '<li><hr class="dropdown-divider" /></li>' +
+      '<li><a class="dropdown-item" href="graduation-gallery.html">Graduation Day</a></li>' +
+      '<li><a class="dropdown-item" href="sports-gallery.html">Sports Day</a></li>' +
+      '<li><a class="dropdown-item" href="cultural-gallery.html">Cultural Day</a></li>' +
+      "</ul>" +
+      "</li>" +
+      navLink("news.html", "News", "news", a) +
+      navLink("contact.html", "Contact", "contact", a) +
+      '<li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold" href="contact.html">Book a Visit</a></li>' +
+      "</ul>" +
+      "</div>" +
+      "</div>" +
+      "</nav>"
+    );
+  }
+
+  function buildFooter(emailFieldId) {
+    const eid = emailFieldId || "footer-newsletter-email-article";
+    return (
+      '<footer class="site-footer footer-creative w-100">' +
+      '<div class="container py-5">' +
+      '<div class="row g-4 g-lg-5">' +
+      '<div class="col-lg-3 col-md-6 text-center text-md-start">' +
+      '<h3 class="site-footer__brand h4 mb-3">Little Feet Academy</h3>' +
+      '<p class="site-footer__tagline mb-4 mx-auto mx-md-0">Growing bright minds in Ongata Rongai. Joyful learning and holistic growth since 2010.</p>' +
+      '<div class="site-footer__social d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">' +
+      '<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>' +
+      '<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>' +
+      '<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>' +
+      '<a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>' +
+      "</div>" +
+      "</div>" +
+      '<div class="col-lg-3 col-md-6 text-center text-md-start">' +
+      '<h4 class="site-footer__heading">Quick Links</h4>' +
+      '<ul class="site-footer__links list-unstyled mb-0">' +
+      '<li><a href="admissions.html">Admissions</a></li>' +
+      '<li><a href="programs.html">Curriculum</a></li>' +
+      '<li><a href="news.html#term-dates">Term Dates</a></li>' +
+      '<li><a href="privacy.html">Privacy Policy</a></li>' +
+      '<li><a href="index.html">Home</a></li>' +
+      '<li><a href="About.html">About Us</a></li>' +
+      '<li><a href="news.html#learning-articles">CBC articles</a></li>' +
+      '<li><a href="gallery.html">Gallery</a></li>' +
+      '<li><a href="contact.html">Contact</a></li>' +
+      "</ul>" +
+      "</div>" +
+      '<div class="col-lg-3 col-md-6 text-center text-md-start">' +
+      '<h4 class="site-footer__heading">Contact Us</h4>' +
+      '<ul class="site-footer__contact list-unstyled mb-0">' +
+      "<li>" +
+      '<a href="https://www.google.com/maps/search/?api=1&amp;query=Ongata+Rongai+Kenya" target="_blank" rel="noopener noreferrer" class="site-footer__contact-link"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Ongata Rongai, Kenya</span></a>' +
+      "</li>" +
+      "<li>" +
+      '<a href="tel:+254796609626" class="site-footer__contact-link"><i class="fas fa-phone-alt" aria-hidden="true"></i><span>+254 796 609 626</span></a>' +
+      "</li>" +
+      "<li>" +
+      '<a href="mailto:hello@littlefeetacademy.co.ke" class="site-footer__contact-link"><i class="fas fa-envelope" aria-hidden="true"></i><span>hello@littlefeetacademy.co.ke</span></a>' +
+      "</li>" +
+      "</ul>" +
+      "</div>" +
+      '<div class="col-lg-3 col-md-6 text-center text-md-start">' +
+      '<h4 class="site-footer__heading">Join Newsletter</h4>' +
+      '<form action="https://formspree.io/f/xgorlred" method="POST" class="site-footer__newsletter-form">' +
+      '<input type="hidden" name="_subject" value="Newsletter signup - Little Feet Academy" />' +
+      '<label class="visually-hidden" for="' +
+      eid +
+      '">Email address</label>' +
+      '<div class="input-group site-footer__input-group">' +
+      '<input type="email" name="email" id="' +
+      eid +
+      '" class="form-control site-footer__email-input" placeholder="Your email address" required autocomplete="email" />' +
+      '<button type="submit" class="btn site-footer__newsletter-btn" aria-label="Subscribe to newsletter"><i class="fas fa-arrow-right"></i></button>' +
+      "</div>" +
+      "</form>" +
+      "</div>" +
+      "</div>" +
+      '<div class="site-footer__bottom row align-items-center pt-4 mt-4 gx-2">' +
+      '<div class="col-md-6 text-center text-md-start small mb-3 mb-md-0">' +
+      '<span class="site-footer__copyright">&copy; <span id="year"></span> Little Feet Academy. Growing bright minds.</span>' +
+      "</div>" +
+      '<div class="col-md-6 text-center text-md-end small site-footer__legal">' +
+      '<a href="terms.html">Terms of Service</a>' +
+      '<span class="site-footer__dot" aria-hidden="true">·</span>' +
+      '<a href="sitemap.html">Sitemap</a>' +
+      '<span class="site-footer__dot" aria-hidden="true">·</span>' +
+      '<a href="privacy.html">Privacy</a>' +
+      "</div>" +
+      "</div>" +
+      "</div>" +
+      "</footer>"
+    );
+  }
+
+  function buildWhatsApp() {
+    return (
+      '<a href="https://wa.me/254796609626?text=Hello,%20I%27m%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">' +
+      '<span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>' +
+      '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor">' +
+      '<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>' +
+      "</svg>" +
+      "</a>"
+    );
+  }
+
+  function inject() {
+    const active = document.body.getAttribute("data-nav-active") || "home";
+    const rawId = document.body.getAttribute("data-article-id") || "article";
+    const safeId = String(rawId).replace(/[^a-zA-Z0-9-_]/g, "") || "article";
+    const emailFieldId = "footer-newsletter-email-" + safeId;
+
+    const top = document.getElementById("site-topbar");
+    const nav = document.getElementById("site-navbar");
+    const foot = document.getElementById("site-footer");
+    const wa = document.getElementById("site-whatsapp");
+
+    if (top) top.innerHTML = buildTopbar();
+    if (nav) nav.innerHTML = buildNavbar(active);
+    if (foot) foot.innerHTML = buildFooter(emailFieldId);
+    if (wa) wa.innerHTML = buildWhatsApp();
+
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", inject);
+  } else {
+    inject();
+  }
+})();

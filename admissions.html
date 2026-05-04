@@ -21,6 +21,9 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
   </head>
   <body>
     <!-- Top Utility Bar -->
@@ -259,50 +262,80 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer-creative">
-
-
-      <div class="container py-5 text-white">
-        <div class="row">
-          <div class="col-md-4 text-center mb-4">
-            <h4 class="mb-3">Little Feet Academy</h4>
-            <div class="footer-badges d-flex justify-content-center gap-2 flex-wrap mb-3">
-              <span class="badge rounded-pill bg-light text-dark">🎨 Arts</span>
-              <span class="badge rounded-pill bg-light text-dark">📚 Reading</span>
-              <span class="badge rounded-pill bg-light text-dark">🤝 Caring</span>
+        <!-- Site Footer -->
+    <footer class="site-footer footer-creative w-100">
+      <div class="container py-5">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-3 col-md-6 text-center text-md-start">
+            <h3 class="site-footer__brand h4 mb-3">Little Feet Academy</h3>
+            <p class="site-footer__tagline mb-4 mx-auto mx-md-0">Growing bright minds in Ongata Rongai. Joyful learning and holistic growth since 2010.</p>
+            <div class="site-footer__social d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
-          <div class="col-md-4 text-center mb-4">
-            <h5 class="mb-3">Quick Links</h5>
-            <ul class="list-unstyled small">
-              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-              <li><a href="About.html" class="text-white text-decoration-none">About Us</a></li>
-              <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
-              <li><a href="admissions.html" class="text-white text-decoration-none">Admissions</a></li>
-              <li><a href="team.html" class="text-white text-decoration-none">Our Team</a></li>
-              <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
-              <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <div class="col-lg-3 col-md-6 text-center text-md-start">
+            <h4 class="site-footer__heading">Quick Links</h4>
+            <ul class="site-footer__links list-unstyled mb-0">
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="programs.html">Curriculum</a></li>
+              <li><a href="news.html#term-dates">Term Dates</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="col-md-4 text-center mb-4">
-            <h5 class="mb-3">Connect</h5>
-            <p class="small mb-1">+254 796 609 626</p>
-            <p class="small mb-0">hello@littlefeetacademy.co.ke</p>
+          <div class="col-lg-3 col-md-6 text-center text-md-start">
+            <h4 class="site-footer__heading">Contact Us</h4>
+            <ul class="site-footer__contact list-unstyled mb-0">
+              <li>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Ongata+Rongai+Kenya" target="_blank" rel="noopener noreferrer" class="site-footer__contact-link"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Ongata Rongai, Kenya</span></a>
+              </li>
+              <li>
+                <a href="tel:+254796609626" class="site-footer__contact-link"><i class="fas fa-phone-alt" aria-hidden="true"></i><span>+254 796 609 626</span></a>
+              </li>
+              <li>
+                <a href="mailto:hello@littlefeetacademy.co.ke" class="site-footer__contact-link"><i class="fas fa-envelope" aria-hidden="true"></i><span>hello@littlefeetacademy.co.ke</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center text-md-start">
+            <h4 class="site-footer__heading">Join Newsletter</h4>
+            <form action="https://formspree.io/f/xgorlred" method="POST" class="site-footer__newsletter-form">
+              <input type="hidden" name="_subject" value="Newsletter signup - Little Feet Academy" />
+              <label class="visually-hidden" for="footer-newsletter-email">Email address</label>
+              <div class="input-group site-footer__input-group">
+                <input type="email" name="email" id="footer-newsletter-email" class="form-control site-footer__email-input" placeholder="Your email address" required autocomplete="email" />
+                <button type="submit" class="btn site-footer__newsletter-btn" aria-label="Subscribe to newsletter"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="text-center mt-4 border-top pt-4 opacity-50">
-          <p class="small mb-0">&copy; <span id="year"></span> Little Feet Academy</p>
+        <div class="site-footer__bottom row align-items-center pt-4 mt-4 gx-2">
+          <div class="col-md-6 text-center text-md-start small mb-3 mb-md-0">
+            <span class="site-footer__copyright">&copy; <span id="year"></span> Little Feet Academy. Growing bright minds.</span>
+          </div>
+          <div class="col-md-6 text-center text-md-end small site-footer__legal">
+            <a href="terms.html">Terms of Service</a>
+            <span class="site-footer__dot" aria-hidden="true">·</span>
+            <a href="sitemap.html">Sitemap</a>
+            <span class="site-footer__dot" aria-hidden="true">·</span>
+            <a href="privacy.html">Privacy</a>
+          </div>
         </div>
       </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
+<!-- WhatsApp Floating Button -->
     <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
       <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </a >
+    </a>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script
