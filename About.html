@@ -208,6 +208,55 @@
         </div>
       </section>
 
+      <section class="about-full-section py-5 section-pad">
+        <div class="container">
+          <div class="status-bar-wrap reveal reveal-up" id="about-status-bar">
+            <div class="text-center mb-4">
+              <h2 class="section-title h3 mb-2">Our School Status Snapshot</h2>
+              <p class="text-muted mb-0">A quick look at how we are supporting learners every term.</p>
+            </div>
+            <div class="status-track-list">
+              <div class="status-track-item" data-progress="94">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold">Learner Engagement</span>
+                  <span class="status-value" data-target="94">0%</span>
+                </div>
+                <div class="status-track">
+                  <div class="status-fill"></div>
+                </div>
+              </div>
+              <div class="status-track-item" data-progress="91">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold">Parent Satisfaction</span>
+                  <span class="status-value" data-target="91">0%</span>
+                </div>
+                <div class="status-track">
+                  <div class="status-fill"></div>
+                </div>
+              </div>
+              <div class="status-track-item" data-progress="89">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold">CBC Competency Growth</span>
+                  <span class="status-value" data-target="89">0%</span>
+                </div>
+                <div class="status-track">
+                  <div class="status-fill"></div>
+                </div>
+              </div>
+              <div class="status-track-item" data-progress="96">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold">Student Wellbeing Support</span>
+                  <span class="status-value" data-target="96">0%</span>
+                </div>
+                <div class="status-track">
+                  <div class="status-fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="about-full-section py-5 section-pad bg-playful-blue reveal reveal-up">
         <div class="container">
         <!-- Curriculum & CBC Section -->
@@ -412,6 +461,41 @@
       }, { threshold: 0.1 });
 
       revealElements.forEach(el => observer.observe(el));
+
+      // About status bar animation
+      const statusBar = document.getElementById('about-status-bar');
+      if (statusBar) {
+        const statusObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            const tracks = statusBar.querySelectorAll('.status-track-item');
+            tracks.forEach((track) => {
+              const target = Number(track.getAttribute('data-progress') || 0);
+              const fill = track.querySelector('.status-fill');
+              const value = track.querySelector('.status-value');
+              if (fill) fill.style.width = `${target}%`;
+
+              if (value) {
+                let current = 0;
+                const step = Math.max(1, Math.round(target / 35));
+                const timer = setInterval(() => {
+                  current += step;
+                  if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                  }
+                  value.textContent = `${current}%`;
+                }, 24);
+              }
+            });
+
+            obs.unobserve(entry.target);
+          });
+        }, { threshold: 0.35 });
+
+        statusObserver.observe(statusBar);
+      }
     </script>
   </body>
 </html>
