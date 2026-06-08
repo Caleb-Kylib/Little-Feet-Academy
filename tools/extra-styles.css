@@ -1,0 +1,17 @@
+
+/* Page heroes — moved from inline styles */
+.contact-banner {
+  background: linear-gradient(135deg, rgba(115, 212, 127, 0.8), rgba(102, 166, 255, 0.8)),
+    url("assets/img/kids.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  min-height: 280px;
+}
+
+.lfa-404-code {
+  line-height: 1;
+}
+
+.lfa-404-text {
+  max-width: 28rem;
+}

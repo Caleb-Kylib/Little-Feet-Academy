@@ -1,404 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Admissions • Little Feet Academy</title>
-    <meta name="description" content="Join the Little Feet Academy family. Learn about our admission process, download application forms, and find answers to frequently asked questions." />
 
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admissions • Little Feet Academy</title>
+  <meta name="description"
+    content="Join the Little Feet Academy family. Learn about our admission process, download application forms, and find answers to frequently asked questions." />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 
-  </head>
-  <body>
-    <!-- Top Utility Bar -->
-    <div class="utility-bar">
-      <div class="container d-flex justify-content-between align-items-center">
-        <!-- Left: Social Media -->
-        <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+</head>
+
+<body>
+  <!-- Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Left: Social Media -->
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Center: Working Hours -->
+      <div class="working-hours top-bar-item">
+        <i class="far fa-clock"></i>
+        <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+      </div>
+
+      <!-- Right: Contact & Location -->
+      <div class="top-bar-right d-flex gap-4">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Ongata Rongai, Kenya</span>
         </div>
+        <a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item">
+          <i class="fas fa-envelope"></i>
+          <span>hello@littlefeetacademy.co.ke</span>
+        </a>
+        <a href="tel:+254796609626" class="top-bar-item accent-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+254 796 609 626</span>
+        </a>
+      </div>
+    </div>
+  </div>
 
-        <!-- Center: Working Hours -->
-        <div class="working-hours top-bar-item">
-          <i class="far fa-clock"></i>
-          <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
+        <div class="navbar-logo-wrap">
+          <img src="assets/img/logo.png" alt="Logo" class="navbar-logo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="logo-fallback" style="display:none;">LF</div>
+          <span>Little Feet Academy</span>
         </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+              <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="graduation-gallery.html">🎓 Graduation Day</a></li>
+              <li><a class="dropdown-item" href="sports-gallery.html">🏃‍♂️ Sports Day</a></li>
+              <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
-        <!-- Right: Contact & Location -->
-        <div class="top-bar-right d-flex gap-4">
-          <div class="top-bar-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Ongata Rongai, Kenya</span>
+          <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold"
+              href="contact.html">Book a Visit</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="about-banner d-flex align-items-center text-center text-white"
+    style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1600&auto=format&fit=crop') no-repeat center center; background-size: cover; height: 350px;">
+    <div class="reveal reveal-scale container">
+      <h1 class="display-4 fw-bold">Join Our Community</h1>
+      <p class="lead">Your child's extraordinary journey starts here.</p>
+    </div>
+  </section>
+
+  <!-- Admission Process -->
+  <section class="admission-process-section">
+    <div class="container">
+      <div class="text-center mb-5 reveal reveal-up">
+        <h2 class="section-title h1">Admission Process</h2>
+        <p class="text-muted">A simple, transparent path to joining Little Feet Academy.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="process-card step-blue reveal reveal-up" style="transition-delay: 0.1s;">
+            <img src="assets/img/admin-form.jpg" alt="Fill Form" class="process-illustration">
+            <h4 class="process-title">Fill Application Form</h4>
+            <p class="process-desc">
+              Visit the school to pick a form or
+              <a href="assets/docs/school-fees-brochure.pdf" download
+                class="text-primary fw-bold text-decoration-none">download the school fees brochure</a>.
+              Fill it in and submit at our front office.
+            </p>
           </div>
-          <a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item">
-            <i class="fas fa-envelope"></i>
-            <span>hello@littlefeetacademy.co.ke</span>
-          </a>
-          <a href="tel:+254796609626" class="top-bar-item accent-item">
-            <i class="fas fa-phone-alt"></i>
-            <span>+254 796 609 626</span>
-          </a>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="process-card step-green reveal reveal-up" style="transition-delay: 0.2s;">
+            <img src="assets/img/interview.jpg" alt="Interview" class="process-illustration">
+            <h4 class="process-title">Interview At School</h4>
+            <p class="process-desc">We will schedule a physical interview for your child to understand their unique
+              needs and placement.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="process-card step-yellow reveal reveal-up" style="transition-delay: 0.3s;">
+            <img src="assets/img/interview.png" alt="Feedback" class="process-illustration">
+            <h4 class="process-title">Interview Feedback</h4>
+            <p class="process-desc">Our team will review the interview results and provide detailed feedback to the
+              parents within 48 hours.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="process-card step-orange reveal reveal-up" style="transition-delay: 0.4s;">
+            <img src="assets/img/admin-letter.png" alt="Feedback" class="process-illustration">
+            <p class="process-desc">Successful applicants will be invited to pick up their official admission letter and
+              joining instructions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 text-center reveal reveal-up d-flex flex-wrap gap-3 justify-content-center">
+        <a href="assets/docs/school-fees-brochure.pdf" download
+          class="btn btn-primary btn-lg pill-btn px-5 py-3 shadow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="me-2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download School Fees Brochure (PDF)
+        </a>
+        <a href="contact.html" class="btn btn-outline-primary btn-lg pill-btn px-5 py-3 shadow-sm">
+          Talk to Admissions
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Online Admission Application Form -->
+  <section id="apply-now" class="admission-form-section section-pad bg-light">
+    <div class="container">
+      <div class="text-center mb-5 reveal reveal-up">
+        <h2 class="section-title h1">Online Application</h2>
+        <p class="text-muted max-width-600 mx-auto">Please provide the details below to begin the official enrollment
+          process. Our admissions team will review your application and contact you within 24-48 hours.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="admission-application-card shadow-lg bg-white rounded-5 overflow-hidden reveal reveal-up">
+            <div class="row g-0">
+              <!-- Left Side: Summary/Info -->
+              <div class="col-md-4 bg-primary text-white p-5 d-none d-md-flex flex-column justify-content-between"
+                style="background: linear-gradient(135deg, var(--blue), var(--purple)) !important;">
+                <div>
+                  <h3 class="fw-bold mb-4">Application Tips</h3>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 d-flex gap-2">
+                      <i class="fas fa-check-circle mt-1"></i>
+                      <span>Ensure child's name matches birth certificate.</span>
+                    </li>
+                    <li class="mb-3 d-flex gap-2">
+                      <i class="fas fa-check-circle mt-1"></i>
+                      <span>Provide a valid phone number for SMS updates.</span>
+                    </li>
+                    <li class="mb-3 d-flex gap-2">
+                      <i class="fas fa-check-circle mt-1"></i>
+                      <span>Double-check email for the confirmation.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-4">
+                  <div class="p-3 bg-white bg-opacity-10 rounded-3">
+                    <p class="small mb-2">Need help?</p>
+                    <a href="tel:+254796609626" class="text-white fw-bold text-decoration-none">
+                      <i class="fas fa-phone-alt me-2"></i> +254 796 609 626
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Side: The Form -->
+              <div class="col-md-8 p-4 p-md-5">
+                <form action="https://formspree.io/f/xgorlred" method="POST" class="needs-validation" novalidate>
+                  <!-- Formspree Config -->
+                  <input type="hidden" name="_subject" value="NEW Admission Application - Little Feet Academy">
+
+                  <!-- Child's Information -->
+                  <h5 class="fw-bold text-primary mb-4 d-flex align-items-center">
+                    <span class="step-num me-2">1</span> Child's Details
+                  </h5>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-12">
+                      <label class="form-label fw-semibold">Child's Full Name</label>
+                      <input type="text" name="child_name" class="form-control rounded-3"
+                        placeholder="As it appears on birth certificate" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-semibold">Date of Birth</label>
+                      <input type="date" name="dob" class="form-control rounded-3" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-semibold">Gender</label>
+                      <div class="d-flex gap-3 pt-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" value="Male" id="genderM" required>
+                          <label class="form-check-label" for="genderM">Male</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" value="Female" id="genderF"
+                            required>
+                          <label class="form-check-label" for="genderF">Female</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label class="form-label fw-semibold">Applying for Class/Level</label>
+                      <select name="target_class" class="form-select rounded-3" required>
+                        <option value="" selected disabled>Choose a level...</option>
+                        <option value="Daycare">Daycare (2-3 years)</option>
+                        <option value="Pre-Primary 1">Pre-Primary 1 (PP1)</option>
+                        <option value="Pre-Primary 2">Pre-Primary 2 (PP2)</option>
+                        <option value="Grade 1">Grade 1</option>
+                        <option value="Grade 2">Grade 2</option>
+                        <option value="Grade 3">Grade 3</option>
+                        <option value="Grade 4">Grade 4</option>
+                        <option value="Grade 5">Grade 5</option>
+                        <option value="Grade 6">Grade 6</option>
+                        <option value="Upper Primary">Upper Primary</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Parent's Information -->
+                  <h5 class="fw-bold text-primary mb-4 d-flex align-items-center">
+                    <span class="step-num me-2">2</span> Parent/Guardian Details
+                  </h5>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-12">
+                      <label class="form-label fw-semibold">Full Name</label>
+                      <input type="text" name="parent_name" class="form-control rounded-3"
+                        placeholder="Parent or Guardian's name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-semibold">Phone Number</label>
+                      <input type="tel" name="phone" class="form-control rounded-3" placeholder="+254..." required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-semibold">Email Address</label>
+                      <input type="email" name="email" class="form-control rounded-3" placeholder="example@mail.com"
+                        required>
+                    </div>
+                  </div>
+
+                  <!-- Other Details -->
+                  <h5 class="fw-bold text-primary mb-4 d-flex align-items-center">
+                    <span class="step-num me-2">3</span> Additional Info
+                  </h5>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-12">
+                      <label class="form-label fw-semibold">Preferred Start Month</label>
+                      <input type="month" name="start_date" class="form-control rounded-3" required>
+                    </div>
+                    <div class="col-md-12">
+                      <label class="form-label fw-semibold">Medical conditions or special needs?</label>
+                      <textarea name="medical_notes" class="form-control rounded-3" rows="2"
+                        placeholder="Leave blank if none"></textarea>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-lg w-100 pill-btn py-3 shadow">Submit
+                    Application</button>
+                  <div class="form-status"></div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
-          <div class="navbar-logo-wrap">
-              <img src="assets/img/logo.png" alt="Logo" class="navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="logo-fallback" style="display:none;">LF</div>
-              <span>Little Feet Academy</span>
-          </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="admissions.html">Admissions</a></li>
-            <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Gallery
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
-                <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="graduation-gallery.html">🎓 Graduation Day</a></li>
-                <li><a class="dropdown-item" href="sports-gallery.html">🏃‍♂️ Sports Day</a></li>
-                <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-            <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold" href="contact.html">Book a Visit</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Banner -->
-    <section class="about-banner d-flex align-items-center text-center text-white" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1600&auto=format&fit=crop') no-repeat center center; background-size: cover; height: 350px;">
-      <div class="reveal reveal-scale container">
-        <h1 class="display-4 fw-bold">Join Our Community</h1>
-        <p class="lead">Your child's extraordinary journey starts here.</p>
-      </div>
-    </section>
-
-    <!-- Admission Process -->
-    <section class="admission-process-section">
-      <div class="container">
-        <div class="text-center mb-5 reveal reveal-up">
-            <h2 class="section-title h1">Admission Process</h2>
-            <p class="text-muted">A simple, transparent path to joining Little Feet Academy.</p>
-        </div>
-
-        <div class="row g-4">
-          <!-- Step 1 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="process-card step-blue reveal reveal-up" style="transition-delay: 0.1s;">
-              <img src="assets/img/admin-form.jpg" alt="Fill Form" class="process-illustration">
-              <h4 class="process-title">Fill Application Form</h4>
-              <p class="process-desc">
-                Visit the school to pick a form or 
-                <a href="assets/docs/school-fees-brochure.pdf" download class="text-primary fw-bold text-decoration-none">download the school fees brochure</a>. 
-                Fill it in and submit at our front office.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="process-card step-green reveal reveal-up" style="transition-delay: 0.2s;">
-              <img src="assets/img/interview.jpg" alt="Interview" class="process-illustration">
-              <h4 class="process-title">Interview At School</h4>
-              <p class="process-desc">We will schedule a physical interview for your child to understand their unique needs and placement.</p>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="process-card step-yellow reveal reveal-up" style="transition-delay: 0.3s;">
-              <img src="assets/img/interview.png" alt="Feedback" class="process-illustration">
-              <h4 class="process-title">Interview Feedback</h4>
-              <p class="process-desc">Our team will review the interview results and provide detailed feedback to the parents within 48 hours.</p>
-            </div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="process-card step-orange reveal reveal-up" style="transition-delay: 0.4s;">
-              <img src="assets/img/admin-letter.png" alt="Feedback" class="process-illustration">
-              <p class="process-desc">Successful applicants will be invited to pick up their official admission letter and joining instructions.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-5 text-center reveal reveal-up d-flex flex-wrap gap-3 justify-content-center">
-            <a href="assets/docs/school-fees-brochure.pdf" download class="btn btn-primary btn-lg pill-btn px-5 py-3 shadow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                Download School Fees Brochure (PDF)
-            </a>
-            <a href="contact.html" class="btn btn-outline-primary btn-lg pill-btn px-5 py-3 shadow-sm">
-                Talk to Admissions
-            </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Admission Form & FAQ -->
-    <section class="faq-section section-pad">
-        <div class="container">
-            <div class="row gy-5">
-                <!-- Left: FAQ -->
-                <div class="col-lg-6 reveal reveal-left">
-                    <h2 class="section-title h1 mb-4">Common Questions</h2>
-                    <div class="accordion" id="admissionFaq">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    When is the best time to apply?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#admissionFaq">
-                                <div class="accordion-body">
-                                    Admissions are open throughout the year, but we recommend applying at least 2 months before the start of the term to ensure a smooth transition.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    What documents are required?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#admissionFaq">
-                                <div class="accordion-body">
-                                    You will need a copy of the child's birth certificate, recent passport photos, previous school reports (if applicable), and immunization records.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    Is there an application fee?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#admissionFaq">
-                                <div class="accordion-body">
-                                    Yes, a non-refundable application fee is required upon submission of the form. Please contact our finance office for current rates.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <!-- Admission Inquiry & FAQ -->
+  <section class="faq-section section-pad">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Left: FAQ -->
+        <div class="col-lg-6 reveal reveal-left">
+          <h2 class="section-title h1 mb-4">Common Questions</h2>
+          <div class="accordion" id="admissionFaq">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  When is the best time to apply?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#admissionFaq">
+                <div class="accordion-body">
+                  Admissions are open throughout the year, but we recommend applying at least 2 months before the start
+                  of the term to ensure a smooth transition.
                 </div>
-
-                <!-- Right: Inquiry Form -->
-                <div class="col-lg-6 reveal reveal-right">
-                    <div class="admission-info-card shadow-lg">
-                        <h3 class="fw-bold mb-3">Admission Inquiry</h3>
-                        <p class="mb-4 opacity-75">Can't find what you're looking for? Send us a quick message and our admissions officer will get back to you.</p>
-                        <form action="https://formspree.io/f/xgorlred" method="POST">
-                            <!-- Formspree Configuration -->
-                            <input type="hidden" name="_subject" value="New Admission Inquiry - Little Feet Academy">
-                            
-                            <div class="mb-3">
-                                <input type="text" name="name" class="form-control pill-btn py-3 px-4" placeholder="Full Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" name="email" class="form-control pill-btn py-3 px-4" placeholder="Email Address" required>
-                            </div>
-                            <div class="mb-3">
-                                <select name="program" class="form-select pill-btn py-3 px-4" required>
-                                    <option value="" selected disabled>Interested Program</option>
-                                    <option value="Play Group">Play Group</option>
-                                    <option value="Kindergarten">Kindergarten</option>
-                                    <option value="Primary">Primary</option>
-                                    <option value="Junior Secondary">Junior Secondary</option>
-                                </select>
-                            </div>
-                            <div class="mb-4">
-                                <textarea name="message" class="form-control rounded-4 p-4" rows="4" placeholder="Your Message or Question" required></textarea>
-                            </div>
-                            <button type="submit" id="admission-submit" class="btn btn-dark btn-lg pill-btn w-100 py-3 shadow">Send Inquiry</button>
-                            <div id="admission-status" class="form-status"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <!-- Site Footer -->
-    <footer class="site-footer footer-creative w-100">
-      <div class="container py-5">
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-3 col-md-6 text-center text-md-start">
-            <h3 class="site-footer__brand h4 mb-3">Little Feet Academy</h3>
-            <p class="site-footer__tagline mb-4 mx-auto mx-md-0">Growing bright minds in Ongata Rongai. Joyful learning and holistic growth since 2010.</p>
-            <div class="site-footer__social d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center text-md-start">
-            <h4 class="site-footer__heading">Quick Links</h4>
-            <ul class="site-footer__links list-unstyled mb-0">
-              <li><a href="admissions.html">Admissions</a></li>
-              <li><a href="programs.html">Curriculum</a></li>
-              <li><a href="news.html#term-dates">Term Dates</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="About.html">About Us</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center text-md-start">
-            <h4 class="site-footer__heading">Contact Us</h4>
-            <ul class="site-footer__contact list-unstyled mb-0">
-              <li>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=Ongata+Rongai+Kenya" target="_blank" rel="noopener noreferrer" class="site-footer__contact-link"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Ongata Rongai, Kenya</span></a>
-              </li>
-              <li>
-                <a href="tel:+254796609626" class="site-footer__contact-link"><i class="fas fa-phone-alt" aria-hidden="true"></i><span>+254 796 609 626</span></a>
-              </li>
-              <li>
-                <a href="mailto:hello@littlefeetacademy.co.ke" class="site-footer__contact-link"><i class="fas fa-envelope" aria-hidden="true"></i><span>hello@littlefeetacademy.co.ke</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center text-md-start">
-            <h4 class="site-footer__heading">Join Newsletter</h4>
-            <form action="https://formspree.io/f/xgorlred" method="POST" class="site-footer__newsletter-form">
-              <input type="hidden" name="_subject" value="Newsletter signup - Little Feet Academy" />
-              <label class="visually-hidden" for="footer-newsletter-email">Email address</label>
-              <div class="input-group site-footer__input-group">
-                <input type="email" name="email" id="footer-newsletter-email" class="form-control site-footer__email-input" placeholder="Your email address" required autocomplete="email" />
-                <button type="submit" class="btn site-footer__newsletter-btn" aria-label="Subscribe to newsletter"><i class="fas fa-arrow-right"></i></button>
               </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  What documents are required?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#admissionFaq">
+                <div class="accordion-body">
+                  You will need a copy of the child's birth certificate, recent passport photos, previous school reports
+                  (if applicable), and immunization records.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  Is there an application fee?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#admissionFaq">
+                <div class="accordion-body">
+                  Yes, a non-refundable application fee is required upon submission of the form. Please contact our
+                  finance office for current rates.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form -->
+        <div class="col-lg-6 reveal reveal-right">
+          <div class="admission-info-card shadow-lg">
+            <h3 class="fw-bold mb-3">Admission Inquiry</h3>
+            <p class="mb-4 opacity-75">Can't find what you're looking for? Send us a quick message and our admissions
+              officer will get back to you.</p>
+            <form action="https://formspree.io/f/xgorlred" method="POST">
+              <!-- Formspree Configuration -->
+              <input type="hidden" name="_subject" value="New Admission Inquiry - Little Feet Academy">
+
+              <div class="mb-3">
+                <input type="text" name="name" class="form-control pill-btn py-3 px-4" placeholder="Full Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" name="email" class="form-control pill-btn py-3 px-4" placeholder="Email Address"
+                  required>
+              </div>
+              <div class="mb-3">
+                <select name="program" class="form-select pill-btn py-3 px-4" required>
+                  <option value="" selected disabled>Interested Program</option>
+                  <option value="Daycare">Daycare</option>
+                  <option value="Kindergarten">Kindergarten</option>
+                  <option value="Primary">Primary</option>
+                  <option value="Upper Primary">Upper Primary</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <textarea name="message" class="form-control rounded-4 p-4" rows="4"
+                  placeholder="Your Message or Question" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark btn-lg pill-btn w-100 py-3 shadow">Send Inquiry</button>
+              <div class="form-status"></div>
             </form>
           </div>
         </div>
-        <div class="site-footer__bottom row align-items-center pt-4 mt-4 gx-2">
-          <div class="col-md-6 text-center text-md-start small mb-3 mb-md-0">
-            <span class="site-footer__copyright">&copy; <span id="year"></span> Little Feet Academy. Growing bright minds.</span>
-          </div>
-          <div class="col-md-6 text-center text-md-end small site-footer__legal">
-            <a href="terms.html">Terms of Service</a>
-            <span class="site-footer__dot" aria-hidden="true">·</span>
-            <a href="sitemap.html">Sitemap</a>
-            <span class="site-footer__dot" aria-hidden="true">·</span>
-            <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer footer-creative w-100">
+    <div class="container py-5">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h3 class="site-footer__brand h4 mb-3">Little Feet Academy</h3>
+          <p class="site-footer__tagline mb-4 mx-auto mx-md-0">Growing bright minds in Ongata Rongai. Joyful learning
+            and holistic growth since 2010.</p>
+          <div class="site-footer__social d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+              class="site-footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link"
+              aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+              class="site-footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link"
+              aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h4 class="site-footer__heading">Quick Links</h4>
+          <ul class="site-footer__links list-unstyled mb-0">
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="programs.html">Curriculum</a></li>
+            <li><a href="news.html#term-dates">Term Dates</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h4 class="site-footer__heading">Contact Us</h4>
+          <ul class="site-footer__contact list-unstyled mb-0">
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Ongata+Rongai+Kenya" target="_blank"
+                rel="noopener noreferrer" class="site-footer__contact-link"><i class="fas fa-map-marker-alt"
+                  aria-hidden="true"></i><span>Ongata Rongai, Kenya</span></a>
+            </li>
+            <li>
+              <a href="tel:+254796609626" class="site-footer__contact-link"><i class="fas fa-phone-alt"
+                  aria-hidden="true"></i><span>+254 796 609 626</span></a>
+            </li>
+            <li>
+              <a href="mailto:hello@littlefeetacademy.co.ke" class="site-footer__contact-link"><i
+                  class="fas fa-envelope" aria-hidden="true"></i><span>hello@littlefeetacademy.co.ke</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h4 class="site-footer__heading">Join Newsletter</h4>
+          <form action="https://formspree.io/f/xgorlred" method="POST" class="site-footer__newsletter-form">
+            <input type="hidden" name="_subject" value="Newsletter signup - Little Feet Academy" />
+            <label class="visually-hidden" for="footer-newsletter-email">Email address</label>
+            <div class="input-group site-footer__input-group">
+              <input type="email" name="email" id="footer-newsletter-email"
+                class="form-control site-footer__email-input" placeholder="Your email address" required
+                autocomplete="email" />
+              <button type="submit" class="btn site-footer__newsletter-btn" aria-label="Subscribe to newsletter"><i
+                  class="fas fa-arrow-right"></i></button>
+            </div>
+          </form>
+        </div>
       </div>
-    </footer>
+      <div class="site-footer__bottom row align-items-center pt-4 mt-4 gx-2">
+        <div class="col-md-6 text-center text-md-start small mb-3 mb-md-0">
+          <span class="site-footer__copyright">&copy; <span id="year"></span> Little Feet Academy. Growing bright
+            minds.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end small site-footer__legal">
+          <a href="terms.html">Terms of Service</a>
+          <span class="site-footer__dot" aria-hidden="true">·</span>
+          <a href="sitemap.html">Sitemap</a>
+          <span class="site-footer__dot" aria-hidden="true">·</span>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!" class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
-      <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </a>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!"
+    class="whatsapp-chat-button" target="_blank" aria-label="Chat on WhatsApp">
+    <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  </a>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-      // Intersection Observer for Scroll Animations
-      const revealElements = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
-      }, { threshold: 0.1 });
+    // Intersection Observer for Scroll Animations
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
 
-      revealElements.forEach(el => observer.observe(el));
+    revealElements.forEach(el => observer.observe(el));
 
-      // Formspree AJAX Submission
-      const admissionForm = document.querySelector('form[action^="https://formspree.io"]');
-      const admissionStatus = document.getElementById("admission-status");
-      const admissionBtn = document.getElementById("admission-submit");
+    // Formspree AJAX Submission for all forms
+    document.querySelectorAll('form[action^="https://formspree.io"]').forEach(form => {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-      if (admissionForm) {
-        admissionForm.addEventListener("submit", async (e) => {
-          e.preventDefault();
-          
-          const data = new FormData(admissionForm);
-          admissionBtn.classList.add("btn-loading");
-          admissionStatus.className = "form-status";
-          admissionStatus.textContent = "";
+        const status = form.querySelector(".form-status");
+        const btn = form.querySelector('button[type="submit"]');
+        const data = new FormData(form);
 
-          try {
-            const response = await fetch(admissionForm.action, {
-              method: "POST",
-              body: data,
-              headers: { 'Accept': 'application/json' }
-            });
+        btn.classList.add("btn-loading");
+        if (status) {
+          status.className = "form-status";
+          status.textContent = "";
+        }
 
-            if (response.ok) {
-              admissionStatus.textContent = "Your inquiry has been sent! Our admissions officer will contact you soon.";
-              admissionStatus.classList.add("success");
-              admissionForm.reset();
-            } else {
-              const result = await response.json();
-              admissionStatus.textContent = result.error || "Oops! There was a problem submitting your inquiry.";
-              admissionStatus.classList.add("error");
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            if (status) {
+              status.textContent = "Thank you! Your information has been sent successfully.";
+              status.classList.add("success");
             }
-          } catch (error) {
-            admissionStatus.textContent = "Oops! There was a problem connecting to the server.";
-            admissionStatus.classList.add("error");
-          } finally {
-            admissionBtn.classList.remove("btn-loading");
+            form.reset();
+          } else {
+            const result = await response.json();
+            if (status) {
+              status.textContent = result.error || "Oops! There was a problem submitting the form.";
+              status.classList.add("error");
+            }
           }
-        });
-      }
-    </script>
-      <script src="js/parent-chatbot.js" defer></script>
-</body>
-</html>
+        } catch (error) {
+          if (status) {
+            status.textContent = "Oops! There was a problem connecting to the server.";
+            status.classList.add("error");
+          }
+        } finally {
+          btn.classList.remove("btn-loading");
+        }
+      });
+    });
+  </script>
 
+  <script src="js/parent-chatbot.js" defer></script>
+</body>
+
+</html>

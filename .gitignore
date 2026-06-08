@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+node_modules/
+.vercel
+.cursor/
+tools/__pycache__/
+*.pyc
+style.css.bak
+assets/img/_originals/

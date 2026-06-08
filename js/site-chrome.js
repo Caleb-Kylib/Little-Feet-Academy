@@ -26,10 +26,10 @@
       '<div class="utility-bar">' +
       '<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 py-2">' +
       '<div class="social-links order-1">' +
-      '<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>' +
-      '<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>' +
-      '<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>' +
-      '<a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>' +
+      '<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>' +
+      '<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>' +
+      '<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>' +
+      '<a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>' +
       "</div>" +
       '<div class="working-hours top-bar-item order-3 order-md-2">' +
       '<i class="far fa-clock"></i>' +

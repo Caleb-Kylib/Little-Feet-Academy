@@ -5596,3 +5596,54 @@ html, body {
     max-height: min(32rem, 72vh);
   }
 }
+
+/* Admission Page - Comprehensive Form Styles */
+.admission-form-section {
+  position: relative;
+}
+
+.admission-application-card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.85rem;
+}
+
+.admission-application-card .form-label {
+  font-size: 0.9rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.admission-application-card .form-control,
+.admission-application-card .form-select {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.admission-application-card .form-control:focus,
+.admission-application-card .form-select:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 0.25rem rgba(102, 166, 255, 0.1);
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+@media (max-width: 767.98px) {
+  .admission-application-card .p-4 {
+    padding: 1.5rem !important;
+  }
+}

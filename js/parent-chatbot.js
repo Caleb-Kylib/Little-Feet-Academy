@@ -52,9 +52,9 @@
         "We follow Kenya’s **Competency-Based Curriculum (CBC)** with a focus on practical learning and whole-child growth. Browse **Programs** for pathways, or read the **CBC articles** on our News page.",
     },
     {
-      keys: ["age", "grade", "class", "playgroup", "pp1", "pp2", "primary", "junior"],
+      keys: ["age", "grade", "class", "daycare", "playgroup", "pp1", "pp2", "primary", "upper", "junior"],
       reply:
-        "Program fit depends on your child’s age and readiness. The clearest overview is on **Programs** and each program page (Playgroup, Pre-primary, Lower Primary, Junior Secondary). Tell us your child’s age and we can point you to the best match.",
+        "Program fit depends on your child’s age and readiness. The clearest overview is on **Programs** and each program page (Daycare, Pre-primary, Lower Primary, Upper Primary). Tell us your child’s age and we can point you to the best match.",
     },
     {
       keys: ["location", "where", "address", "map", "rongai"],

@@ -1,0 +1,42 @@
+{
+  "index.html": {
+    "path": "/",
+    "title": "Little Feet Academy • Daycare & Kindergarten",
+    "description": "A colorful, kid-friendly daycare & kindergarten in Ongata Rongai where playful learning helps little minds grow."
+  },
+  "About.html": {
+    "path": "/About",
+    "title": "About Us • Little Feet Academy",
+    "description": "Nurturing young minds with care, creativity, and curiosity since 2010. Learn our story, mission, and vision."
+  },
+  "programs.html": {
+    "path": "/programs",
+    "title": "Our Academic Programs • Little Feet Academy",
+    "description": "Programs from playgroup through junior secondary on Kenya's CBC pathway."
+  },
+  "admissions.html": {
+    "path": "/admissions",
+    "title": "Admissions • Little Feet Academy",
+    "description": "Apply to Little Feet Academy. Enrollment steps, forms, and school visit information."
+  },
+  "contact.html": {
+    "path": "/contact",
+    "title": "Contact Us • Little Feet Academy",
+    "description": "Get in touch with Little Feet Academy in Ongata Rongai. Schedule a tour or ask about enrollment."
+  },
+  "team.html": {
+    "path": "/team",
+    "title": "Our Team • Little Feet Academy",
+    "description": "Meet the educators and leaders at Little Feet Academy."
+  },
+  "news.html": {
+    "path": "/news",
+    "title": "News & Events • Little Feet Academy",
+    "description": "School news, term dates, and CBC educational articles for families."
+  },
+  "gallery.html": {
+    "path": "/gallery",
+    "title": "Gallery • Little Feet Academy",
+    "description": "Photos from life at Little Feet Academy."
+  }
+}
