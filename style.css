@@ -3009,7 +3009,7 @@ body {
 
 /* Inline styles migrated from programs.html */
 .program-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/daycare.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/class.jpg') no-repeat center center;
   background-size: cover;
   padding: 120px 0;
   color: white;
