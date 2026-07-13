@@ -1,18 +1,626 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CivicConnect | Understand Laws, Participate, Be Heard</title>
-    <meta name="description" content="Empowering Kenyan citizens with simplified laws, bill tracking, and civic education. Stay informed and participate in public governance." />
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-[#fcfdff] text-slate-900 overflow-x-hidden">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Little Feet Academy • Daycare &amp; Kindergarten</title>
+  <meta name="description"
+    content="A colorful, kid-friendly daycare &amp; kindergarten where playful learning helps little minds grow big smiles." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <div class="working-hours top-bar-item">
+        <i class="far fa-clock"></i>
+        <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+      </div>
+
+      <div class="top-bar-right d-flex gap-4">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Ongata Rongai, Kenya</span>
+        </div>
+        <a href="mailto:hello@littlefeetacademy.co.ke" class="top-bar-item">
+          <i class="fas fa-envelope"></i>
+          <span>hello@littlefeetacademy.co.ke</span>
+        </a>
+        <a href="tel:+254796609626" class="top-bar-item accent-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+254 796 609 626</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold brand-name" href="index.html">
+        <div class="navbar-logo-wrap">
+          <img src="assets/img/school-logo.png" alt="Logo" class="navbar-logo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="logo-fallback" style="display:none;">LF</div>
+          <span>Little Feet Academy</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+              <li><a class="dropdown-item" href="gallery.html">All Photos</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="graduation-gallery.html">🎓 Graduation Day</a></li>
+              <li><a class="dropdown-item" href="sports-gallery.html">🏃‍♂️ Sports Day</a></li>
+              <li><a class="dropdown-item" href="cultural-gallery.html">🎭 Cultural Day</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+          <li class="nav-item ms-lg-3"><a class="btn btn-warning pill-btn px-4 text-white fw-bold"
+              href="contact.html">Book a Visit</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section home-hero-banner d-flex align-items-center">
+    <div class="container reveal reveal-up">
+      <div class="home-hero-content text-center text-lg-start mx-auto mx-lg-0">
+        <span class="home-hero-kicker badge rounded-pill mb-3">Nurturing Bright Minds in Rongai</span>
+        <h1 class="display-5 display-md-4 display-lg-3 fw-bold hero-title mb-3">Where Little Minds Grow Big Smiles</h1>
+        <p class="lead hero-subtitle mb-4">Playful learning for ages 2–6 in a safe, caring, and curiosity-driven
+          environment.</p>
+        <div
+          class="hero-cta-group d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start align-items-stretch align-items-sm-center">
+          <a href="programs.html" class="btn btn-primary btn-lg pill-btn px-4">Explore Programs</a>
+          <a href="admissions.html" class="btn btn-outline-light btn-lg pill-btn px-4">Enroll for 2026</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="home-about-section py-5 section-pad">
+    <div class="container">
+      <div class="row align-items-stretch g-4 g-lg-5 reveal reveal-up">
+        <div class="col-lg-6 order-lg-2">
+          <div class="home-about-media position-relative rounded-4 overflow-hidden shadow">
+            <img src="assets/img/class5.jpg" alt="Children learning together at Little Feet Academy"
+              class="img-fluid w-100 d-block" />
+            <div class="home-about-badge">
+              <span class="d-block fw-bold">Est. 2010</span>
+              <span class="small text-white-50">Ongata Rongai</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
+          <p class="home-about-kicker text-uppercase small fw-bold mb-2">About Little Feet Academy</p>
+          <h2 class="section-title mb-3">A warm school community in the heart of Rongai</h2>
+          <p class="text-muted mb-3">
+            We are a caring Christian-based academy serving families in Ongata Rongai and beyond. Our teachers blend the
+            Competency-Based Curriculum with purposeful play, creativity, and strong values—so every child
+            feels known, challenged, and celebrated.
+          </p>
+          <p class="text-muted mb-4">
+            From early years through upper primary pathways, we focus on confidence, character, and curiosity: the
+            foundations that last long after the school day ends.
+          </p>
+          <ul class="home-about-highlights list-unstyled mb-4">
+            <li class="d-flex gap-2 mb-2"><i class="fas fa-check-circle text-success mt-1"
+                aria-hidden="true"></i><span>Small-group attention and clear communication with families</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="fas fa-check-circle text-success mt-1"
+                aria-hidden="true"></i><span>Safe, joyful classrooms and enriching co-curricular activities</span></li>
+            <li class="d-flex gap-2"><i class="fas fa-check-circle text-success mt-1"
+                aria-hidden="true"></i><span>Partnership with parents—you’re part of the journey</span></li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 gap-md-3">
+            <a href="About.html" class="btn btn-kid pill-btn">Discover our story</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Academic Programs -->
+  <section id="programs" class="py-5 bg-light section-pad">
+    <div class="container">
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4 reveal reveal-up">
+        <h2 class="section-title mb-0">Our Academic Programs</h2>
+        <a href="programs.html" class="btn btn-beyond pill-btn px-4">
+          See All Programs
+          <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.1s;">
+          <div class="card program-card h-100">
+            <img src="assets/img/kinder.jpg" class="card-img-top" alt="Daycare" />
+            <div class="card-body">
+              <h5 class="card-title">Daycare</h5>
+              <p class="card-text">Gentle routines, creative play, and lots of giggles for our youngest explorers.</p>
+              <a href="program-daycare.html" class="btn btn-primary pill-btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.2s;">
+          <div class="card program-card h-100">
+            <img src="assets/img/kids2.jpg" class="card-img-top" alt="Kindergarten" />
+            <div class="card-body">
+              <h5 class="card-title">Lower Primary</h5>
+              <p class="card-text">Early literacy, numbers, and discovery-based learning in a joyful classroom.</p>
+              <a href="program-lower-primary.html" class="btn btn-primary pill-btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.3s;">
+          <div class="card program-card h-100">
+            <img src="assets/img/kids2.jpg" class="card-img-top" alt="After School" />
+            <div class="card-body">
+              <h5 class="card-title">Upper Primary </h5>
+              <p class="card-text">Homework help, STEAM crafts, and active games to end the day with smiles.</p>
+              <a href="program-upper-primary.html" class="btn btn-primary pill-btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School Approach -->
+  <section id="approach" class="approach-section section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal reveal-left">
+          <img src="assets/img/school.jpg" class="img-fluid approach-image-circle mx-auto d-block"
+            alt="Children engaged in a joyful classroom experience" />
+        </div>
+        <div class="col-lg-6 reveal reveal-right">
+          <span class="approach-tag">Our Learning Approach</span>
+          <h2 class="section-title mb-3">Balanced learning that grows the whole child</h2>
+          <p class="text-muted mb-4">
+            We combine strong academics, creativity, and emotional growth. Every learner is guided with structured
+            routines, practical activities,
+            and caring mentorship that builds confidence in and outside the classroom.
+          </p>
+
+          <div class="approach-progress">
+            <div class="progress-label-wrap">
+              <span>Academic Mastery</span>
+              <span>92%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-fill fill-blue" style="width: 92%"></div>
+            </div>
+          </div>
+          <div class="approach-progress">
+            <div class="progress-label-wrap">
+              <span>Creativity & Innovation</span>
+              <span>88%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-fill fill-orange" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="approach-progress mb-0">
+            <div class="progress-label-wrap">
+              <span>Character & Leadership</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-fill fill-red" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Co-curricular Activities -->
+  <section id="activities" class="py-5 bg-light section-pad">
+    <div class="container">
+      <div class="text-center mb-4 reveal reveal-up">
+        <h2 class="section-title mb-2">Co-curricular Activities</h2>
+        <p class="text-muted mb-0">Short, purposeful programs that build confidence, teamwork, and talent.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.1s;">
+          <div class="activity-mini-card h-100">
+            <img src="assets/img/science-club.jpg" class="activity-mini-img" alt="Science club activity" />
+            <div class="p-4">
+              <h5 class="fw-bold mb-2">Football Academy</h5>
+              <p class="text-muted mb-0">Hands-on experiments that spark curiosity and problem-solving.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.2s;">
+          <div class="activity-mini-card h-100">
+            <img src="assets/img/drama-clubi.jpeg" class="activity-mini-img" alt="Drama and performance practice" />
+            <div class="p-4">
+              <h5 class="fw-bold mb-2">Performing Arts</h5>
+              <p class="text-muted mb-0">Communication and stage confidence through creative performance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal reveal-up" style="transition-delay: 0.3s;">
+          <div class="activity-mini-card h-100">
+            <img src="assets/img/swimming.jpg" class="activity-mini-img" alt="Swimming lessons for students" />
+            <div class="p-4">
+              <h5 class="fw-bold mb-2">Swimming</h5>
+              <p class="text-muted mb-0">Safety, fitness, and discipline with guided pool sessions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="home-why-section py-5 section-pad">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5 reveal reveal-up">
+        <div class="col-lg-8">
+          <p class="home-why-kicker text-uppercase small fw-bold mb-2">Why families choose us</p>
+          <h2 class="section-title mb-3">Everything you want in a school—without the noise</h2>
+          <p class="text-muted mb-0">
+            Clear teaching, genuine care, and a campus culture where children want to show up. Here’s what sets Little
+            Feet Academy apart.
+          </p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.05s;">
+          <div class="home-why-card h-100 text-center p-4 rounded-4 bg-white shadow-sm border-0">
+            <div class="home-why-icon mx-auto"><i class="fas fa-heart" aria-hidden="true"></i></div>
+            <h3 class="h6 fw-bold mt-3 mb-2">Teachers who truly care</h3>
+            <p class="text-muted small mb-0">Experienced educators who know each learner by name and walk beside
+              families through every milestone.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.1s;">
+          <div class="home-why-card h-100 text-center p-4 rounded-4 bg-white shadow-sm border-0">
+            <div class="home-why-icon mx-auto"><i class="fas fa-palette" aria-hidden="true"></i></div>
+            <h3 class="h6 fw-bold mt-3 mb-2">Joyful, hands-on learning</h3>
+            <p class="text-muted small mb-0">Play, projects, and discovery that build creativity and confidence—not just
+              worksheets.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.15s;">
+          <div class="home-why-card h-100 text-center p-4 rounded-4 bg-white shadow-sm border-0">
+            <div class="home-why-icon mx-auto"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+            <h3 class="h6 fw-bold mt-3 mb-2">Strong CBC foundations</h3>
+            <p class="text-muted small mb-0">Balanced academics and social-emotional growth aligned with Kenya’s
+              competency-based pathway.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-up" style="transition-delay: 0.2s;">
+          <div class="home-why-card h-100 text-center p-4 rounded-4 bg-white shadow-sm border-0">
+            <div class="home-why-icon mx-auto"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+            <h3 class="h6 fw-bold mt-3 mb-2">Safe &amp; welcoming</h3>
+            <p class="text-muted small mb-0">Secure routines, supervised spaces, and a culture where every child feels
+              they belong.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voices of Our Parents -->
+  <section id="testimonials" class="voices-section section-pad">
+    <div class="voices-bg-quote" aria-hidden="true">“</div>
+    <div class="container">
+      <div class="text-center mb-5 reveal reveal-up">
+        <h2 class="section-title mb-0">Voices of Our Parents</h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide reveal reveal-up" data-bs-ride="carousel"
+        data-bs-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6">
+                <article class="parent-review-card h-100">
+                  <div class="review-header">
+                    <img src="assets/img/interview.png" alt="Parent portrait" class="review-avatar-circle" />
+                    <div>
+                      <h5 class="parent-name">Mary Wambui</h5>
+                      <span class="parent-subtext">Parent since 2019</span>
+                    </div>
+                  </div>
+                  <p class="review-body-text mb-0">
+                    "The transformation I’ve seen in my daughter’s confidence is incredible. Little Feet Academy is not
+                    just a school, it is a family that truly cares."
+                  </p>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="parent-review-card h-100">
+                  <div class="review-header">
+                    <img src="assets/img/admin-letter.png" alt="Parent portrait" class="review-avatar-circle" />
+                    <div>
+                      <h5 class="parent-name">David Omondi</h5>
+                      <span class="parent-subtext">Parent of 2 learners</span>
+                    </div>
+                  </div>
+                  <p class="review-body-text mb-0">
+                    "As a parent, I value the balance between academics and values. My children look forward to school
+                    every morning."
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6">
+                <article class="parent-review-card h-100">
+                  <div class="review-header">
+                    <img src="assets/img/interview.jpg" alt="Parent portrait" class="review-avatar-circle" />
+                    <div>
+                      <h5 class="parent-name">Faith Njeri</h5>
+                      <span class="parent-subtext">Parent of PP2 learner</span>
+                    </div>
+                  </div>
+                  <p class="review-body-text mb-0">
+                    "The teachers are warm, responsive, and intentional. We feel involved in every step of our child’s
+                    journey."
+                  </p>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="parent-review-card h-100">
+                  <div class="review-header">
+                    <img src="assets/img/admin-form.jpg" alt="Parent portrait" class="review-avatar-circle" />
+                    <div>
+                      <h5 class="parent-name">Kevin Otieno</h5>
+                      <span class="parent-subtext">Parent of 1 learner</span>
+                    </div>
+                  </div>
+                  <p class="review-body-text mb-0">
+                    "From class communication to student support, everything is organized and thoughtful. We recommend
+                    the school without hesitation."
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-indicators mt-4 position-static">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School Happenings -->
+  <section id="articles" class="py-5 section-pad school-happenings-section">
+    <div class="container">
+      <div class="mb-4 reveal reveal-up">
+        <h2 class="section-title h1 mb-2">School Happenings</h2>
+        <p class="text-muted mb-0">Highlights from our events, projects, and school life.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.1s;">
+          <article class="article-card h-100">
+            <img src="assets/img/kids.jpg" class="article-img" alt="Students celebrating sports day" />
+            <div class="p-4">
+              <span class="article-date">March 15, 2024</span>
+              <h4 class="mt-2 fw-bold">Annual Sports Day</h4>
+              <p class="text-muted mt-2 mb-3">A day filled with athletics, teamwork, and spirited competition between
+                houses.</p>
+              <a href="sports-gallery.html" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i
+                  class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.2s;">
+          <article class="article-card h-100">
+            <img src="assets/img/science-club.jpg" class="article-img" alt="Students presenting STEM fair projects" />
+            <div class="p-4">
+              <span class="article-date">April 2, 2024</span>
+              <h4 class="mt-2 fw-bold">STEM Fair 2024</h4>
+              <p class="text-muted mt-2 mb-3">Witnessing innovation as students showcased their science and tech
+                projects.</p>
+              <a href="news.html" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i
+                  class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-up" style="transition-delay: 0.3s;">
+          <article class="article-card h-100">
+            <img src="assets/img/group-african-kids-learning-together.jpg" class="article-img"
+              alt="Culture week presentation at school" />
+            <div class="p-4">
+              <span class="article-date">May 10, 2024</span>
+              <h4 class="mt-2 fw-bold">Culture Week</h4>
+              <p class="text-muted mt-2 mb-3">Celebrating the rich diversity of our community through food, art, and
+                music.</p>
+              <a href="cultural-gallery.html" class="btn btn-link p-0 fw-bold text-decoration-none">Read More <i
+                  class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Site Footer -->
+  <footer class="site-footer footer-creative w-100">
+    <div class="container py-5">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h3 class="site-footer__brand h4 mb-3">Little Feet Academy</h3>
+          <p class="site-footer__tagline mb-4 mx-auto mx-md-0">Growing bright minds in Ongata Rongai. Joyful learning
+            and holistic growth since 2010.</p>
+          <div class="site-footer__social d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+              class="site-footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link"
+              aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+              class="site-footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="site-footer__social-link"
+              aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h4 class="site-footer__heading">Quick Links</h4>
+          <ul class="site-footer__links list-unstyled mb-0">
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="programs.html">Curriculum</a></li>
+            <li><a href="news.html#term-dates">Term Dates</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="news.html#learning-articles">CBC articles</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h4 class="site-footer__heading">Contact Us</h4>
+          <ul class="site-footer__contact list-unstyled mb-0">
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Ongata+Rongai+Kenya" target="_blank"
+                rel="noopener noreferrer" class="site-footer__contact-link"><i class="fas fa-map-marker-alt"
+                  aria-hidden="true"></i><span>Ongata Rongai, Kenya</span></a>
+            </li>
+            <li>
+              <a href="tel:+254796609626" class="site-footer__contact-link"><i class="fas fa-phone-alt"
+                  aria-hidden="true"></i><span>+254 796 609 626</span></a>
+            </li>
+            <li>
+              <a href="mailto:hello@littlefeetacademy.co.ke" class="site-footer__contact-link"><i
+                  class="fas fa-envelope" aria-hidden="true"></i><span>hello@littlefeetacademy.co.ke</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center text-md-start">
+          <h4 class="site-footer__heading">Join Newsletter</h4>
+          <form action="https://formspree.io/f/xgorlred" method="POST" class="site-footer__newsletter-form">
+            <input type="hidden" name="_subject" value="Newsletter signup - Little Feet Academy" />
+            <label class="visually-hidden" for="footer-newsletter-email">Email address</label>
+            <div class="input-group site-footer__input-group">
+              <input type="email" name="email" id="footer-newsletter-email"
+                class="form-control site-footer__email-input" placeholder="Your email address" required
+                autocomplete="email" />
+              <button type="submit" class="btn site-footer__newsletter-btn" aria-label="Subscribe to newsletter"><i
+                  class="fas fa-arrow-right"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="site-footer__bottom row align-items-center pt-4 mt-4 gx-2">
+        <div class="col-md-6 text-center text-md-start small mb-3 mb-md-0">
+          <span class="site-footer__copyright">&copy; <span id="year"></span> Little Feet Academy. Growing bright
+            minds.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end small site-footer__legal">
+          <a href="terms.html">Terms of Service</a>
+          <span class="site-footer__dot" aria-hidden="true">·</span>
+          <a href="sitemap.html">Sitemap</a>
+          <span class="site-footer__dot" aria-hidden="true">·</span>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254796609626?text=Hello,%20I'm%20interested%20in%20Little%20Feet%20Academy!"
+    class="whatsapp-chat-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <span class="whatsapp-chat-tooltip">Need help? Chat with us!</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  </a>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Small helper for current year & form validation -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (() => {
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach((form) => {
+        form.addEventListener('submit', (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    revealElements.forEach((el) => observer.observe(el));
+  </script>
+  <script src="js/parent-chatbot.js" defer></script>
+</body>
+
 </html>
