@@ -5158,7 +5158,7 @@ body {
 /* --- Homepage refresh (banner, approach, co-curricular, voices, happenings) --- */
 .home-hero-banner {
   min-height: 78vh;
-  background: linear-gradient(rgba(12, 27, 51, 0.58), rgba(12, 27, 51, 0.52)), url("assets/img/school.jpg") no-repeat center center;
+  background: linear-gradient(rgba(12, 27, 51, 0.58), rgba(12, 27, 51, 0.52)), url("assets/img/schoolbanner1.jpg") no-repeat center center;
   background-size: cover;
   border-bottom: none;
 }
